@@ -1,4 +1,4 @@
-import logo from "./img/logo.svg";
+import logo from "./img/LOGO_SEER_WHITE.png";
 import "./scss/Index.scss";
 
 function App() {
