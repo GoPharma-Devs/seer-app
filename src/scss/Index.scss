@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -8,6 +10,8 @@ body {
   background-image: url('../img/fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Roboto', sans-serif;
+  color: #103561;
 }
 
 .contenedor {
@@ -17,8 +21,143 @@ body {
   height: 100vh;
   width: 100%;
 
+
+  &-nosotros {
+    height: auto !important;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 1080px;
+    gap: 7px;
+    margin: 0 auto;
+
+    .nosotros-el:nth-child(1) {
+      border-radius: 0 0 25px 0;
+    }
+
+    .nosotros-el:nth-child(2) {
+      border-radius: 0 0 0 25px;
+    }
+
+    .nosotros-el:nth-child(3) {
+      border-radius: 0 25px 0 0;
+    }
+
+    .nosotros-el:nth-child(4) {
+      border-radius: 25px 0 0 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+
+        justify-content: flex-start;
+
+        a {
+          text-decoration: none;
+          color: #103561;
+        }
+
+        i {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+.titulo {
+  font-weight: bolder !important;
 }
 
 .App-logo {
   max-width: 220px
+}
+
+.Home {
+  height: 100vh;
+  width: 100%;
+}
+
+section {
+  height: auto;
+  width: 100%;
+}
+
+.nosotros-el {
+  background-color: #e5e8ec;
+  padding: 1rem;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+
+  ul {
+    list-style: none;
+  }
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    list-style: none;
+  }
+
+  .contenedor-footer ul {
+    display: flex;
+    align-items: center;
+
+    padding: 1rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+    }
+
+    li {
+      margin: 1rem;
+
+      a {
+        color: #103561;
+        font-size: 1.4rem;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+    }
+  }
+
+}
+
+.contacto-section {
+  flex-flow: column;
+  display: flex;
+  min-height: 40vh;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    margin-top: 1rem !important;
+    font-size: 1.4rem;
+    color: #103561;
+
+    &:hover {
+      color: #fff;
+    }
+  }
 }
