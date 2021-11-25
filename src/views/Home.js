@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../img/LOGO_SEER_WHITE.png";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+
 import {
   FaInstagram,
   FaFacebookSquare,
@@ -57,44 +57,38 @@ function Home() {
           <div className="nosotros-el">
             <ul>
               <li>
-                <Link to="/">
+                <a href="https://www.instagram.com/seer.latam/">
                   <i>
                     <FaFacebookSquare />
                   </i>
                   seer.latam
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/">
+                <a href="https://business.facebook.com/latest/home?asset_id=101864688995598&nav_ref=bm_home_redirect">
                   <i>
                     <FaInstagram />
                   </i>
                   SEER LATAM
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/">
+                <a href="https://www.linkedin.com/company/seer-latam/?viewAsMember=true">
                   <i>
                     {" "}
                     <FaLinkedin />
                   </i>
                   SEER LATAM
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/">
+                <a href="https://twitter.com/SEERLATAM">
                   <i>
                     {" "}
                     <FaTwitterSquare />
                   </i>
                   SEERLATAM
-                </Link>
-              </li>
-              <li>
-                <Link></Link>
-              </li>
-              <li>
-                <Link></Link>
+                </a>
               </li>
             </ul>
           </div>
