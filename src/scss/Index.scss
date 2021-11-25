@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap');
 
+@import "libs/mixins";
+@import "libs/variables";
+
 * {
   padding: 0;
   margin: 0;
@@ -32,6 +35,11 @@ body {
     max-width: 1080px;
     gap: 7px;
     margin: 0 auto;
+
+    @include phone {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
 
     .nosotros-el:nth-child(1) {
       border-radius: 0 0 25px 0;

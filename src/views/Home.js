@@ -44,14 +44,11 @@ function Home() {
             <h2 className="titulo">VISIÓN </h2>
             <br />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              excepturi dolorum, mollitia veniam accusantium corrupti omnis iste
-              quis laborum quasi non, optio, incidunt consequatur dolore.
-              Aspernatur nulla similique adipisci maxime. Minima autem quia
-              beatae doloremque quas itaque harum ab, temporibus quidem quaerat
-              rem praesentium aliquam iste, id, modi libero voluptatibus facilis
-              dolorum aut voluptas amet cumque labore. Laborum, voluptas
-              blanditiis?
+              SEER la asociación referente en NorLatam en investigación,
+              diagnóstico, tratamiento y concientización de las enfermedades
+              raras, generando conocimiento en la comunidad médica y la
+              sociedad, provocando un impacto positivo en la atención y calidad
+              de vida de los pacientes.
             </p>
           </div>
           <div className="nosotros-el">

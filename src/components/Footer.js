@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import {
   FaInstagram,
   FaFacebookSquare,
@@ -16,7 +16,6 @@ function footer() {
               <i>
                 <FaFacebookSquare />
               </i>
-              seer.latam
             </a>
           </li>
           <li>
@@ -24,7 +23,6 @@ function footer() {
               <i>
                 <FaInstagram />
               </i>
-              SEER LATAM
             </a>
           </li>
           <li>
@@ -33,7 +31,6 @@ function footer() {
                 {" "}
                 <FaLinkedin />
               </i>
-              SEER LATAM
             </a>
           </li>
           <li>
@@ -42,7 +39,6 @@ function footer() {
                 {" "}
                 <FaTwitterSquare />
               </i>
-              SEERLATAM
             </a>
           </li>
         </ul>
