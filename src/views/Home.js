@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../img/LOGO_SEER_WHITE.png";
+import ListaComite from "../components/ListaComite";
 import Footer from "../components/Footer";
 
 import {
@@ -90,6 +91,22 @@ function Home() {
             </ul>
           </div>
         </div>
+      </section>
+      <section className="comite-contenedor">
+        <h4>Conoce a nuestro </h4>
+        <h3 style={{ textAlign: "center" }}>COMITÉ CIENTÍFICO</h3>
+        <br />
+        <br />
+        <ListaComite />
+        {/* <br />
+        <Agendas />
+        <br />
+        <h4>Conoce a nuestros </h4>
+        <h2>PROFESORES</h2>
+        <br />
+        <ListaPonente />
+        <Patrocinadores />
+        <Aliados /> */}
       </section>
       <section className="contacto-section">
         <br />
