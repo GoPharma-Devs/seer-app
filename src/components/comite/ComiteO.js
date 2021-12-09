@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-const ImgPonente = "IMAGEN";
+const ImgPonente = "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F15_franciscozun%CC%83iga.png?alt=media&token=5c32afc1-2275-479f-939f-e2bbd6743fbd";
 function Comite() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -56,7 +56,7 @@ function Comite() {
     <React.Fragment>
       {" "}
       <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img src="IMAGEN" alt="comite" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F15_franciscozun%CC%83iga.png?alt=media&token=5c32afc1-2275-479f-939f-e2bbd6743fbd" alt="comite" />
         <div className="info">
           <h2 className="nombre-ponente">Dr. Francisco Zuñiga </h2>
           <p className="titulo-ponente">Genética medica </p>

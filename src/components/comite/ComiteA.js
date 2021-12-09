@@ -44,7 +44,7 @@ function Comite() {
       {" "}
       <div className="comite-el" onClick={() => setModalShow(true)}>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/comite-coiner.appspot.com/o/1_DraAraceli_Arellano.png?alt=media&token=042a6aa2-ce45-4d18-8bda-0bdf1104989c"
+          src={ImgPonente}
           alt="comite"
         />
         <div className="info">

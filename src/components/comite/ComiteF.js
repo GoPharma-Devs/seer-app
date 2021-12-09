@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
-const ImgPonente = "imagen";
-function Comite() {
+const ImgPonente = "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F6_Charles%20Marques.png?alt=media&token=b88dff08-a095-4368-97cb-08a630951d87";
+function ComiteF() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
     return (
@@ -82,7 +82,7 @@ function Comite() {
     <React.Fragment>
       {" "}
       <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img src="imagen" alt="comite" />
+        <img src={ImgPonente} alt="comite" />
         <div className="info">
           <h2 className="nombre-ponente">Dr. Charles Marques </h2>
           <p className="titulo-ponente">Genética Médica </p>
@@ -101,4 +101,4 @@ function Comite() {
   );
 }
 
-export default Comite;
+export default ComiteF;

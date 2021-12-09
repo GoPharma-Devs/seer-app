@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 const ImgPonente =
-  "https://firebasestorage.googleapis.com/v0/b/comite-coiner.appspot.com/o/2_DraAlejandra_Camacho.png?alt=media&token=24687803-07e1-471a-bc3d-cde31dea3af7";
+  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F2_alejandracamacho.png?alt=media&token=94b754df-f1fe-4786-aae7-f75a5f4dc39f";
 function Comite() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -51,7 +51,7 @@ function Comite() {
       {" "}
       <div className="comite-el" onClick={() => setModalShow(true)}>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/comite-coiner.appspot.com/o/2_DraAlejandra_Camacho.png?alt=media&token=24687803-07e1-471a-bc3d-cde31dea3af7"
+          src="https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F2_alejandracamacho.png?alt=media&token=94b754df-f1fe-4786-aae7-f75a5f4dc39f"
           alt="comite"
         />
         <div className="info">
