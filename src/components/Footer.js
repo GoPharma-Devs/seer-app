@@ -12,14 +12,14 @@ function footer() {
       <div className="contenedor-footer">
         <ul>
           <li>
-            <a href="https://www.instagram.com/seer.latam/">
+            <a href="https://www.facebook.com/SEER-LATAM-101864688995598/">
               <i>
                 <FaFacebookSquare />
               </i>
             </a>
           </li>
           <li>
-            <a href="https://business.facebook.com/latest/home?asset_id=101864688995598&nav_ref=bm_home_redirect">
+            <a href="https://www.instagram.com/seer.latam/">
               <i>
                 <FaInstagram />
               </i>
