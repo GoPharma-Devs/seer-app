@@ -15,6 +15,9 @@ import ComiteM from "./comite/ComiteM";
 import ComiteN from "./comite/ComiteN";
 import ComiteO from "./comite/ComiteO";
 import ComiteP from "./comite/ComiteP";
+import ComiteR from "./comite/ComiteR";
+import ComiteS from "./comite/ComiteS";
+import ComiteT from "./comite/ComiteT";
 function ListaComite() {
   return (
     <div className="comite">
@@ -34,6 +37,9 @@ function ListaComite() {
       <ComiteN />
       <ComiteO />
       <ComiteP />
+      <ComiteR />
+      <ComiteS />
+      <ComiteT />
     </div>
   );
 }
