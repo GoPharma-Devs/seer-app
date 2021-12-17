@@ -44,12 +44,12 @@ function Comite() {
           alt="comite"
         />
         <div className="info">
-          <h2 className="nombre-ponente">Dra. Armando Partida</h2>
+          <h2 className="nombre-ponente">Dr. Armando Partida</h2>
           <p className="titulo-ponente">Alergia Pediátrica</p>
         </div>
 
         <div className="nombre-card">
-          <h2 className="nombre-ponente">Dra. Armando Partida</h2>
+          <h2 className="nombre-ponente">Dr. Armando Partida</h2>
           <p className="titulo-ponente">Nefrología Pediátrica </p>
         </div>
       </div>
