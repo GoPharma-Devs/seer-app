@@ -2,12 +2,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./scss/Index.scss";
 
-import Routes from "./routes/Routes";
+import GeneralRoutes from "./routes/GeneralRoutes";
 
 function App() {
   return (
     <div className="App">
-      <Routes />
+      <GeneralRoutes />
     </div>
   );
 }
