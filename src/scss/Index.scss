@@ -442,7 +442,9 @@ footer {
   }
 }
 
-.formulario {
+.form {
+  max-width: 530px;
+  width: 100%;
   display: flex;
   flex-flow: column;
 }
