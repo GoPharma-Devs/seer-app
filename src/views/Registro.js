@@ -4,7 +4,7 @@ function Registro() {
   return (
     <section className="registro" >
 
-      <div className="contenedor-form">
+      <div className="contenedor-form contenedor">
         <div classname="form">
           {/* Begin Mailchimp Signup Form */}
           <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
@@ -12,7 +12,7 @@ function Registro() {
           <div id="mc_embed_signup">
             <form action="https://go-pharma.us1.list-manage.com/subscribe/post?u=37892f6a3c3f15b6ba401af59&id=76d3e57aa3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
               <div id="mc_embed_signup_scroll">
-                <h2>Subscribe</h2>
+                <h2>Registro</h2>
                 <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
                 <div className="mc-field-group">
                   <label htmlFor="mce-MMERGE3">Nombre  <span className="asterisk">*</span>

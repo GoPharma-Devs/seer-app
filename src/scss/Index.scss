@@ -36,6 +36,8 @@ h4 {
   width: 100%;
   box-sizing: border-box;
 
+
+
   &-nosotros {
     height: auto !important;
     justify-content: center;
@@ -395,4 +397,52 @@ footer {
   position: absolute;
   right: 7px;
   top: 7px;
+}
+
+.contenedor-error {
+  flex-flow: column;
+}
+
+.btn-primario {
+  background-color: $app-1 !important;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  text-decoration: none !important;
+  cursor: pointer;
+  margin: auto;
+  border: none;
+
+  &:hover {
+    background-color: white !important;
+    color: $app-1 !important;
+
+  }
+
+}
+
+.contenedor-login {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  max-width: 580px;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column;
+  margin-bottom: 1rem;
+
+  label,
+  input {
+    width: 100%;
+  }
+}
+
+.formulario {
+  display: flex;
+  flex-flow: column;
 }
