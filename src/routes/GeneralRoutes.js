@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import Footer from "../components/Footer";
 import Home from "../views/Home";
 import Login from "../views/Login";
 import Registro from "../views/Registro";
@@ -39,6 +39,7 @@ const GeneralRoutes = () => {
         <Route path="*" element={<ErrorPage />} />
 
       </Routes>
+      <Footer data-aos="fade-up" />
     </BrowserRouter>
   );
 }

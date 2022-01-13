@@ -1,8 +1,10 @@
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "../context/AuthProvider";
 import { Link } from 'react-router-dom'
-import BgBanner from '../img/registro-bg-banner.png'
+import LogoBanner from '../img/LOGO_SEER_WHITE_SLOGAN.png'
 import axios from 'axios';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 const LOGIN_URL = 'https://seer-be.herokuapp.com/login';
 
 const Login = () => {
@@ -17,6 +19,20 @@ const Login = () => {
 
   useEffect(() => {
     userRef.current.focus();
+  }, [])
+
+  useEffect(() => {
+
+    AOS.init({
+      offset: 120,
+      delay: 20,
+      duration: 500,
+      easing: 'ease-in-out',
+      debounceDelay: 50,
+      throttleDelay: 99,
+      mirror: false,
+      anchorPlacement: 'bottom-top',
+    });
   }, [])
 
   useEffect(() => {
@@ -57,8 +73,8 @@ const Login = () => {
   }
 
   return (
-    <section className="contenedor">
-      <img src={BgBanner} alt="" className="bgbanner" />
+    <section className="contenedor" data-aos="fade-up">
+      <img src={LogoBanner} alt="" className="logobanner" />
       {success ? (
         <section className="contenedor-logeado">
           <h1>You are logged in!</h1>
@@ -70,10 +86,10 @@ const Login = () => {
       ) : (
         <section className="contenedor-login ">
           <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-          <h1>Iniciar Sesión</h1>
+
           <form className="formulario" onSubmit={handleSubmit}>
             <div className="form-group">
-              <label htmlFor="email">Email:</label>
+              <label htmlFor="email">Correo:</label>
               <input
                 type="text"
                 id="email"
@@ -84,7 +100,7 @@ const Login = () => {
                 required
               /></div>
 
-            <div className="form-group">  <label htmlFor="password">Password:</label>
+            <div className="form-group">  <label htmlFor="password">Contraseña:</label>
               <input
                 type="password"
                 id="password"
@@ -105,6 +121,16 @@ const Login = () => {
         </section>
       )
       }
+      <section className="contacto-section" data-aos="fade-up">
+        <br />
+        <h2>
+          Cualquier duda, comentario o interés por favor comunicarse al correo:
+        </h2>
+
+        <a href="mailto:comunicacion@seerlatam.org">
+          comunicacion@seerlatam.org
+        </a>
+      </section>
     </section >
   )
 }

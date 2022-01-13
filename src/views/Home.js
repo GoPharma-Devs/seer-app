@@ -1,9 +1,9 @@
 
 import React, { useEffect } from 'react';
 //import { Link } from "react-router-dom"
-import logo from "../img/LOGO_SEER_WHITE.png";
+import logo from "../img/LOGO_SEER_WHITE_SLOGAN.png";
 import ListaComite from "../components/ListaComite";
-import Footer from "../components/Footer";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import {
@@ -140,7 +140,7 @@ function Home() {
           comunicacion@seerlatam.org
         </a>
       </section>
-      <Footer data-aos="fade-up" />
+
     </>
   );
 }
