@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { Link } from "react-router-dom"
+//import { Link } from "react-router-dom"
 import logo from "../img/LOGO_SEER_WHITE.png";
 import ListaComite from "../components/ListaComite";
 import Footer from "../components/Footer";
