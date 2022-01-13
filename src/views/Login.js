@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "../context/AuthProvider";
 import { Link } from 'react-router-dom'
-
+import BgBanner from '../img/registro-bg-banner.png'
 import axios from 'axios';
 const LOGIN_URL = 'https://seer-be.herokuapp.com/login';
 
@@ -58,6 +58,7 @@ const Login = () => {
 
   return (
     <section className="contenedor">
+      <img src={BgBanner} alt="" className="bgbanner" />
       {success ? (
         <section className="contenedor-logeado">
           <h1>You are logged in!</h1>
@@ -92,13 +93,13 @@ const Login = () => {
                 value={pwd}
                 required
               /></div>
-            <button className="btn-primario">Sign In</button>
+            <button className="btn-primario">iniciar Sesión</button>
           </form>
           <p>
-            Desea ingresar<br />
+            Desea registrarse o actualizar sus datos<br />
             <span className="line">
               {/*put router link here*/}
-              <Link to="/registro">Iniciar</Link>
+              <Link to="/registro">Ir a registro</Link>
             </span>
           </p>
         </section>

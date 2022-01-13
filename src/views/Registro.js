@@ -1,19 +1,25 @@
 import React from 'react'
-
+import BgBanner from '../img/registro-bg-banner.png'
 function Registro() {
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log('You clicked submit.');
+  }
   return (
     <section className="registro" >
 
       <div className="contenedor-form contenedor">
+        <img src={BgBanner} alt="" className="bgbanner" />
         <div className="form">
           {/* Begin Mailchimp Signup Form */}
           <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
           <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n" }} />
           <div id="mc_embed_signup">
-            <form action="https://go-pharma.us1.list-manage.com/subscribe/post?u=37892f6a3c3f15b6ba401af59&id=76d3e57aa3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" >
+            <form action="https://go-pharma.us1.list-manage.com/subscribe/post?u=37892f6a3c3f15b6ba401af59&id=76d3e57aa3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate " target="_blank" >
               <div id="mc_embed_signup_scroll">
 
                 <h1>SEER 2022</h1>
+                <p>Calidad de Vida al alcance de nuestras manos</p>
                 <h2>Registro</h2>
 
 
@@ -58,7 +64,7 @@ function Registro() {
                   <div className="response" id="mce-success-response" style={{ display: 'none' }} />
                 </div>    {/* real people should not fill this in and expect good things - do not remove this or risk form bot signups*/}
                 <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="b_37892f6a3c3f15b6ba401af59_76d3e57aa3" tabIndex={-1} defaultValue /></div>
-                <div className="clear"><input type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
+                <div className="clear"><input onSubmit={handleSubmit} type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
               </div>
             </form>
           </div>

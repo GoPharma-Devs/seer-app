@@ -1,8 +1,11 @@
-import React from "react";
+
+import React, { useEffect } from 'react';
+import { Link } from "react-router-dom"
 import logo from "../img/LOGO_SEER_WHITE.png";
 import ListaComite from "../components/ListaComite";
 import Footer from "../components/Footer";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 import {
   FaInstagram,
   FaFacebookSquare,
@@ -10,14 +13,33 @@ import {
   FaTwitterSquare,
 } from "react-icons/fa";
 function Home() {
+  useEffect(() => {
+
+    AOS.init({
+      offset: 120,
+      delay: 20,
+      duration: 500,
+      easing: 'ease-in-out',
+      debounceDelay: 50,
+      throttleDelay: 99,
+      mirror: false,
+      anchorPlacement: 'bottom-top',
+    });
+  }, [])
+
   return (
     <>
-      <section className="Home">
+      <section className="Home" data-aos="fade-in">
         <div className="contenedor">
           <img src={logo} className="App-logo" alt="logo" />
+          <div className="contenedor-botones">
+            < Link className="btn-primario" to="/registro">Registro</Link>
+
+          </div>
+
         </div>
       </section>
-      <section>
+      <section data-aos="fade-up">
         <div className="contenedor-nosotros">
           <div className="nosotros-el">
             <h2 className="titulo">¿QUIENES SOMOS?</h2>
@@ -92,7 +114,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="comite-contenedor">
+      <section className="comite-contenedor" data-aos="fade-up">
         <h4>Conoce a nuestro </h4>
         <h3 style={{ textAlign: "center" }}>COMITÉ CIENTÍFICO</h3>
         <br />
@@ -108,7 +130,7 @@ function Home() {
         <Patrocinadores />
         <Aliados /> */}
       </section>
-      <section className="contacto-section">
+      <section className="contacto-section" data-aos="fade-up">
         <br />
         <h2>
           Cualquier duda, comentario o interés por favor comunicarse al correo:
@@ -118,7 +140,7 @@ function Home() {
           comunicacion@seerlatam.org
         </a>
       </section>
-      <Footer />
+      <Footer data-aos="fade-up" />
     </>
   );
 }

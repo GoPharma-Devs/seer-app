@@ -25,8 +25,8 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dr. Guillermo Wakida </p>
-              <p className="titulo-ponente">Pediatra </p>
-              <p className="trayectoria">----</p>
+              <p className="titulo-ponente">Alergia Pediátrica</p>
+              <p className="trayectoria">Médico Pediatra con subespecialidad en Alergia Pediátrica e Inmunología Clínica. Autor del libro de Enfermedades Raras en Pediatría. Ex presidente de la Sociedad Mexicana de Pediatría. Vicepresidente del Colegio Mexicano de Pediatras Especialistas en Inmunología Clínica y Alergia. (Compedia). Jefe depto de Integración Clínica. Pregrado . Facultad de Medicina, UNAM.</p>
             </div>
           </div>
         </Modal.Body>
