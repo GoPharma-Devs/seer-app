@@ -33,7 +33,7 @@ function Home() {
         <div className="contenedor">
           <img src={logo} className="App-logo" alt="logo" />
           <div className="contenedor-botones">
-            < Link className="btn-primario" to="/registro">Registro</Link>
+            {/* < Link className="btn-primario" to="/registro">Registro</Link> */}
 
           </div>
 

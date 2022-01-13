@@ -23,7 +23,7 @@ function Registro() {
                 <h2>Registro</h2>
 
 
-                <div className="indicates-required"><span className="asterisk">*</span> indicates required</div>
+
                 <div className="mc-field-group">
                   <label htmlFor="mce-MMERGE3">Nombre  <span className="asterisk">*</span>
                   </label>
@@ -66,6 +66,8 @@ function Registro() {
                 <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true"><input type="text" name="b_37892f6a3c3f15b6ba401af59_76d3e57aa3" tabIndex={-1} defaultValue /></div>
                 <div className="clear"><input onSubmit={handleSubmit} type="submit" defaultValue="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" /></div>
               </div>
+
+              <div className="indicates-required"><span className="asterisk">*</span> campo requerido</div>
             </form>
           </div>
           {/*End mc_embed_signup*/}
