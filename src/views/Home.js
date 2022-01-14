@@ -127,12 +127,12 @@ function Home() {
         <h4>Conoce a nuestros </h4>
         <h2>PROFESORES</h2>
          */}<br />
-          <br />
+          {/* <br />
           <h4>Conoce a nuestros </h4>
           <h2>COLABORADORES</h2>
           <br />
           <br />
-          <ListaPonente />
+          <ListaPonente /> */}
           {/* <Patrocinadores />
         <Aliados /> */}
         </div>
