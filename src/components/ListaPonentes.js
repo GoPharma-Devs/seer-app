@@ -11,12 +11,7 @@ function ListaPonente() {
       <ProfesorA data-aos="fade-up" />
       <ProfesorA data-aos="fade-up" />
       <ProfesorA data-aos="fade-up" />
-      <ProfesorA data-aos="fade-up" />
-      <ProfesorA data-aos="fade-up" />
-      <ProfesorA data-aos="fade-up" />
-      <ProfesorA data-aos="fade-up" />
-      <ProfesorA data-aos="fade-up" />
-      <ProfesorA data-aos="fade-up" />
+
 
     </div>
   );

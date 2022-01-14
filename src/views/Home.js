@@ -126,9 +126,11 @@ function Home() {
         <br />
         <h4>Conoce a nuestros </h4>
         <h2>PROFESORES</h2>
-        <br /> */}
+         */}<br />
           <br />
-          <h3 style={{ textAlign: "center" }}>COLABORADORES</h3>
+          <h4>Conoce a nuestros </h4>
+          <h2>COLABORADORES</h2>
+          <br />
           <br />
           <ListaPonente />
           {/* <Patrocinadores />

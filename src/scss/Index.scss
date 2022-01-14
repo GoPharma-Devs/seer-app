@@ -220,10 +220,11 @@ footer {
       grid-template-columns: 1fr;
     }
 
-    &-el {
+    &-el,
+    .comite-el {
       width: 280px;
       height: 280px;
-      border-radius: 0 20px;
+
       padding: 1.5rem;
       margin-bottom: 1rem;
       position: relative;
@@ -304,9 +305,7 @@ footer {
 
       }
 
-      img:nth-child(1) {
-        border-radius: 60px 20px 60px 0px;
-      }
+
 
       .info {
         position: relative;
@@ -482,4 +481,16 @@ footer {
   display: flex;
   align-items: space-between;
   justify-content: space-around;
+}
+
+.colaboladores {
+  img:nth-child(1) {
+    border-radius: 60px 20px 60px 0px;
+  }
+}
+
+.profesores {
+  .comite-el img {
+    border-radius: 0 60px 20px 60px;
+  }
 }
