@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 //import { Link } from "react-router-dom"
 import logo from "../img/LOGO_SEER_WHITE_SLOGAN.png";
 import ListaComite from "../components/ListaComite";
-import ListaPonente from "../components/ListaPonentes";
+//import ListaPonente from "../components/ListaPonentes";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import {
