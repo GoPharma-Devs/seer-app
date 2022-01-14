@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 //import { Link } from "react-router-dom"
 import logo from "../img/LOGO_SEER_WHITE_SLOGAN.png";
 import ListaComite from "../components/ListaComite";
-
+import ListaPonente from "../components/ListaPonentes";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import {
@@ -115,20 +115,25 @@ function Home() {
         </div>
       </section>
       <section className="comite-contenedor" data-aos="fade-up">
-        <h4>Conoce a nuestro </h4>
-        <h3 style={{ textAlign: "center" }}>COMITÉ CIENTÍFICO</h3>
-        <br />
-        <br />
-        <ListaComite />
-        {/* <br />
-        <Agendas />
+        <div className="contenedor">
+          <h4>Conoce a nuestro </h4>
+          <h3 style={{ textAlign: "center" }}>COMITÉ CIENTÍFICO</h3>
+          <br />
+          <br />
+          <ListaComite />
+          <br />
+          {/* <Agendas />
         <br />
         <h4>Conoce a nuestros </h4>
         <h2>PROFESORES</h2>
-        <br />
-        <ListaPonente />
-        <Patrocinadores />
+        <br /> */}
+          <br />
+          <h3 style={{ textAlign: "center" }}>COLABORADORES</h3>
+          <br />
+          <ListaPonente />
+          {/* <Patrocinadores />
         <Aliados /> */}
+        </div>
       </section>
       <section className="contacto-section" data-aos="fade-up">
         <br />

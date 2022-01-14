@@ -20,26 +20,26 @@ import ComiteS from "./comite/ComiteS";
 import ComiteT from "./comite/ComiteT";
 function ListaComite() {
   return (
-    <div className="comite">
-      <ComiteA />
-      <ComiteB />
-      <ComiteC />
-      <ComiteD />
-      <ComiteE />
-      <ComiteF />
-      <ComiteG />
-      <ComiteH />
-      <ComiteI />
-      <ComiteJ />
-      <ComiteK />
-      <ComiteL />
-      <ComiteM />
-      <ComiteN />
-      <ComiteO />
-      <ComiteP />
-      <ComiteR />
-      <ComiteS />
-      <ComiteT />
+    <div className="comite" data-aos="fade-up">
+      <ComiteA data-aos="fade-up" />
+      <ComiteB data-aos="fade-up" />
+      <ComiteC data-aos="fade-up" />
+      <ComiteD data-aos="fade-up" />
+      <ComiteE data-aos="fade-up" />
+      <ComiteF data-aos="fade-up" />
+      <ComiteG data-aos="fade-up" />
+      <ComiteH data-aos="fade-up" />
+      <ComiteI data-aos="fade-up" />
+      <ComiteJ data-aos="fade-up" />
+      <ComiteK data-aos="fade-up" />
+      <ComiteL data-aos="fade-up" />
+      <ComiteM data-aos="fade-up" />
+      <ComiteN data-aos="fade-up" />
+      <ComiteO data-aos="fade-up" />
+      <ComiteP data-aos="fade-up" />
+      <ComiteR data-aos="fade-up" />
+      <ComiteS data-aos="fade-up" />
+      <ComiteT data-aos="fade-up" />
     </div>
   );
 }
