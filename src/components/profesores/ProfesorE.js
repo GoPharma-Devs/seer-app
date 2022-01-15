@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 const ImgProfesor =
-  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/colaboradores-seer%2F1_RobertoGiugliani.png?alt=media&token=0a3e8f9a-eaa2-48a4-ab1e-c8607dbe0589";
+  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2FGenerico_1.png?alt=media&token=95154929-c408-4e38-a8bd-3855524f27be";
 function ProfesorA() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -25,10 +25,10 @@ function ProfesorA() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Roberto Giugliani</p>
-              <p className="titulo-ponente">Médico en genética</p>
+              <p className="nombre">Dimitri Proffé</p>
+              <p className="titulo-ponente">Licenciado</p>
               <p className="trayectoria">
-                Médico genetista, fundador y miembro activo del Servicio de Genética Médica del Hospital Universitario, en Porto Alegre. , Brasil. Fundador de “House of Rares”. Responsable de Enfermedades Raras del grupo DASA/GENOME. Editor en Jefe de la Revista de Errores Congénitos del Metabolismo y Cribado, Presidente de la Escuela Latinoamericana de Genética Humana y Médica y Miembro de la Academia Brasileña de Ciencias. Ex director del Centro Colaborador de la OMS para el Desarrollo de la Genética Médica.  Ha sido el IP de más de 50 ensayos clínicos, supervisado la formación de más de 100 MSc y PhD, y siendo autor de más de 500 artículos científicos.
+                Viajes internacionales – 2 años Viajes y voluntariado junio 2018 Marzo 2020, Middle office Cash Management (Departamento de Banca Electrónica y Liquidez) BNP Paribas París (Francia) Diciembre de 2015 – Mayo de 2018, Embajador de servicio al cliente Marquise Group-Aeropuerto Internacional de Vancouver Vancouver (Canadá – Columbia Británica) Enero de 2015 – Julio de 2015, Representante de Servicio al Cliente BNP Paribas Le Touquet Paris-Plage (Francia) - Septiembre de 2012 – septiembre de 2013, Asesor de recepción Crédit Agricole · Dunkerque (Francia) ·
               </p>
             </div>
           </div>
@@ -42,13 +42,13 @@ function ProfesorA() {
       <div className="comite-el" onClick={() => setModalShow(true)}>
         <img src={ImgProfesor} alt="comite" />
         <div className="info">
-          <h2 className="nombre-ponente">Roberto Giugliani</h2>
-          <p className="titulo-ponente">Médico en genética</p>
+          <h2 className="nombre-ponente">Dimitri Proffé</h2>
+          <p className="titulo-ponente">Licenciado</p>
         </div>
 
         <div className="nombre-card">
-          <h2 className="nombre-ponente">Roberto Giugliani</h2>
-          <p className="titulo-ponente">Médico en genética</p>
+          <h2 className="nombre-ponente">Dimitri Proffé</h2>
+          <p className="titulo-ponente">Licenciado</p>
         </div>
       </div>
       <MyVerticallyCenteredModal

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 const ImgProfesor =
-  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/colaboradores-seer%2F1_RobertoGiugliani.png?alt=media&token=0a3e8f9a-eaa2-48a4-ab1e-c8607dbe0589";
+  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/colaboradores-seer%2F2_AdrianaOchoa.png?alt=media&token=f1fe60fe-f3ea-41c0-8775-97613e82caf9";
 function ProfesorA() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -25,10 +25,10 @@ function ProfesorA() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Roberto Giugliani</p>
-              <p className="titulo-ponente">Médico en genética</p>
+              <p className="nombre">Adriana Ochoa</p>
+              <p className="titulo-ponente">Licenciada </p>
               <p className="trayectoria">
-                Médico genetista, fundador y miembro activo del Servicio de Genética Médica del Hospital Universitario, en Porto Alegre. , Brasil. Fundador de “House of Rares”. Responsable de Enfermedades Raras del grupo DASA/GENOME. Editor en Jefe de la Revista de Errores Congénitos del Metabolismo y Cribado, Presidente de la Escuela Latinoamericana de Genética Humana y Médica y Miembro de la Academia Brasileña de Ciencias. Ex director del Centro Colaborador de la OMS para el Desarrollo de la Genética Médica.  Ha sido el IP de más de 50 ensayos clínicos, supervisado la formación de más de 100 MSc y PhD, y siendo autor de más de 500 artículos científicos.
+                Secretaria del Comité de ética en Investigación, coordinadora del Programa de Diagnóstico Presintomático para enfermedad de Huntington y ataxias espinocerebelosas, perteneciente al Sistema Nacional de Investigadores Nivel 1. Participación en múltiples reuniones científicas nacionales e internacionales. Autora y coautora de diversos artículos publicados en revistas nacionales e internacionales. Áreas de investigación: Bioética, cuidados paliativo, sociogenética, diagnóstico presintomático, discriminación y estigma en enfermedades neurodegenerativas, entre otras.
               </p>
             </div>
           </div>
@@ -42,13 +42,13 @@ function ProfesorA() {
       <div className="comite-el" onClick={() => setModalShow(true)}>
         <img src={ImgProfesor} alt="comite" />
         <div className="info">
-          <h2 className="nombre-ponente">Roberto Giugliani</h2>
-          <p className="titulo-ponente">Médico en genética</p>
+          <h2 className="nombre-ponente">Adriana Ochoa</h2>
+          <p className="titulo-ponente">Licenciada </p>
         </div>
 
         <div className="nombre-card">
-          <h2 className="nombre-ponente">Roberto Giugliani</h2>
-          <p className="titulo-ponente">Médico en genética</p>
+          <h2 className="nombre-ponente">Adriana Ochoa</h2>
+          <p className="titulo-ponente">Licenciada </p>
         </div>
       </div>
       <MyVerticallyCenteredModal
