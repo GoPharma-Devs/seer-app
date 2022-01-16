@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 const ImgProfesor =
-  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/colaboradores-seer%2F1_RobertoGiugliani.png?alt=media&token=0a3e8f9a-eaa2-48a4-ab1e-c8607dbe0589";
+  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/colaboradores-seer%2F10_AlejandroRey.png?alt=media&token=96229a50-c77f-4f40-b10a-d249a02c8e1c";
 function ProfesorA() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -25,10 +25,10 @@ function ProfesorA() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Roberto Giugliani</p>
-              <p className="titulo-ponente">Médico en genética</p>
+              <p className="nombre">Alejandro Rey</p>
+              <p className="titulo-ponente">Medico Cirujano</p>
               <p className="trayectoria">
-                Médico genetista, fundador y miembro activo del Servicio de Genética Médica del Hospital Universitario, en Porto Alegre. , Brasil. Fundador de “House of Rares”. Responsable de Enfermedades Raras del grupo DASA/GENOME. Editor en Jefe de la Revista de Errores Congénitos del Metabolismo y Cribado, Presidente de la Escuela Latinoamericana de Genética Humana y Médica y Miembro de la Academia Brasileña de Ciencias. Ex director del Centro Colaborador de la OMS para el Desarrollo de la Genética Médica.  Ha sido el IP de más de 50 ensayos clínicos, supervisado la formación de más de 100 MSc y PhD, y siendo autor de más de 500 artículos científicos.
+                Médico Genetista, con experiencia en asuntos médicos, consultoría, bioética, farmacología, diagnóstico y apoyo clínico para pacientes con enfermedades raras. Enfoque orientado hacia las ciencias sociales al contar con una Licenciatura en Ciencias Religiosas y una Maestría en Estudios Judaicos. Actualmente Enlace Médico Científico para Ultragenyx Pharmaceutical Latinoamérica y Director Médico del centro de desarrollo infantil Desarrollo Dinámico.
               </p>
             </div>
           </div>
@@ -42,13 +42,13 @@ function ProfesorA() {
       <div className="comite-el" onClick={() => setModalShow(true)}>
         <img src={ImgProfesor} alt="comite" />
         <div className="info">
-          <h2 className="nombre-ponente">Roberto Giugliani</h2>
-          <p className="titulo-ponente">Médico en genética</p>
+          <h2 className="nombre-ponente">Alejandro Rey</h2>
+          <p className="titulo-ponente">Medico Cirujano</p>
         </div>
 
         <div className="nombre-card">
-          <h2 className="nombre-ponente">Roberto Giugliani</h2>
-          <p className="titulo-ponente">Médico en genética</p>
+          <h2 className="nombre-ponente">Alejandro Rey</h2>
+          <p className="titulo-ponente">Medico Cirujano</p>
         </div>
       </div>
       <MyVerticallyCenteredModal
