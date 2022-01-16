@@ -2,6 +2,7 @@
 
 @import "libs/mixins";
 @import "libs/variables";
+@import "./components/Navbar";
 
 * {
   padding: 0;
@@ -492,5 +493,102 @@ footer {
 .profesores {
   .comite-el img {
     border-radius: 0 60px 20px 60px;
+  }
+}
+
+
+.registro {
+  margin-top: 15vh;
+}
+
+#colab,
+#comite {
+  padding-top: 15vh;
+}
+
+
+.formulario {
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  max-width: 430px;
+  flex-flow: column;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+  }
+
+  a,
+  a:visited {
+    color: #fff;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  button,
+  textarea {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+  }
+
+  label,
+  button {
+    margin-top: 1rem;
+  }
+
+  button {
+    padding: 0.5rem;
+  }
+
+  .instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+  }
+
+  .instructions>svg {
+    margin-right: 0.25rem;
+  }
+
+  .offscreen {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+  }
+
+  .invalid {
+    color: red;
+    margin-left: 0.25rem;
+  }
+
+  .errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .line {
+    display: inline-block;
   }
 }

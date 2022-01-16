@@ -1,11 +1,12 @@
 
 import React, { useEffect } from 'react';
-//import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 import logo from "../img/LOGO_SEER_WHITE_SLOGAN.png";
 import ListaComite from "../components/ListaComite";
 import ListaPonente from "../components/ListaPonentes";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 import {
   FaInstagram,
   FaFacebookSquare,
@@ -33,7 +34,7 @@ function Home() {
         <div className="contenedor">
           <img src={logo} className="App-logo" alt="logo" />
           <div className="contenedor-botones">
-            {/* < Link className="btn-primario" to="/registro">Registro</Link> */}
+            < Link className="btn-primario" to="/registro">Registro</Link>
 
           </div>
 
@@ -114,24 +115,16 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="comite-contenedor" data-aos="fade-up">
+      <section className="comite-contenedor" a>
         <div className="contenedor">
-          <h4>Conoce a nuestro </h4>
-          <h3 style={{ textAlign: "center" }}>COMITÉ CIENTÍFICO</h3>
-          <br />
-          <br />
+
           <ListaComite />
-          <br />
+
           {/* <Agendas />
         <br />
         <h4>Conoce a nuestros </h4>
         <h2>PROFESORES</h2>
-         */}<br />
-          <br />
-          <h4>Conoce a nuestros </h4>
-          <h2>COLABORADORES</h2>
-          <br />
-          <br />
+         */}
           <ListaPonente />
           {/* <Patrocinadores />
         <Aliados /> */}
