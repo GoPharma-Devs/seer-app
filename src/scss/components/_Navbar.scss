@@ -1,5 +1,5 @@
 .navbar {
-
+  height: 10vh;
   position: absolute;
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@
   .navbar-icon {
     position: relative;
     display: none;
-    margin-top: 1rem;
+
 
     @include tablet {
       display: block;
@@ -69,6 +69,10 @@
       color: #ffffff;
       cursor: pointer;
 
+      .btn-primario {
+        margin: 0.5rem auto;
+      }
+
       &:hover {
         li {
 
@@ -108,7 +112,7 @@
 
     align-items: center;
     list-style: none;
-    justify-content: space-evenly;
+    justify-content: center;
     z-index: 0;
     font-size: 1.5rem;
     overflow: hidden;
@@ -117,10 +121,13 @@
     box-sizing: border-box;
     display: none;
 
-    @include tableth {
+
+    @include tablet {
 
       display: flex;
     }
+
+
 
     li {
       box-sizing: border-box;
@@ -163,7 +170,7 @@
   padding: 0.5% 5%;
   position: fixed;
   top: 0;
-  height: 55px;
+  height: 68px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   color: #ffffff !important;

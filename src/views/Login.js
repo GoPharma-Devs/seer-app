@@ -9,8 +9,8 @@ const Login = () => {
   const userRef = useRef();
   const errRef = useRef();
 
-  const [user, setUser] = useState('');
-  const [pwd, setPwd] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [errMsg, setErrMsg] = useState('');
   const [success, setSuccess] = useState(false);
 
@@ -20,26 +20,26 @@ const Login = () => {
 
   useEffect(() => {
     setErrMsg('');
-  }, [user, pwd])
+  }, [email, password])
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
       const response = await axios.post(LOGIN_URL,
-        JSON.stringify({ user, pwd }),
+        JSON.stringify({ email, password }),
         {
           headers: { 'Content-Type': 'application/json' },
           withCredentials: true
         }
       );
       console.log(JSON.stringify(response?.data));
-      //console.log(JSON.stringify(response));
+      console.log(JSON.stringify(response));
       const accessToken = response?.data?.accessToken;
       const roles = response?.data?.roles;
-      setAuth({ user, pwd, roles, accessToken });
-      setUser('');
-      setPwd('');
+      setAuth({ email, password, roles, accessToken });
+      setEmail('');
+      setPassword('');
       setSuccess(true);
     } catch (err) {
       if (!err?.response) {
@@ -79,8 +79,8 @@ const Login = () => {
                     id="username"
                     ref={userRef}
                     autoComplete="off"
-                    onChange={(e) => setUser(e.target.value)}
-                    value={user}
+                    onChange={(e) => setEmail(e.target.value)}
+                    value={email}
                     required
                   />
                 </div>
@@ -90,8 +90,8 @@ const Login = () => {
                   <input
                     type="password"
                     id="password"
-                    onChange={(e) => setPwd(e.target.value)}
-                    value={pwd}
+                    onChange={(e) => setPassword(e.target.value)}
+                    value={password}
                     required
                     autoComplete="off"
                   />

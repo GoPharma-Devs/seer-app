@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from 'react-router-dom'
-import { ExternalLink } from "react-external-link";
+
 import * as FaIcons from "react-icons/fa";
 import Logo from '../img/logo.svg';
 //import Logo from "../../img/logo.png";
@@ -73,35 +73,20 @@ function Navbar() {
         </NavLink>
 
         <NavLink
-          to="/socios-comerciales"
+          to="/registro"
           className={({ isActive }) => isActive ? 'active-nav' : ''}
           onClick={closeMobileMenu}
         >
-          <li> Socios Comerciales </li>
+          <li> Registro</li>
         </NavLink>
         <NavLink
-          to="/contacto"
+          to="/inicio-sesion"
           className={({ isActive }) => isActive ? 'active-nav' : ''}
           onClick={closeMobileMenu}
         >
-          <li> Contacto </li>
+          <li className="btn-primario"> Evento </li>
         </NavLink>
-        <ExternalLink href="https://www.instagram.com/gopharmamx/">
-          <li>
-            <FaIcons.FaInstagram />
-          </li>
-        </ExternalLink>
-        <ExternalLink href="https://www.facebook.com/gopharmamx/">
-          <li>
-            <FaIcons.FaFacebook />
-          </li>
-        </ExternalLink>
 
-        <ExternalLink href="https://www.linkedin.com/company/marketing-and-media-go-pharma/">
-          <li>
-            <FaIcons.FaLinkedin />
-          </li>
-        </ExternalLink>
       </ul>
       <div className="navbar-icon" onClick={handleClick}>
         {click ? <FaIcons.FaTimes /> : <FaIcons.FaBars />}

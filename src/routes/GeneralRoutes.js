@@ -34,7 +34,7 @@ const GeneralRoutes = () => {
               <>
                 <Route path="/" element={<Home />} />
                 <Route
-                  path="/inicio"
+                  path="/inicio-sesion"
                   element={<Login authenticate={() => setUser(true)} />}
                 />
 

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { ExternalLink } from "react-external-link";
 import {
   FaInstagram,
   FaFacebookSquare,
@@ -12,34 +12,34 @@ function footer() {
       <div className="contenedor-footer">
         <ul>
           <li>
-            <a href="https://www.facebook.com/SEER-LATAM-101864688995598/">
+            <ExternalLink href="https://www.facebook.com/SEER-LATAM-101864688995598/">
               <i>
                 <FaFacebookSquare />
               </i>
-            </a>
+            </ExternalLink>
           </li>
           <li>
-            <a href="https://www.instagram.com/seer.latam/">
+            <ExternalLink href="https://www.instagram.com/seer.latam/">
               <i>
                 <FaInstagram />
               </i>
-            </a>
+            </ExternalLink>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/seer-latam/?viewAsMember=true">
+            <ExternalLink href="https://www.linkedin.com/company/seer-latam/?viewAsMember=true">
               <i>
                 {" "}
                 <FaLinkedin />
               </i>
-            </a>
+            </ExternalLink>
           </li>
           <li>
-            <a href="https://twitter.com/SEERLATAM">
+            <ExternalLink href="https://twitter.com/SEERLATAM">
               <i>
                 {" "}
                 <FaTwitterSquare />
               </i>
-            </a>
+            </ExternalLink>
           </li>
         </ul>
       </div>

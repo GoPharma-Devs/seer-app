@@ -15,7 +15,7 @@ function Registro() {
           <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
           <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n\t#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }\n\t/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.\n\t   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */\n" }} />
           <div id="mc_embed_signup">
-            <form action="https://go-pharma.us1.list-manage.com/subscribe/post?u=37892f6a3c3f15b6ba401af59&id=76d3e57aa3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate " target="_blank" >
+            <form action="https://seerlatam.us1.list-manage.com/subscribe/post?u=37892f6a3c3f15b6ba401af59&amp;id=76d3e57aa3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate " target="_blank" >
               <div id="mc_embed_signup_scroll">
 
                 <h1>SEER 2022</h1>

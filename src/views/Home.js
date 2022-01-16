@@ -6,7 +6,7 @@ import ListaComite from "../components/ListaComite";
 import ListaPonente from "../components/ListaPonentes";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-
+import { ExternalLink } from "react-external-link";
 import {
   FaInstagram,
   FaFacebookSquare,
@@ -34,12 +34,14 @@ function Home() {
         <div className="contenedor">
           <img src={logo} className="App-logo" alt="logo" />
           <div className="contenedor-botones">
-            < Link className="btn-primario" to="/registro">Registro</Link>
+            <Link className="btn-primario" to="/registro" >Registro</Link>
+            <Link className="btn-primario" to="/inicio-sesion" >Evento</Link>
 
           </div>
 
         </div>
       </section>
+
       <section data-aos="fade-up">
         <div className="contenedor-nosotros">
           <div className="nosotros-el">
@@ -57,8 +59,7 @@ function Home() {
             <h2 className="titulo">MISIÓN</h2>
             <br />
             <p>
-              Sensibilizar y educar a la comunidad médica sobre las enfermedades
-              raras, con base en nuestros cuatro pilares: Concientización,
+              Sensibilizar y educar ExternalLinkla comunidad médica sobre las enfermedades raras, con base en nuestros cuatro pilares: Concientización,
               Prevención, Diagnóstico y Manejo. Contribuiyendo a la difusión y
               correcto encause de las enfermedades raras, colaborando con los
               diferentes actores del ecosistema de salud y la sociedad civil.
@@ -78,44 +79,44 @@ function Home() {
           <div className="nosotros-el">
             <ul>
               <li>
-                <a href="https://www.instagram.com/seer.latam/">
+                <ExternalLink to="https://www.instagram.com/seer.latam/">
                   <i>
                     <FaFacebookSquare />
                   </i>
                   seer.latam
-                </a>
+                </ExternalLink>
               </li>
               <li>
-                <a href="https://business.facebook.com/latest/home?asset_id=101864688995598&nav_ref=bm_home_redirect">
+                <ExternalLink to="https://business.facebook.com/latest/home?asset_id=101864688995598&nav_ref=bm_home_redirect">
                   <i>
                     <FaInstagram />
                   </i>
                   SEER LATAM
-                </a>
+                </ExternalLink>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/seer-latam/?viewAsMember=true">
+                <ExternalLink to="https://www.linkedin.com/company/seer-latam">
                   <i>
                     {" "}
                     <FaLinkedin />
                   </i>
                   SEER LATAM
-                </a>
+                </ExternalLink>
               </li>
               <li>
-                <a href="https://twitter.com/SEERLATAM">
+                <ExternalLink to="https://twitter.com/SEERLATAM">
                   <i>
                     {" "}
                     <FaTwitterSquare />
                   </i>
                   SEERLATAM
-                </a>
+                </ExternalLink>
               </li>
             </ul>
           </div>
         </div>
       </section>
-      <section className="comite-contenedor" a>
+      <section className="comite-contenedor" >
         <div className="contenedor">
 
           <ListaComite />
