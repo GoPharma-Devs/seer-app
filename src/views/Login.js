@@ -8,7 +8,7 @@ const Login = () => {
   const { setAuth } = useContext(AuthContext);
   const userRef = useRef();
   const errRef = useRef();
-
+  const [user, setUser] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errMsg, setErrMsg] = useState('');
@@ -17,7 +17,9 @@ const Login = () => {
   useEffect(() => {
     userRef.current.focus();
   }, [])
-
+  useEffect(() => {
+    localStorage.setItem("user", user);
+  }, [user])
   useEffect(() => {
     setErrMsg('');
   }, [email, password])
@@ -29,27 +31,36 @@ const Login = () => {
       const response = await axios.post(LOGIN_URL,
         JSON.stringify({ email, password }),
         {
-          headers: { 'Content-Type': 'application/json' },
-          withCredentials: true
+          headers: { 'Content-Type': 'application/json' }
         }
       );
+      console.log("Session Iniciada");
       console.log(JSON.stringify(response?.data));
       console.log(JSON.stringify(response));
       const accessToken = response?.data?.accessToken;
-      const roles = response?.data?.roles;
-      setAuth({ email, password, roles, accessToken });
+      const roles = response?.data?.role;
+      setAuth({ user, email, password, roles, accessToken });
       setEmail('');
       setPassword('');
       setSuccess(true);
+      setUser(true)
+      if (response?.data === "") {
+        localStorage.setItem("user", user);
+      }
+
+
+
+
     } catch (err) {
       if (!err?.response) {
-        setErrMsg('No Server Response');
+        setErrMsg('Sin respuesta del servidor');
       } else if (err.response?.status === 400) {
-        setErrMsg('Missing Username or Password');
+        setErrMsg('Falta el nombre de usuario o la contraseña');
       } else if (err.response?.status === 401) {
-        setErrMsg('Unauthorized');
+        setErrMsg('Correo no registrado');
+
       } else {
-        setErrMsg('Login Failed');
+        setErrMsg('Usuario no encontrado');
       }
       errRef.current.focus();
     }
@@ -58,12 +69,30 @@ const Login = () => {
   return (
     <>
       {success ? (
-        <section>
-          <h1>You are logged in!</h1>
-          <br />
-          <p>
-            <Link to="/">Go to Home</Link>
-          </p>
+        <section className="Home">
+          <div className="contenedor">
+
+
+            {!user && (
+              <>
+
+                <div className="texto"><h1>You are logged in!</h1>
+                  <br />
+                  <p>
+                    <Link to="/">Ir a home</Link>
+                  </p></div>
+              </>
+
+            )}
+            {user && (
+              <div className="texto"><h1>SEER 2022</h1>
+                <br />
+                <p>
+                  <Link to="/evento">Ir a transmision</Link>
+                </p></div>
+
+            )}
+          </div>
         </section>
       ) : (
         <section>
