@@ -1,8 +1,8 @@
 
 import React, { useEffect } from 'react';
-import { Link } from "react-router-dom"
+//import { Link } from "react-router-dom"
 import logo from "../img/LOGO_SEER_WHITE_SLOGAN.png";
-import HeroSlider1 from "../img/fondo-hero-slider.png";
+//import HeroSlider1 from "../img/fondo-hero-slider.png";
 import ListaComite from "../components/ListaComite";
 import ListaPonente from "../components/ListaPonentes";
 import AOS from 'aos';
@@ -15,7 +15,7 @@ import {
   FaTwitterSquare,
 } from "react-icons/fa";
 
-import Carousel from 'react-bootstrap/Carousel'
+//import Carousel from 'react-bootstrap/Carousel'
 function Home() {
   useEffect(() => {
 
@@ -33,7 +33,7 @@ function Home() {
 
   return (
     <>
-      <section className="Home" data-aos="fade-in">
+      {/* <section className="Home" data-aos="fade-in">
         <Carousel className="Carousel-hero container" fade data-aos="fade-in">
           <Carousel.Item>
             <img
@@ -77,8 +77,14 @@ function Home() {
           </Carousel.Item>
         </Carousel>
 
+      </section> */}
+      <section className="Home" data-aos="fade-in">
+        <div className="contenedor">
+          <img src={logo} className="App-logo" alt="seer 2022" />
+          <h1>SEER 2022</h1>
+          <h2>17, 18 y 19 de febrero</h2>
+        </div>
       </section>
-
 
       <section data-aos="fade-up">
         <div className="contenedor-nosotros">
