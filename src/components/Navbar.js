@@ -84,7 +84,7 @@ function Navbar() {
           className={({ isActive }) => isActive ? 'active-nav' : ''}
           onClick={closeMobileMenu}
         >
-          <li className="btn-primario"> Evento </li>
+          <li className="btn-primario"> Congreso </li>
         </NavLink>
 
       </ul>

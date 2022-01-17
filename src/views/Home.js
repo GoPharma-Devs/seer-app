@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom"
 import logo from "../img/LOGO_SEER_WHITE_SLOGAN.png";
+import HeroSlider1 from "../img/fondo-hero-slider.png";
 import ListaComite from "../components/ListaComite";
 import ListaPonente from "../components/ListaPonentes";
 import AOS from 'aos';
@@ -13,6 +14,8 @@ import {
   FaLinkedin,
   FaTwitterSquare,
 } from "react-icons/fa";
+
+import Carousel from 'react-bootstrap/Carousel'
 function Home() {
   useEffect(() => {
 
@@ -31,16 +34,51 @@ function Home() {
   return (
     <>
       <section className="Home" data-aos="fade-in">
-        <div className="contenedor">
-          <img src={logo} className="App-logo" alt="logo" />
-          <div className="contenedor-botones">
-            <Link className="btn-primario" to="/registro" >Registro</Link>
-            <Link className="btn-primario" to="/inicio-sesion" >Evento</Link>
+        <Carousel className="Carousel-hero container" fade data-aos="fade-in">
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={HeroSlider1}
+              alt="First slide"
+            />
+            <Carousel.Caption>
+              <img src={logo} className="App-logo" alt="logo" />
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <Link className="btn-primario" to="/registro" >Registro</Link>
 
-          </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={HeroSlider1}
+              alt="Second slide"
+            />
 
-        </div>
+            <Carousel.Caption>
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <Link className="btn-primario" to="/registro" >Registro</Link>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={HeroSlider1}
+              alt="Third slide"
+            />
+
+            <Carousel.Caption>
+              <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <Link className="btn-primario" to="/inicio-sesion" >Congreso</Link>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+
       </section>
+
 
       <section data-aos="fade-up">
         <div className="contenedor-nosotros">

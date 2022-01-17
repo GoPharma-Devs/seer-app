@@ -15,7 +15,6 @@ const GeneralRoutes = () => {
   const Wrapper = ({ children }) => {
     const location = useLocation();
     useLayoutEffect(() => {
-
       document.documentElement.scrollTo(0, 0);
     }, [location.pathname]);
     return children
@@ -23,9 +22,7 @@ const GeneralRoutes = () => {
   const [user, setUser] = useState(null);
   useEffect(() => {
     localStorage.setItem("user", user);
-
   }, [user])
-  console.log(localStorage.getItem("user"))
   return (
     <BrowserRouter>
       <Wrapper>
@@ -46,11 +43,12 @@ const GeneralRoutes = () => {
                   element={<Registro authenticate={() => setUser(true)} />}
                 />
 
+
               </>
 
             )}
             {user && (
-              <Route path="/evento" element={<Transmision logout={() => setUser(true)} />} />
+              <Route path="/congreso" element={<Transmision logout={() => setUser(false)} />} />
 
             )}
             <Route path="*" element={<ErrorPage />} />

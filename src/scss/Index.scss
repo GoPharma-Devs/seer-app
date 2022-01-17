@@ -4,6 +4,7 @@
 @import "libs/variables";
 @import "./components/Navbar";
 
+
 * {
   padding: 0;
   margin: 0;
@@ -103,7 +104,7 @@ h4 {
 }
 
 .Home {
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -590,5 +591,30 @@ footer {
 
   .line {
     display: inline-block;
+  }
+}
+
+.carousel-caption {
+  bottom: 10vh !important
+}
+
+.Carousel-hero {
+  top: 13vh !important
+}
+
+
+.jotform-form {
+  box-sizing: border-box;
+}
+
+.asistencia {
+  width: 100%;
+  width: 100vw !important;
+
+  #JotFormIFrame-212609285006048 {
+    min-width: 320px !important;
+    max-width: 480px !important;
+
+    min-height: 500px;
   }
 }

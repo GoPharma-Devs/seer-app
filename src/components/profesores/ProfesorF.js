@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 const ImgProfesor =
-  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2FGenerico_1.png?alt=media&token=95154929-c408-4e38-a8bd-3855524f27be";
+  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/colaboradores-seer%2F6_KenjiLo%CC%81pez.png?alt=media&token=aa75a7ac-c531-4c09-968d-828300b348a0";
 function ProfesorA() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
