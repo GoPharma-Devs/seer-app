@@ -88,17 +88,12 @@ const Login = () => {
               <div className="texto">
 
                 <div className="asistencia">
-                  <iframe id="JotFormIFrame-212609285006048" title="SEER 2022" onload="window.parent.scrollTo(0,0)" allowTransparency="true" allowFullScreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/212609285006048" frameBorder={0} style={{ minWidth: '90vw', height: 539, border: 'none' }} scrolling="no">
+                  <iframe id="JotFormIFrame-212609285006048" title="SEER 2022" onload="window.parent.scrollTo(0,0)" allowTransparency="true" allowFullScreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/212609285006048" frameBorder={0} style={{ height: 539, border: 'none' }} scrolling="no">
                   </iframe>
                 </div>
 
 
-
-
-
-                <p>
-                  <Link to="/congreso">Ir a transmision</Link>
-                </p></div>
+              </div>
 
             )}
           </div>
@@ -148,7 +143,8 @@ const Login = () => {
 
           </div>
         </section>
-      )}
+      )
+      }
     </>
   )
 }

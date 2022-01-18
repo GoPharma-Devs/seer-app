@@ -608,13 +608,12 @@ footer {
 }
 
 .asistencia {
-  width: 100%;
-  width: 100vw !important;
+  width: 100% !important;
 
   #JotFormIFrame-212609285006048 {
     min-width: 320px !important;
     max-width: 480px !important;
-
+    width: 70vw;
     min-height: 500px;
   }
 }

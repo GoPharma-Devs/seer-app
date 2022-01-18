@@ -4,6 +4,7 @@ function Registro() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log('You clicked submit.');
+
   }
   return (
     <section className="registro" >
