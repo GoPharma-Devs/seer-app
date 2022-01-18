@@ -48,7 +48,7 @@ const GeneralRoutes = () => {
 
             )}
             {user && (
-              <Route path="/congreso" element={<Transmision logout={() => setUser(false)} />} />
+              <Route path="/congreso" element={<Transmision logout={() => setUser(true)} />} />
 
             )}
             <Route path="*" element={<ErrorPage />} />
