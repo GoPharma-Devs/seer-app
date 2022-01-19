@@ -1,4 +1,4 @@
-import React, { isValidElement, useState } from 'react'
+import React, { useState } from 'react'
 import BgBanner from '../img/registro-bg-banner.png'
 function Registro() {
   const [valid, setValid] = useState(false)
@@ -18,9 +18,9 @@ function Registro() {
         'Content-Type': 'application/json'
       }
     }).then(res => {
-      if (res.status == 200) {
+      if (res.status === 200) {
         return true;
-      } else if (res.status == 400) {
+      } else if (res.status === 400) {
         return res.json()
       }
     }
