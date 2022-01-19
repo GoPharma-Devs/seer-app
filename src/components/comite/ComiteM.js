@@ -36,7 +36,7 @@ function Comite() {
                 universidad nacional autónoma de méxico. Núm de registro. Unam
                 ca96-03 período 2001-2003 maestría en ciencias de la salud con
                 especialidad en investigación. Especialización en investigación.
-                Instituto politécnico nacional, título con registro oficial
+                Instituto Politécnico Nacional, título con registro oficial
                 b141239 cédula (año 2014 - 2016). Master en enfermedades de
                 depósito lisosomal (edl) fundación española para el estudio y
                 tratamiento de la enfermedad de gaucher y otras lisosomales
@@ -45,7 +45,7 @@ function Comite() {
                 Créditos 5.1 ects. Master en enfermedades metabólicas
                 hereditarias universidad de santiago de compostela, españa,
                 aceptada septiembre 2020, inicio enero 2021 a la fecha (cursando
-                actualmente). Mps disorders, fabry, gaucher disease training
+                actualmente). MPS disorders, Fabry, Gaucher Disease Training
                 certification of fymca medical ltd. Panama city, panama. (Mayo
                 2017 a enero 2019).
               </p>

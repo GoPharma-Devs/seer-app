@@ -30,7 +30,7 @@ function ComiteF() {
                 Investigación Médica Aplicada en la Facultad de Medicina, Centro
                 Universitario Estacio en Ribeirão Preto, São Paulo, Brasil y
                 Coordinador de consultas externas de Neurogenética y Errores
-                Congénitos del Metabolismo en la Faculdade de Medicina de São
+                Congénitos del Metabolismo en la Facultad de Medicina de São
                 José do Rio Preto (FAMERP). El Dr. Lourenço es un genetista
                 bioquímico clínico con un interés especial en los trastornos
                 neurodegenerativos genéticos. Obtuvo su título de médico en la
@@ -43,7 +43,7 @@ function ComiteF() {
                 espinocerebelosa de inicio temprano, especialmente en un
                 subconjunto de pacientes con ataxia e hipogonadismo. Más
                 recientemente, ha estado involucrado en una nueva clínica
-                multidisciplinaria en la Faculdade de Medicina de São José do
+                multidisciplinaria en la Facultad de Medicina de São José do
                 Rio Preto (FAMERP), que se enfoca principalmente en la
                 investigación de trastornos neurodegenerativos infantiles y, en
                 particular, pacientes con ataxia cerebelosa de inicio temprano y

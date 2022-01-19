@@ -28,7 +28,7 @@ function ProfesorA() {
               <p className="nombre">Rafa Navarro</p>
               <p className="titulo-ponente">Médico cirujano </p>
               <p className="trayectoria">
-                Médico genetista, fundador y miembro activo del Servicio de Genética Médica del Hospital Universitario, en Porto Alegre. , Brasil. Fundador de “House of Rares”. Responsable de Enfermedades Raras del grupo DASA/GENOME. Editor en Jefe de la Revista de Errores Congénitos del Metabolismo y Cribado, Presidente de la Escuela Latinoamericana de Genética Humana y Médica y Miembro de la Academia Brasileña de Ciencias. Ex director del Centro Colaborador de la OMS para el Desarrollo de la Genética Médica.  Ha sido el IP de más de 50 ensayos clínicos, supervisado la formación de más de 100 MSc y PhD, y siendo autor de más de 500 artículos científicos.
+                Médico Cirujano por la Universidad Anahuac de México, con estudios en Biología Molecular, Sistemas de Salud y Política Pública. Actualmente es director médico en Go Pharma. Ha sido profesor de posgrado en farmacoeconomía e investigación clínica y cuenta con más de 12 años de experiencia en áreas de alta especialidad dentro la industria farmacéutica, en laboratorios transnacionales y nacionales; teniendo a su cargo México, Centroamérica, Perú, Ecuador y El Caribe.
               </p>
             </div>
           </div>

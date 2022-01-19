@@ -27,7 +27,7 @@ function Comite() {
               <p className="nombre">Dra. Laura Martinez </p>
               <p className="titulo-ponente">Doctora en médicina</p>
               <p className="trayectoria">
-                Dr. Med. y Maestro en Ciencias. Jefa del Departamento de
+                Dra. Med. y Maestra en Ciencias. Jefa del Departamento de
                 Genética. Profesor Investigador de tiempo completo Universidad
                 Autónoma de Nuevo León desde 1982. Áreas de investigación: 1.-
                 Interacción genético -nutricional y metabolismo de folatos

@@ -26,7 +26,7 @@ function Comite() {
               <p className="nombre">Dr. Juan Manuel Politei </p>
               <p className="titulo-ponente">Médico </p>
               <p className="trayectoria">
-                Médico de Staff en el Laboratorio de Neuroquímica Dr Chamoles.
+                Médico de Staff en el Laboratorio de Neuroquímica Dr. Chamoles.
                 Fundación para el Estudio de las Enfermedades Neurometabólicas
                 (FESEN), Editor de literatura y eventos científicos para
                 Circlepress.,Asesor externo en enfermedades huérfanas (poco

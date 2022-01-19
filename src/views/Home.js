@@ -89,7 +89,7 @@ function Home() {
       <section data-aos="fade-up">
         <div className="contenedor-nosotros">
           <div className="nosotros-el">
-            <h2 className="titulo">¿QUIENES SOMOS?</h2>
+            <h2 className="titulo">¿QUIÉNES SOMOS?</h2>
             <br />
             <p>
               SEER asociación civil constituída por profesionales de la salud y
@@ -103,7 +103,7 @@ function Home() {
             <h2 className="titulo">MISIÓN</h2>
             <br />
             <p>
-              Sensibilizar y educar ExternalLinkla comunidad médica sobre las enfermedades raras, con base en nuestros cuatro pilares: Concientización,
+              Sensibilizar y educar a la comunidad médica sobre las enfermedades raras, con base en nuestros cuatro pilares: Concientización,
               Prevención, Diagnóstico y Manejo. Contribuiyendo a la difusión y
               correcto encause de las enfermedades raras, colaborando con los
               diferentes actores del ecosistema de salud y la sociedad civil.
