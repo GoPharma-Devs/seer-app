@@ -80,7 +80,7 @@ function Navbar() {
           <li> Registro</li>
         </NavLink>
         <NavLink
-          to="/inicio-sesion"
+          to="/congreso"
           className={({ isActive }) => isActive ? 'active-nav' : ''}
           onClick={closeMobileMenu}
         >
