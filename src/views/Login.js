@@ -1,7 +1,10 @@
+import React from 'react';
 import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "../context/AuthProvider";
 import { Link } from "react-router-dom"
 import axios from '../api/axios';
+import { Modal, Button } from 'react-bootstrap';
+import Transmision from './Transmision';
 const LOGIN_URL = '/login';
 
 const Login = () => {
@@ -13,7 +16,7 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [errMsg, setErrMsg] = useState('');
   const [success, setSuccess] = useState(false);
-
+  const [modalShow, setModalShow] = useState(true)
   useEffect(() => {
     userRef.current.focus();
   }, [])
@@ -35,6 +38,7 @@ const Login = () => {
         }
       );
       console.log("Session Iniciada");
+
       console.log(JSON.stringify(response?.data));
       console.log(JSON.stringify(response));
       const accessToken = response?.data?.accessToken;
@@ -47,7 +51,7 @@ const Login = () => {
       if (response?.status === 200) {
         console.log("usuario")
         localStorage.setItem("user", user);
-
+        console.log(localStorage.getItem("user"));
       }
 
 
@@ -67,7 +71,26 @@ const Login = () => {
       errRef.current.focus();
     }
   }
+  function MyVerticallyCenteredModal(props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
 
+        <Modal.Body>
+          <iframe id="JotFormIFrame-212609285006048" title="SEER 2022" src="https://form.jotform.com/212609285006048" frameBorder={0} style={{ height: 539, border: 'none' }} scrolling="no">
+          </iframe>
+        </Modal.Body>
+        <Modal.Footer>
+
+          <Button className='btn btn-danger' onClick={props.onHide}>Cerrar</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
   return (
     <>
       {success ? (
@@ -87,16 +110,15 @@ const Login = () => {
 
             )}
             {user && (
-              <div className="texto">
+              <section className="section transmision-contenedor">
+                <MyVerticallyCenteredModal
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                />
 
-                <div className="asistencia">
-                  <iframe id="JotFormIFrame-212609285006048" title="SEER 2022" src="https://form.jotform.com/212609285006048" frameBorder={0} style={{ height: 539, border: 'none' }} scrolling="no">
-                  </iframe>
-                </div>
+                <Transmision />
 
-
-
-              </div>
+              </section>
 
             )}
           </div>

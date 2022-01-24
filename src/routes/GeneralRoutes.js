@@ -19,7 +19,7 @@ const GeneralRoutes = () => {
     }, [location.pathname]);
     return children
   }
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState("");
   useEffect(() => {
     localStorage.setItem("user", user);
   }, [user])
@@ -34,7 +34,7 @@ const GeneralRoutes = () => {
               <>
                 <Route path="/" element={<Home />} />
                 <Route
-                  path="/inicio-sesion"
+                  path="/congreso"
                   element={<Login authenticate={() => setUser(true)} />}
                 />
 
