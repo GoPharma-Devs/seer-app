@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useLayoutEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer";
 import Home from "../views/Home";
 import Login from "../views/Login";
 import Registro from "../views/Registro";
-import Transmision from "../views/Transmision";
+//import Transmision from "../views/Transmision";
 import ErrorPage from "../views/ErrorPage";
 import {
   ScrollingProvider,
@@ -19,10 +19,8 @@ const GeneralRoutes = () => {
     }, [location.pathname]);
     return children
   }
-  const [user, setUser] = useState("");
-  useEffect(() => {
-    localStorage.setItem("user", user);
-  }, [user])
+  const [user, setUser] = useState(null);
+
   return (
     <BrowserRouter>
       <Wrapper>
@@ -43,14 +41,10 @@ const GeneralRoutes = () => {
                   element={<Registro authenticate={() => setUser(true)} />}
                 />
 
-
               </>
 
             )}
-            {user && (
-              <Route path="/congreso" element={<Transmision logout={() => setUser(null)} />} />
 
-            )}
             <Route path="*" element={<ErrorPage />} />
 
           </Routes>
