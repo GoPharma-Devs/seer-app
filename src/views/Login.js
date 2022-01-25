@@ -11,14 +11,14 @@ const Login = () => {
   const { setAuth } = useContext(AuthContext);
   const userRef = useRef();
   const errRef = useRef();
-  const [user, setUser] = useState(localStorage.getItem('user'));
+  const [user, setUser] = useState(localStorage.getItem('user') != null ? JSON.parse(localStorage.getItem('user')) : null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
   const [modalShow, setModalShow] = useState(true);
   useEffect(() => {
-    userRef.current.focus();
+    // userRef.current.focus();
   }, []);
 
 
@@ -45,12 +45,11 @@ const Login = () => {
       setAuth({ user });
       setEmail("");
       setPassword("");
-      setSuccess(true);
-      setUser(true);
       if (response?.status === 200) {
         console.log("usuario");
-        localStorage.setItem("user", user);
-        console.log(localStorage.getItem("user"));
+        setSuccess(true);
+        localStorage.setItem("user", JSON.stringify({ ...user, form: false }));
+        setUser({ ...user, form: false });
       }
     } catch (err) {
       if (!err?.response) {
@@ -92,91 +91,80 @@ const Login = () => {
     );
   }
 
-  if (user) {
+  if (success && !user?.form) {
+    return <section className="section transmision-contenedor kkk">
+      <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => {
+          setModalShow(false);
+          setUser( { ...user, form: true });
+          localStorage.setItem("user", JSON.stringify({ ...user, form: true }));
+        }}
+      />
+    </section>
+  }
+
+  if (user?.form) {
     return (
       <section className="section transmision-contenedor">
-        <MyVerticallyCenteredModal
-          show={modalShow}
-          onHide={() => setModalShow(false)}
-        />
-
         <Transmision />
       </section>
     )
+
   }
-
-  return (
-    <>
-      {success ? (
-        <section className="Home">
-          <div className="contenedor">
-            {!user && (
-              <>
-                <div className="texto">
-                  <h1>You are not logged in!</h1>
-                  <br />
-                  <p>
-                    <Link to="/">Ir a home</Link>
-                  </p>
-                </div>
-              </>
-            )}
-
+  return (<section>
+    <div className="contenedor">
+      <p
+        ref={errRef}
+        className={errMsg ? "errmsg" : "offscreen"}
+        aria-live="assertive"
+      >
+        {errMsg}
+      </p>
+      <h1>Iniciar sesión</h1>
+      <div className="contenedor-login">
+        <form className="form" onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label htmlFor="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              ref={userRef}
+              autoComplete="off"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              required
+            />
           </div>
-        </section>
-      ) : (
-        <section>
-          <div className="contenedor">
-            <p
-              ref={errRef}
-              className={errMsg ? "errmsg" : "offscreen"}
-              aria-live="assertive"
-            >
-              {errMsg}
-            </p>
-            <h1>Iniciar sesión</h1>
-            <div className="contenedor-login">
-              <form className="form" onSubmit={handleSubmit}>
-                <div className="form-group">
-                  <label htmlFor="username">Username:</label>
-                  <input
-                    type="text"
-                    id="username"
-                    ref={userRef}
-                    autoComplete="off"
-                    onChange={(e) => setEmail(e.target.value)}
-                    value={email}
-                    required
-                  />
-                </div>
 
-                <div className="form-group">
-                  <label htmlFor="password">Password:</label>
-                  <input
-                    type="password"
-                    id="password"
-                    onChange={(e) => setPassword(e.target.value)}
-                    value={password}
-                    required
-                    autoComplete="off"
-                  />
-                </div>
-                <button className="btn btn-primario">Sign In</button>
-              </form>
-              <p>
-                Desea registrarse o actualizar sus datos
-                <br />
-                <span className="line">
-                  {/*put router link here*/}
-                  <Link to="/registro">Ir a registro</Link>
-                </span>
-              </p>
-            </div>
+          <div className="form-group">
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              onChange={(e) => setPassword(e.target.value)}
+              value={password}
+              required
+              autoComplete="off"
+            />
           </div>
-        </section>
-      )}
-    </>
-  );
+          <button className="btn btn-primario">Sign In</button>
+        </form>
+        <p>
+          Desea registrarse o actualizar sus datos
+          <br />
+          <span className="line">
+            {/*put router link here*/}
+            <Link to="/registro">Ir a registro</Link>
+          </span>
+        </p>
+      </div>
+    </div>
+  </section>)
+
+
+
+
 };
 
 export default Login;
