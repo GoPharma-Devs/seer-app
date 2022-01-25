@@ -30,6 +30,7 @@ function Registro() {
         e.target.submit();
       } else {
         alert("El correo ingresado ya fue registrado")
+        window.open("https://seerlatam.us1.list-manage.com/subscribe?u=37892f6a3c3f15b6ba401af59&id=76d3e57aa3")
       }
     });
 

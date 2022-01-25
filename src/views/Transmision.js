@@ -1,12 +1,18 @@
 import React from 'react'
 
-const Transmision = ({ logout }) => {
+const Transmision = () => {
+  const Logout = () => {
+    localStorage.removeItem("user")
+    window.location.replace("/");
+  }
   return (
     <section className="contenedor">
       <div className="contenedor-transmision">
         <div className="video-contenedor">
-          {/* <button onClick={logout} className="btn-primario">Cerrar Sesion</button> */}
+          <button onClick={Logout} className="btn-primario">Cerrar Sesion</button>
           <h1 style={{ textAlign: 'center' }}><strong>SEER 2022</strong> <br /> 17, 18 y 19 de febrero</h1>
+
+
 
 
         </div>

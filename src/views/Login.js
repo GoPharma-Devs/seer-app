@@ -73,14 +73,10 @@ const Login = () => {
         centered
       >
         <Modal.Body>
-          <iframe
-            id="JotFormIFrame-212609285006048"
-            title="SEER 2022"
-            src="https://form.jotform.com/212609285006048"
-            frameBorder={0}
-            style={{ height: 539, border: "none" }}
-            scrolling="no"
-          ></iframe>
+
+          <iframe id="JotFormIFrame-212609285006048" title="SEER 2022" onload="window.parent.scrollTo(0,0)" allowTransparency="true" allowFullScreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/212609285006048" frameBorder={0} style={{ minWidth: '100%', height: 539, border: 'none' }} scrolling="no">
+          </iframe>
+
         </Modal.Body>
         <Modal.Footer>
           <Button className="btn btn-danger" onClick={props.onHide}>
@@ -92,15 +88,17 @@ const Login = () => {
   }
 
   if (success && !user?.form) {
-    return <section className="section transmision-contenedor kkk">
-      <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => {
-          setModalShow(false);
-          setUser( { ...user, form: true });
-          localStorage.setItem("user", JSON.stringify({ ...user, form: true }));
-        }}
-      />
+    return <section className="section transmision-contenedor Hero">
+      <div className="contenedor">
+        <MyVerticallyCenteredModal
+          show={modalShow}
+          onHide={() => {
+            setModalShow(false);
+            setUser({ ...user, form: true });
+            localStorage.setItem("user", JSON.stringify({ ...user, form: true }));
+          }}
+        />
+      </div>
     </section>
   }
 
@@ -121,11 +119,13 @@ const Login = () => {
       >
         {errMsg}
       </p>
-      <h1>Iniciar sesión</h1>
+      <h1>SEER 2022</h1>
+      <h2>Bienvenid@</h2>
+
       <div className="contenedor-login">
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="username">Username:</label>
+            <label htmlFor="username">Correo eletrónico:</label>
             <input
               type="text"
               id="username"
