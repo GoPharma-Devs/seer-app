@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import axios from "../api/axios";
 import { Modal, Button } from "react-bootstrap";
 import Transmision from "./Transmision";
+import * as ReactBootStrap from "react-bootstrap";
 const LOGIN_URL = "/login";
 
 const Login = () => {
@@ -17,10 +18,11 @@ const Login = () => {
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
   const [modalShow, setModalShow] = useState(true);
+  const [isLoading, setLoading] = useState(false);
+  const [DescriptionApi] = useState(null);
   useEffect(() => {
     // userRef.current.focus();
   }, []);
-
 
 
 
@@ -41,7 +43,7 @@ const Login = () => {
       );
       console.log("Session Iniciada");
 
-
+      setLoading(true);
       setAuth({ user });
       setEmail("");
       setPassword("");
@@ -74,7 +76,8 @@ const Login = () => {
       >
         <Modal.Body>
 
-          <iframe id="JotFormIFrame-212609285006048" title="SEER 2022" onload="window.parent.scrollTo(0,0)" allowTransparency="true" allowFullScreen="true" allow="geolocation; microphone; camera" src="https://form.jotform.com/212609285006048" frameBorder={0} style={{ minWidth: '100%', height: 539, border: 'none' }} scrolling="no">
+          <iframe id="JotFormIFrame-212609285006048" title="SEER 2022"
+            onLoad={window.parent.scrollTo(0, 0)} src="https://form.jotform.com/212609285006048" frameBorder={0} style={{ minWidth: '100%', height: 539, border: 'none' }} scrolling="no">
           </iframe>
 
         </Modal.Body>
@@ -160,6 +163,13 @@ const Login = () => {
         </p>
       </div>
     </div>
+    {isLoading ? (
+      DescriptionApi
+    ) : (
+      <div className="contenedor-loader">
+        <ReactBootStrap.Spinner animation="border" className="loader" />
+      </div>
+    )}
   </section>)
 
 

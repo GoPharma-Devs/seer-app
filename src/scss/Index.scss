@@ -5,6 +5,7 @@
 @import "./components/Navbar";
 
 
+
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +21,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #103561 !important;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 h2.nombre-ponente {
@@ -104,10 +106,15 @@ h4 {
 }
 
 .Home {
-  height: 85vh;
+  min-height: 85vh !important;
+  height: auto !important;
   width: 100%;
   align-items: center;
   justify-content: center;
+
+  @include tableth {
+    min-height: 45vh !important;
+  }
 }
 
 section {
@@ -596,11 +603,25 @@ footer {
 }
 
 .carousel-caption {
-  bottom: 10vh !important
+  bottom: 20vh !important;
+
+  @include tablet {
+    bottom: 45vh !important
+  }
+
+  @include phone {
+    bottom: 15vh !important
+  }
 }
 
 .Carousel-hero {
-  top: 13vh !important
+  top: 10vh !important;
+  padding: 0px !important;
+
+
+  @include tablet {
+    top: 0px !important;
+  }
 }
 
 
@@ -876,4 +897,91 @@ footer {
 .JotFormIFrame-212609285006048,
 #JotFormIFrame-212609285006048 {
   width: 100% !important;
+}
+
+
+.slider {
+  display: block;
+
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.slider-r {
+  display: none !important;
+
+  @include tablet {
+    display: block !important;
+    box-sizing: border-box !important;
+    max-height: 80vh;
+    fill: cover !important;
+    width: auto;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 7% !important;
+  color: $app-1 !important;
+}
+
+.carousel-nav-icon {
+  height: 48px;
+  width: 48px;
+}
+
+.carousel-item {
+
+  .col,
+  .col-sm,
+  .col-md {
+    margin: 8px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 4px #fff0, inset 0 2px 0 rgba(0, 0, 0, 0), 0 3px 0 4px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
+  background: transparent !important;
+}
+
+
+.vertical-timeline--two-columns .vertical-timeline-element-icon {
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  margin-left: -24px !important;
+
+  @include tablet {
+    left: 19px !important;
+  }
+}
+
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0) !important;
+  background: transparent !important;
+}
+
+
+
+.img-responsive {
+  max-width: auto;
+  height: 180px !important;
 }
