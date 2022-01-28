@@ -12,9 +12,11 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 //import { ExternalLink } from "react-external-link";
 import {
   //FaInstagram,
-
   FaChevronDown,
 } from "react-icons/fa";
+import {
+  useScrollSection,
+} from 'react-scroll-section';
 
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
@@ -23,6 +25,8 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import Carousel from 'react-bootstrap/Carousel'
 function Home() {
+
+  const homeSection = useScrollSection('comite');
   useEffect(() => {
 
     AOS.init({
@@ -42,7 +46,7 @@ function Home() {
       <section className="Home" data-aos="fade-in">
         <div className="row" data-aos="fade-in">
           <Carousel className="Carousel-hero container-fluid"  >
-            <Carousel.Item interval={9000}    >
+            <Carousel.Item interval={5000}    >
               <img
                 className="d-block w-100 slider"
                 src={HeroSlider1}
@@ -62,7 +66,7 @@ function Home() {
 
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={4000}    >
+            <Carousel.Item interval={5000}    >
               <img
                 className="d-block w-100 slider"
                 src={HeroSlider1}
@@ -81,7 +85,7 @@ function Home() {
                 <Link className="btn-primario" to="/registro" >Registro</Link>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={4000}    >
+            <Carousel.Item interval={5000}    >
               <img
                 className="d-block w-100 slider"
                 src={HeroSlider1}
@@ -94,26 +98,32 @@ function Home() {
               />
 
               <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                <Link className="btn-primario" to="/congreso" >Congreso</Link>
+                <h1>¡No te pierdas el 1er Congreso <br /> internacional SEER 2022!</h1>
+
+                <div className="container  ">
+                  <ul className="row temas ">
+                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Actualidades en el Manejo de la Hemofilia</li>
+                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Raquitismo Hipofosfatémico Ligado al cromosoma X</li>
+                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Atrofia Muscular Espinal</li>
+                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Nirmann Pick Tipo C</li>
+                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Neurofibromatosis Tipo 1</li>
+
+                  </ul>
+                </div>
+                <h2>¡Registrate Ahora!</h2>
+
+                <Link className="btn-primario" to="/congreso" >Saber más</Link>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </div>
 
       </section>
-      {/* <section className="Home" data-aos="fade-in">
-        <div className="contenedor">
-          <img src={logo} className="App-logo" alt="seer 2022" />
-          <h1>SEER 2022</h1>
-          <h2>17, 18 y 19 de febrero</h2>
-        </div>
-      </section> */}
-      <div className="row mt-5" data-aos="fade-up">
-        <div className="container mt-5 mb-5 text-center">
-          <h2>Conoce más de este gran proyecto</h2>
-          <FaChevronDown />
+
+      <div className="row mt-5" data-aos="fade-up" >
+        <div className="container-fluid mt-5 mb-5 text-center">
+          <p>Conoce más de este gran proyecto</p>
+          <FaChevronDown className="bounce-2" onClick={homeSection.onClick} selected={homeSection.selected} />
         </div>
 
         <div className="row mt-5 mb-5  justify-content-center" data-aos="fade-up">
@@ -127,7 +137,7 @@ function Home() {
 
       </div>
 
-      <section data-aos="fade-up">
+      <section id="info" data-aos="fade-up">
         <div className="contenedor" data-aos="fade-up">
           <VerticalTimeline data-aos="fade-up"  >
 
@@ -198,6 +208,7 @@ function Home() {
       </section>
       <section className="comite-contenedor" >
         <div className="contenedor">
+
 
           <ListaComite />
 

@@ -14,7 +14,7 @@
 
 
 body {
-  background-color: #88a1b5;
+  background-color: #5b7896;
   background-image: url('../img/fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,14 +106,14 @@ h4 {
 }
 
 .Home {
-  min-height: 85vh !important;
+  min-height: 75vh !important;
   height: auto !important;
   width: 100%;
   align-items: center;
   justify-content: center;
 
   @include tableth {
-    min-height: 45vh !important;
+    min-height: 55vh !important;
   }
 }
 
@@ -914,7 +914,16 @@ footer {
   @include tablet {
     display: block !important;
     box-sizing: border-box !important;
-    max-height: 80vh;
+    max-height: 90vh;
+    fill: cover !important;
+    width: auto;
+  }
+
+  @include phone {
+    margin-top: 5vh;
+    display: block !important;
+    box-sizing: border-box !important;
+    max-height: 90vh;
     fill: cover !important;
     width: auto;
   }
@@ -984,4 +993,84 @@ footer {
 .img-responsive {
   max-width: auto;
   height: 180px !important;
+}
+
+.ponente-card {
+  cursor: pointer;
+
+  .speaker-box {
+    overflow: hidden;
+  }
+
+  .team-img {
+    box-sizing: border-box;
+
+    img {
+      width: 100%;
+      vertical-align: middle;
+      border-style: none;
+
+
+    }
+  }
+
+
+
+
+
+  .info_box {
+    line-height: 1;
+
+
+
+    .name {
+      text-align: left !important;
+      font-weight: bold;
+      font-size: 14px;
+      color: white;
+      margin-bottom: 2px !important;
+    }
+
+    .position {
+      text-align: left !important;
+      font-weight: light !important;
+      font-size: 12px;
+    }
+  }
+}
+
+
+.vertical-timeline::before {
+  content: "";
+  position: absolute;
+  top: 75px !important;
+  left: 18px;
+  height: 90% !important;
+  width: 4px;
+  background: var(--line-color);
+}
+
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce-2 {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.active-nav {
+  color: #ffffff !important;
 }

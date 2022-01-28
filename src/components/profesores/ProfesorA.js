@@ -39,18 +39,18 @@ function ProfesorA() {
   return (
     <React.Fragment>
       {" "}
-      <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img src={ImgProfesor} alt="comite" />
-        <div className="info">
-          <h2 className="nombre-ponente">Roberto Giugliani</h2>
-          <p className="titulo-ponente">Médico en genética</p>
-        </div>
-
-        <div className="nombre-card">
-          <h2 className="nombre-ponente">Roberto Giugliani</h2>
-          <p className="titulo-ponente">Médico en genética</p>
+      <div className="col-md-3 col-sm-6">
+        <div className="speaker_box">
+          <div className="speaker_img">
+            <img src={ImgProfesor} alt="comite" />
+            <div className="info_box">
+              <h5 className="name">Roberto Giugliani</h5>
+              <p className="position">Médico en genética</p>
+            </div>
+          </div>
         </div>
       </div>
+
       <MyVerticallyCenteredModal
         show={modalShow}
         onHide={() => setModalShow(false)}
