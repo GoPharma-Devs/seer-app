@@ -44,19 +44,17 @@ function Comite() {
   return (
     <React.Fragment>
       {" "}
-      <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F16_lauramartinez.png?alt=media&token=a83b1534-963d-4246-bbf4-4cd9cd794d60"
-          alt="comite"
-        />
-        <div className="info">
-          <h2 className="nombre-ponente">Dra. Laura Martinez </h2>
-          <p className="titulo-ponente">Doctora en médicina</p>
-        </div>
 
-        <div className="nombre-card">
-          <h2 className="nombre-ponente">Dra. Laura Martinez </h2>
-          <p className="titulo-ponente">Nefrología Pediátrica </p>
+
+      <div className="col-lg-3 col-md-6 col-sm-6 ponente-card" onClick={() => setModalShow(true)}>
+        <div className="single-team m-2 ">
+          <div className="team-img">
+            <img src={ImgPonente} alt="comite" />
+          </div>
+          <div className="info_box ">
+            <h4 className="name mt-3">Dra. Araceli Arellano</h4>
+            <p className="position">Reumatología Pediátrica</p>
+          </div>
         </div>
       </div>
       <MyVerticallyCenteredModal

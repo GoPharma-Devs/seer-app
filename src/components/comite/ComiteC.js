@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 const ImgPonente =
-  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F3_danielcampos.png?alt=media&token=f80272aa-c8da-4353-9bba-023492278cd1";
+  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F1_araceliarellano.png?alt=media&token=6ac2fe5d-976f-495c-8dff-ccb92aba7407";
 function Comite() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -24,15 +24,12 @@ function Comite() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Dr. Daniel Campos</p>
+              <p className="nombre">Dra. Araceli Arellano</p>
               <p className="titulo-ponente">
-                Médico Cirujano especialista en Genética Médica
+                Reumatología Pediátrica
               </p>
               <p className="trayectoria">
-                Médico Cirujano, especialista en Genética Médica por la Facultad
-                de médicina UANL. Médico Adscrito al Departamento de Genética
-                Titular de la Residencia en Genética Médica Coordinador del Área
-                de Genética Molecular
+                Médica adscrita al servicio de Reumatología Pediátrica, de la UMAE Hospital de Pediatría del CMNO. Médico tratante de pacientes lisosomales y con enfermedades metabólicas de baja prevalencia. Miembro del Grupo de Expertos en Enfermedades Lisosomales (GEEL). Profesora titular de Reumatología Pediátrica.
               </p>
             </div>
           </div>
@@ -43,19 +40,17 @@ function Comite() {
   return (
     <React.Fragment>
       {" "}
-      <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F3_danielcampos.png?alt=media&token=f80272aa-c8da-4353-9bba-023492278cd1"
-          alt="comite"
-        />
-        <div className="info">
-          <h2 className="nombre-ponente">Dr. Daniel Campos</h2>
-          <p className="titulo-ponente">Pediatría </p>
-        </div>
 
-        <div className="nombre-card">
-          <h2 className="nombre-ponente">Dr. Daniel Campos</h2>
-          <p className="titulo-ponente">Pediatría </p>
+
+      <div className="col-lg-3 col-md-6 col-sm-6 ponente-card" onClick={() => setModalShow(true)}>
+        <div className="single-team m-2 ">
+          <div className="team-img">
+            <img src={ImgPonente} alt="comite" />
+          </div>
+          <div className="info_box ">
+            <h4 className="name mt-3">Dra. Araceli Arellano</h4>
+            <p className="position">Reumatología Pediátrica</p>
+          </div>
         </div>
       </div>
       <MyVerticallyCenteredModal

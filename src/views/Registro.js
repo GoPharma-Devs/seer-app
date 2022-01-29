@@ -10,6 +10,7 @@ function Registro() {
       return;
     }
     e.preventDefault();
+
     await fetch("https://seer-be.herokuapp.com/users/", {
       method: "POST",
       body: JSON.stringify(form),
@@ -20,6 +21,7 @@ function Registro() {
     }).then(res => {
       if (res.status === 200) {
         return true;
+
       } else if (res.status === 400) {
         return res.json()
       }
@@ -28,6 +30,7 @@ function Registro() {
       if (res === true) {
         setValid(true);
         e.target.submit();
+        window.location.replace("/exito");
       } else {
         alert("El correo ingresado ya fue registrado")
         window.open("https://seerlatam.us1.list-manage.com/subscribe?u=37892f6a3c3f15b6ba401af59&id=76d3e57aa3")
@@ -85,7 +88,7 @@ function Registro() {
                   <input onChange={e => setForm({ ...form, PHONE: e.target.value })} type="text" name="PHONE" className="required" defaultValue="Teléfono" id="mce-PHONE" />
                 </div>
                 <div className="mc-field-group">
-                  <label htmlFor="mce-MMERGE7">Cédula Profesional  <span className="asterisk">*</span>
+                  <label htmlFor="mce-MMERGE7">Cédula Profesional o Universidad y matricula <span className="asterisk">*</span>
                   </label>
                   <input onChange={e => setForm({ ...form, MMERGE7: e.target.value })} type="text" defaultValue="" name="MMERGE7" className="required" id="mce-MMERGE7" />
                 </div>

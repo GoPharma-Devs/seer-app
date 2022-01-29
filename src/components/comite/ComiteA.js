@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 const ImgPonente =
-  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F1_araceliarellano.png?alt=media&token=6ac2fe5d-976f-495c-8dff-ccb92aba7407";
+  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F2_alejandracamacho.png?alt=media&token=94b754df-f1fe-4786-aae7-f75a5f4dc39f";
 function Comite() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -24,14 +24,11 @@ function Comite() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Dra. Araceli Arellano </p>
-              <p className="titulo-ponente">Reumatología Pediátrica</p>
+              <p className="nombre">Dra. Alejandra Camacho
+              </p>
+              <p className="titulo-ponente">Genética Médica</p>
               <p className="trayectoria">
-                "Médico adscrito al servicio de Reumatología Pediátrica, de la
-                UMAE Hospital de Pediatría del CMNO. Médico tratante de
-                pacientes lisosomales y con enfermedades metabólicas de baja
-                prevalencia. Miembro del GEEL. Profesora titular de Reumatología
-                Pediátrica."
+                Médica Genetista con maestría en Ciencias con Especialidad en Farmacología. Experiencia como Jefa del Departamento de Neurogenética e investigadora en Ciencias Médicas en el Insituto Nacional de Neurología y Neurocirugía Manuel Velasco Suárez. Miembro del Sistema Nacional de Investigadores, cuenta con diversas publicaciones nacionales e internacionales. Actualmente Vicepresidenta del Consejo Mexicano de Genética, Coordinadora del Programa de Enfermedades Huérfanas Lisosomales y Laboratorios de Genómica  en el Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado.
               </p>
             </div>
           </div>
@@ -50,8 +47,9 @@ function Comite() {
             <img src={ImgPonente} alt="comite" />
           </div>
           <div className="info_box ">
-            <h4 className="name mt-3">Dra. Araceli Arellano</h4>
-            <p className="position">Reumatología Pediátrica</p>
+            <h4 className="name mt-3">Dra. Alejandra Camacho
+            </h4>
+            <p className="position">Genética Médica</p>
           </div>
         </div>
       </div>

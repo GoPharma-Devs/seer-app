@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import axios from "../api/axios";
 import { Modal, Button } from "react-bootstrap";
 import Transmision from "./Transmision";
-import * as ReactBootStrap from "react-bootstrap";
 const LOGIN_URL = "/login";
 
 const Login = () => {
@@ -18,8 +17,8 @@ const Login = () => {
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
   const [modalShow, setModalShow] = useState(true);
-  const [isLoading, setLoading] = useState(false);
-  const [DescriptionApi] = useState(null);
+
+
   useEffect(() => {
     // userRef.current.focus();
   }, []);
@@ -43,7 +42,7 @@ const Login = () => {
       );
       console.log("Session Iniciada");
 
-      setLoading(true);
+
       setAuth({ user });
       setEmail("");
       setPassword("");
@@ -123,7 +122,8 @@ const Login = () => {
         {errMsg}
       </p>
       <h1>SEER 2022</h1>
-      <h2>Bienvenid@</h2>
+      <h2>17,18 y 19 de febrero</h2>
+      <h3>Bienvenid@</h3>
 
       <div className="contenedor-login">
         <form className="form" onSubmit={handleSubmit}>
@@ -151,25 +151,19 @@ const Login = () => {
               autoComplete="off"
             />
           </div>
-          <button className="btn btn-primario">Sign In</button>
+          <button className="btn btn-primario">Entrar</button>
         </form>
-        <p>
+        <small>
           Desea registrarse o actualizar sus datos
           <br />
           <span className="line">
             {/*put router link here*/}
             <Link to="/registro">Ir a registro</Link>
           </span>
-        </p>
+        </small>
       </div>
     </div>
-    {isLoading ? (
-      DescriptionApi
-    ) : (
-      <div className="contenedor-loader">
-        <ReactBootStrap.Spinner animation="border" className="loader" />
-      </div>
-    )}
+
   </section>)
 
 

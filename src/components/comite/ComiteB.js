@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 const ImgPonente =
-  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F2_alejandracamacho.png?alt=media&token=94b754df-f1fe-4786-aae7-f75a5f4dc39f";
+  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F8_juanainesnavarrete.png?alt=media&token=e80f2ee2-cdc2-4a6d-81dd-c29263984f2a";
 function Comite() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -24,21 +24,10 @@ function Comite() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Dra. Alejandra Camacho </p>
+              <p className="nombre">Dra. Juana Inés Navarrete </p>
               <p className="titulo-ponente">Genética Médica </p>
               <p className="trayectoria">
-                Tiene especialidad en Genética Médica en el Hospital General de
-                México (UNAM), maestría en Ciencias con Especialidad en
-                Farmacología en la Escuela Superior de Medicina (IPN). Fue Jefa
-                del Departamento de Genética e investigadora en ciencias médicas
-                en el Insituto Nacional de Neurología y Neurocirugía Manuel
-                Velasco Suárez, es miembro del Sistema Nacional de
-                Investigadores y cuenta con diversas publicaciones nacionales e
-                internacionales. Actualmente es coordinadora del Programa de
-                Enfermedades Huérfanas Lisosomales, Estandarización de la
-                Prescripción de Medicamentos de Alta Especialidad y de los
-                Laboratorios de Genómica del Instituto de Seguridad y Servicios
-                Sociales de los Trabajadores del Estado (ISSSTE).
+                Médica  Genetista egresada de la UNAM. Experiencia como Jefa del Servicio de Genética del Hospital Central Sur de Alta Especialidad PEMEX. Profesor titular de Genética Médica de la carrera de Médico Cirujano, Facultad de Medicina UNAM. Miembro de la Asociación Mexicana de Genética Humana y del Consejo Mexicano de Especialistas en Genética Humana. Miembro Fundador del Grupo de Estudios al Nacimiento. Actualmente Presidenta de la Asociación Mexicana de Genética Humana.
               </p>
             </div>
           </div>
@@ -49,19 +38,17 @@ function Comite() {
   return (
     <React.Fragment>
       {" "}
-      <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F2_alejandracamacho.png?alt=media&token=94b754df-f1fe-4786-aae7-f75a5f4dc39f"
-          alt="comite"
-        />
-        <div className="info">
-          <h2 className="nombre-ponente">Dra. Alejandra Camacho </h2>
-          <p className="titulo-ponente">Genética Médica </p>
-        </div>
 
-        <div className="nombre-card">
-          <h2 className="nombre-ponente">Dra. Alejandra Camacho </h2>
-          <p className="titulo-ponente">Genética Médica </p>
+
+      <div className="col-lg-3 col-md-6 col-sm-6 ponente-card" onClick={() => setModalShow(true)}>
+        <div className="single-team m-2 ">
+          <div className="team-img">
+            <img src={ImgPonente} alt="comite" />
+          </div>
+          <div className="info_box ">
+            <h4 className="name mt-3">Dra. Juana Inés Navarrete</h4>
+            <p className="position">Genética Médica </p>
+          </div>
         </div>
       </div>
       <MyVerticallyCenteredModal

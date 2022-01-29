@@ -100,16 +100,7 @@ function Home() {
               <Carousel.Caption>
                 <h1>¡No te pierdas el 1er Congreso <br /> internacional SEER 2022!</h1>
 
-                <div className="container  ">
-                  <ul className="row temas ">
-                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Actualidades en el Manejo de la Hemofilia</li>
-                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Raquitismo Hipofosfatémico Ligado al cromosoma X</li>
-                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Atrofia Muscular Espinal</li>
-                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Nirmann Pick Tipo C</li>
-                    <li className="col-6 col-sm" style={{ textAlign: "left" }}>Neurofibromatosis Tipo 1</li>
 
-                  </ul>
-                </div>
                 <h2>¡Registrate Ahora!</h2>
 
                 <Link className="btn-primario" to="/congreso" >Saber más</Link>

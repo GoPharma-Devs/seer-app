@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button } from "react-bootstrap";
 const ImgPonente =
-  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F4_albertohidalgo.png?alt=media&token=31421042-b65d-438a-a452-87e61e6d3294";
+  "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F3_danielcampos.png?alt=media&token=f80272aa-c8da-4353-9bba-023492278cd1";
 function Comite() {
   const [modalShow, setModalShow] = useState(false);
   function MyVerticallyCenteredModal(props) {
@@ -24,13 +24,14 @@ function Comite() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Dr. Alberto Hidalgo</p>
+              <p className="nombre">Dr. Daniel Campos</p>
               <p className="titulo-ponente">Genética Médica</p>
               <p className="trayectoria">
-                Médico Especialista en Genética Médica Doctorado en Genética.
-                Investigador en Ciencias Médicas D, Miembro del Sistema Nacional
-                de Investigadores: Nivel 1, Certificado por el Consejo Mexicano
-                de Genética Humana.
+                Médico Cirujano, especialista en Genética Médica por la Facultad de médicina UANL. Médico Adscrito al Departamento de Genética
+                Titular de la Residencia en Genética Médica
+                Coordinador del Área de Genética Molecular
+
+
               </p>
             </div>
           </div>
@@ -41,19 +42,17 @@ function Comite() {
   return (
     <React.Fragment>
       {" "}
-      <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img
-          src="https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/comite-seer%2F4_albertohidalgo.png?alt=media&token=31421042-b65d-438a-a452-87e61e6d3294"
-          alt="comite"
-        />
-        <div className="info">
-          <h2 className="nombre-ponente">Dr. Alberto Hidalgo</h2>
-          <p className="titulo-ponente">Genética Médica</p>
-        </div>
 
-        <div className="nombre-card">
-          <h2 className="nombre-ponente">Dr. Alberto Hidalgo</h2>
-          <p className="titulo-ponente">Genética Médica</p>
+
+      <div className="col-lg-3 col-md-6 col-sm-6 ponente-card" onClick={() => setModalShow(true)}>
+        <div className="single-team m-2 ">
+          <div className="team-img">
+            <img src={ImgPonente} alt="comite" />
+          </div>
+          <div className="info_box ">
+            <h4 className="name mt-3">Dr. Daniel Campos</h4>
+            <p className="position">Genética Médica</p>
+          </div>
         </div>
       </div>
       <MyVerticallyCenteredModal
