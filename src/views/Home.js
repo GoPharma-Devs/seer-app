@@ -7,6 +7,7 @@ import HeroSlider1 from "../img/fondo-hero-slider.png";
 import HeroSlider1R from "../img/fondo-hero-slider-r.png";
 import ListaComite from "../components/ListaComite";
 import ListaPonente from "../components/ListaPonentes";
+
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 //import { ExternalLink } from "react-external-link";
@@ -17,7 +18,7 @@ import {
 import {
   useScrollSection,
 } from 'react-scroll-section';
-
+import CountDown from "../components/CountDown";
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -62,7 +63,7 @@ function Home() {
 
                 <h1 className="mt-2">Sociedad De Especialistas <br />en Enferemedades Raras</h1>
                 <p>¡No te pierdas el 1er Congreso Internacional SEER 2022!</p>
-                <Link className="btn-primario" to="/registro" >Registrate </Link>
+                <Link className="btn-primario" to="/registro" >Regístrate </Link>
 
               </Carousel.Caption>
             </Carousel.Item>
@@ -101,7 +102,7 @@ function Home() {
                 <h1>¡No te pierdas el 1er Congreso <br /> internacional SEER 2022!</h1>
 
 
-                <h2>¡Registrate Ahora!</h2>
+                <h2>¡Regístrate Ahora!</h2>
 
                 <Link className="btn-primario" to="/congreso" >Saber más</Link>
               </Carousel.Caption>
@@ -202,7 +203,7 @@ function Home() {
 
 
           <ListaComite />
-
+          <CountDown />
           {/* <Agendas />
         <br />
         <h4>Conoce a nuestros </h4>

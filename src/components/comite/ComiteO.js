@@ -26,25 +26,7 @@ function Comite() {
               <p className="nombre">Dr. Francisco Zuñiga </p>
               <p className="titulo-ponente">Genética medica </p>
               <p className="trayectoria">
-                Egresado de la Universidad Michoacana de San Nicolás de Hidalgo
-                con especialidad en Genética Médica (Hospital Infantil de México
-                Federico Gómez). Cuenta con posgrados de Alta Especialidad en
-                Genodermatosis (Hospital General de México) y Neurogenética
-                (Instituto Nacional de Neurología y Neurocirugía “Manuel Velasco
-                Suárez”) y se encuentra cursando la maestría en Ciencias Médicas
-                y Odontológicas (Hospital Infantil de México Federico Gómez) y
-                cuenta con estudios en formación docente. Miembro de la
-                Asociación Mexicana de Genética y certificado por el Consejo
-                Mexicano de Genética Ha sido vocal en la región sur de la
-                Asociación Mexicana de Genética, profesor de pregrado de la
-                Facultad de Medicina Humana Campus IV Tapachula de la
-                Universidad Autónoma de Chiapas y profesor de la Escuela de
-                Medicina del Instituto de Estudios Superiores de Chiapas
-                “Universidad Salazar” Actualmente es médico Especialista
-                Adscrito de Genética del Hospital Regional de Alta Especialidad
-                Ciudad Salud en Tapachula, Chiapas y Práctica privada. Vocal de
-                los Comités de Bioética y Ética en Investigación del Hospital
-                Regional de Alta Especialidad Ciudad Salud.
+                Médico Genetista con Alta Especialidad en Genodermatosis y Neurogenética, actualmente cursando una maestría en Ciencias Médicas y Odontológicas. Miembro de la Asociación Mexicana de Genética Humana. Actualmente es médico Especialista Adscrito al Servicio de Genética del Hospital Regional de Alta Especialidad Ciudad Salud en Tapachula, Chiapas y Práctica privada. Vocal de los Comités de Bioética y Ética en Investigación del Hospital Regional de Alta Especialidad Ciudad Salud.
               </p>
             </div>
           </div>
@@ -63,8 +45,8 @@ function Comite() {
             <img src={ImgPonente} alt="comite" />
           </div>
           <div className="info_box ">
-            <h4 className="name mt-3">Dra. Araceli Arellano</h4>
-            <p className="position">Reumatología Pediátrica</p>
+            <h4 className="name mt-3">Dr. Francisco Zuñiga</h4>
+            <p className="position">Genética medica</p>
           </div>
         </div>
       </div>

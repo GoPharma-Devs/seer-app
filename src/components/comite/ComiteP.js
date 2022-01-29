@@ -27,13 +27,7 @@ function Comite() {
               <p className="nombre">Dra. Laura Martinez </p>
               <p className="titulo-ponente">Doctora en médicina</p>
               <p className="trayectoria">
-                Dra. Med. y Maestra en Ciencias. Jefa del Departamento de
-                Genética. Profesor Investigador de tiempo completo Universidad
-                Autónoma de Nuevo León desde 1982. Áreas de investigación: 1.-
-                Interacción genético -nutricional y metabolismo de folatos
-                relacionados con enfermedades crónico-degenerativas y defectos
-                al nacimiento. 2.- Defectos del tubo neural 3.- Tamiz Neonatal y
-                Errores innatos del metabolismo.
+                Dra. en Medicina y Maestra en Ciencias. Jefa del Departamento de Genética. Profesora e Investigadora de tiempo completo en la Universidad Autónoma de Nuevo León desde 1982. Áreas de investigación: 1.- Interacción Genético -Nutricional y Metabolismo de Folatos relacionados con Enfermedades Crónico-Degenerativas y Defectos al Nacimiento. 2.- Defectos del Tubo Neural 3.- Tamiz Neonatal y Errores Innatos del Metabolismo.
               </p>
             </div>
           </div>
@@ -52,8 +46,8 @@ function Comite() {
             <img src={ImgPonente} alt="comite" />
           </div>
           <div className="info_box ">
-            <h4 className="name mt-3">Dra. Araceli Arellano</h4>
-            <p className="position">Reumatología Pediátrica</p>
+            <h4 className="name mt-3">Dra. Laura Martinez</h4>
+            <p className="position">Doctora en médicina</p>
           </div>
         </div>
       </div>

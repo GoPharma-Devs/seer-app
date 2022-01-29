@@ -13,23 +13,24 @@ import { Section } from 'react-scroll-section';
 function ListaPonente() {
   return (
     <Section id="colab">
-      <br />
-      <h4>Conoce a nuestros </h4>
-      <h3 style={{ textAlign: "center" }}>COLABORADORES</h3>
-      <br />
-      <br />
-      <section className="profesores" data-aos="fade-up">
-        <ProfesorA data-aos="fade-up" />
-        <ProfesorB data-aos="fade-up" />
-        <ProfesorC data-aos="fade-up" />
-        <ProfesorD data-aos="fade-up" />
-        <ProfesorE data-aos="fade-up" />
-        <ProfesorF data-aos="fade-up" />
-        <ProfesorG data-aos="fade-up" />
-        <ProfesorH data-aos="fade-up" />
-        <ProfesorI data-aos="fade-up" />
-        <ProfesorJ data-aos="fade-up" />
-      </section>
+      <div className="container">
+
+        <h3 className="titulo" style={{ textAlign: "center", fontSize: "2.2rem", }}> Conoce a nuestros  <br />colaboradores</h3>
+        <br />
+        <br />
+        <section className="row" data-aos="fade-up">
+          <ProfesorA />
+          <ProfesorB />
+          <ProfesorC />
+          <ProfesorD />
+          <ProfesorE />
+          <ProfesorF />
+          <ProfesorG />
+          <ProfesorH />
+          <ProfesorI />
+          <ProfesorJ />
+        </section>
+      </div>
     </Section>
   );
 }

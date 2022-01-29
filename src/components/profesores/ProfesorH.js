@@ -25,7 +25,7 @@ function ProfesorA() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Israel Rico</p>
+              <p className="nombre">Dr. Israel Rico</p>
               <p className="titulo-ponente">Médico cirujano </p>
               <p className="trayectoria">
                 Médico cirujano con experiencia en áreas de alta especialidad dentro de la industra farmacéutica. Ha sido revisor de las revistas científicas Global Public Health y Latin American Journal of Clinical Sciences and Medical Technology, así como consultor en más de 40 proyectos de investigación de economía de la salud y epidemiología. Actualmente cursa la maestría en políticas públicas comparadas en la Facultad de Estudios Latinoamericanos en Ciencias Sociales (FLACSO).
@@ -39,16 +39,17 @@ function ProfesorA() {
   return (
     <React.Fragment>
       {" "}
-      <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img src={ImgProfesor} alt="comite" />
-        <div className="info">
-          <h2 className="nombre-ponente">Israel Rico</h2>
-          <p className="titulo-ponente">Médico cirujano </p>
-        </div>
 
-        <div className="nombre-card">
-          <h2 className="nombre-ponente">Israel Rico</h2>
-          <p className="titulo-ponente">Médico cirujano </p>
+
+      <div className="col-lg-3 col-md-6 col-sm-6 ponente-card" onClick={() => setModalShow(true)}>
+        <div className="single-team m-2 ">
+          <div className="team-img">
+            <img src={ImgProfesor} alt="comite" />
+          </div>
+          <div className="info_box ">
+            <h4 className="name mt-3">Dr. Israel Rico</h4>
+            <p className="position">Médico cirujano</p>
+          </div>
         </div>
       </div>
       <MyVerticallyCenteredModal

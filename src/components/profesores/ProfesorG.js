@@ -25,7 +25,7 @@ function ProfesorA() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Rafa Navarro</p>
+              <p className="nombre">Dr. Rafael Navarro</p>
               <p className="titulo-ponente">Médico cirujano </p>
               <p className="trayectoria">
                 Médico Cirujano por la Universidad Anahuac de México, con estudios en Biología Molecular, Sistemas de Salud y Política Pública. Actualmente es director médico en Go Pharma. Ha sido profesor de posgrado en farmacoeconomía e investigación clínica y cuenta con más de 12 años de experiencia en áreas de alta especialidad dentro la industria farmacéutica, en laboratorios transnacionales y nacionales; teniendo a su cargo México, Centroamérica, Perú, Ecuador y El Caribe.
@@ -39,16 +39,17 @@ function ProfesorA() {
   return (
     <React.Fragment>
       {" "}
-      <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img src={ImgProfesor} alt="comite" />
-        <div className="info">
-          <h2 className="nombre-ponente">Rafa Navarro</h2>
-          <p className="titulo-ponente">Médico cirujano </p>
-        </div>
 
-        <div className="nombre-card">
-          <h2 className="nombre-ponente">Rafa Navarro</h2>
-          <p className="titulo-ponente">Médico cirujano </p>
+
+      <div className="col-lg-3 col-md-6 col-sm-6 ponente-card" onClick={() => setModalShow(true)}>
+        <div className="single-team m-2 ">
+          <div className="team-img">
+            <img src={ImgProfesor} alt="comite" />
+          </div>
+          <div className="info_box ">
+            <h4 className="name mt-3">Dr. Rafael Navarro</h4>
+            <p className="position">Alergia Pediátrica</p>
+          </div>
         </div>
       </div>
       <MyVerticallyCenteredModal

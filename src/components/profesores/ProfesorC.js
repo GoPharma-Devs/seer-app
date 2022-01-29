@@ -39,16 +39,17 @@ function ProfesorA() {
   return (
     <React.Fragment>
       {" "}
-      <div className="comite-el" onClick={() => setModalShow(true)}>
-        <img src={ImgProfesor} alt="comite" />
-        <div className="info">
-          <h2 className="nombre-ponente">Jacqueline Tovar</h2>
-          <p className="titulo-ponente">Licenciada en Derecho</p>
-        </div>
 
-        <div className="nombre-card">
-          <h2 className="nombre-ponente">Jacqueline Tovar</h2>
-          <p className="titulo-ponente">Licenciada en Derecho</p>
+
+      <div className="col-lg-3 col-md-6 col-sm-6 ponente-card" onClick={() => setModalShow(true)}>
+        <div className="single-team m-2 ">
+          <div className="team-img">
+            <img src={ImgProfesor} alt="comite" />
+          </div>
+          <div className="info_box ">
+            <h4 className="name mt-3">Jacqueline Tovar</h4>
+            <p className="position">Licenciada en Derecho</p>
+          </div>
         </div>
       </div>
       <MyVerticallyCenteredModal

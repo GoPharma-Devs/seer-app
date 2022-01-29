@@ -24,14 +24,9 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dra. Luz María Sánchez </p>
-              <p className="titulo-ponente">Pediatra y Neonatologa </p>
+              <p className="titulo-ponente">Neonatología </p>
               <p className="trayectoria">
-                Trabajo 28 años en el Hospital de Especialidades No. 25 del IMSS
-                en Monterrey, NL y actualmente se dedica a la medicina privada.
-                Se ha dedicado a las enfermedades raras desde hace más de 15
-                años. Miembro de grupos de expertos nacionales e internacionales
-                en enfermedades raras. Profesora de Pediatria por más de 20 años
-                e investigadora clínica del Sistema Nacional de Investigadores.
+                Neonatóloga, experiencia de 28 años laborando en el Hospital de Especialidades No. 25 del IMSS en Monterrey, NL con experiencia en enfermedades raras desde hace más de 15 años. Miembro de grupos de expertos nacionales e internacionales en enfermedades raras. Profesora de Pediatria por más de 20 años e investigadora clínica del Sistema Nacional de Investigadores. Actualmente ejerce la medicina privada.
               </p>
             </div>
           </div>
@@ -50,8 +45,8 @@ function Comite() {
             <img src={ImgPonente} alt="comite" />
           </div>
           <div className="info_box ">
-            <h4 className="name mt-3">Dra. Araceli Arellano</h4>
-            <p className="position">Reumatología Pediátrica</p>
+            <h4 className="name mt-3">Luz María Sánchez</h4>
+            <p className="position">Neonatología</p>
           </div>
         </div>
       </div>

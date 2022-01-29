@@ -11,10 +11,40 @@
   margin: 0;
 }
 
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  .contenedor-contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .col {
+      p {
+        font-weight: bold;
+        font-size: 4.5rem;
+        color: $app-1;
+        margin-bottom: -8px !important;
+
+        @include phone {
+          font-size: 2rem;
+        }
+      }
+
+      text-align: center;
+      padding: 0.7rem;
+      display: flex;
+      flex-flow: column;
+      color: rgb(7, 10, 54);
+      text-transform: uppercase;
+    }
+  }
+}
 
 body {
-  background-color: #5b7896;
+  background-color: #98c4f3;
   background-image: url('../img/fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,6 +455,7 @@ footer {
   cursor: pointer;
   margin: 2rem auto;
   border: none;
+  max-width: 220px;
 
   &:hover {
     background-color: white !important;

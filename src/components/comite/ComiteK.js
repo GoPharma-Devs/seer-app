@@ -24,19 +24,9 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dr. Jorge Alberto Ramos </p>
-              <p className="titulo-ponente">Médico Cirujano y Partero </p>
+              <p className="titulo-ponente">Cuidados Paliativos Pediátricos </p>
               <p className="trayectoria">
-                Médico Cirujano y Partero, Especialista en Pediatría por la
-                Universidad de Guadalajara, con Maestría en Desarrollo Humanos
-                (ITESO) y Máster Universitario de Cuidados Paliativos en el
-                Enfermo Oncológico (Universidad de Salamanca). Actualmente
-                adscrito al Servicio de Medicina Paliativa y Dolor del Hospital
-                General de Occidente (Secretaría de Salud Jalisco) y Profesor
-                Adjunto de la Especialidad (UDG). Con experiencia en atención
-                clínica, docencia de pregrado y posgrado, investigación y
-                política pública en medicina paliativa y soporte para la calidad
-                de vida para niñas y niños con condiciones limitantes o
-                amenazantes para la vida y a sus familias.
+                Médico Pediatra con Maestría en Desarrollo Humanos (ITESO) y Máster Universitario de Cuidados Paliativos en el Enfermo Oncológico (Universidad de Salamanca). Actualmente adscrito al Servicio de Medicina Paliativa y Dolor del Hospital General de Occidente (Secretaría de Salud Jalisco) y Profesor Adjunto de la Especialidad (UDG).
               </p>
             </div>
           </div>
@@ -55,8 +45,8 @@ function Comite() {
             <img src={ImgPonente} alt="comite" />
           </div>
           <div className="info_box ">
-            <h4 className="name mt-3">Dra. Araceli Arellano</h4>
-            <p className="position">Reumatología Pediátrica</p>
+            <h4 className="name mt-3">Dr. Jorge Alberto Ramos</h4>
+            <p className="position">Cuidados Paliativos Pediátricos</p>
           </div>
         </div>
       </div>

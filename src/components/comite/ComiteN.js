@@ -44,8 +44,8 @@ function Comite() {
             <img src={ImgPonente} alt="comite" />
           </div>
           <div className="info_box ">
-            <h4 className="name mt-3">Dra. Araceli Arellano</h4>
-            <p className="position">Reumatología Pediátrica</p>
+            <h4 className="name mt-3">Dr. Guillermo Wakida</h4>
+            <p className="position">Alergia Pediátrica</p>
           </div>
         </div>
       </div>
