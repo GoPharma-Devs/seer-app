@@ -9,7 +9,7 @@ const Transmision = () => {
     <section className="contenedor">
       <div className="contenedor-transmision">
         <div className="video-contenedor">
-          <button onClick={Logout} className="btn-primario">Cerrar Sesion</button>
+          <button onClick={Logout} className="btn-primario">Cerrar Sesión</button>
           <h1 style={{ textAlign: 'center' }}><strong>SEER 2022</strong> <br /> 17, 18 y 19 de febrero</h1>
 
 
