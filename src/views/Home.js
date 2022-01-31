@@ -47,7 +47,7 @@ function Home() {
       <section className="Home" data-aos="fade-in">
         <div className="row" data-aos="fade-in">
           <Carousel className="Carousel-hero container-fluid"  >
-            <Carousel.Item interval={5000}    >
+            <Carousel.Item interval={4500}    >
               <img
                 className="d-block w-100 slider"
                 src={HeroSlider1}
@@ -67,7 +67,7 @@ function Home() {
 
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={5000}    >
+            <Carousel.Item interval={4500}    >
               <img
                 className="d-block w-100 slider"
                 src={HeroSlider1}
@@ -86,7 +86,7 @@ function Home() {
                 <Link className="btn-primario" to="/registro" >Registro</Link>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={5000}    >
+            <Carousel.Item interval={4500}    >
               <img
                 className="d-block w-100 slider"
                 src={HeroSlider1}
@@ -99,12 +99,12 @@ function Home() {
               />
 
               <Carousel.Caption>
+                <img src={logo} className="App-logo" alt="logo" />
                 <h1>¡No te pierdas el 1er Congreso <br /> internacional SEER 2022!</h1>
 
 
-                <h2>¡Regístrate Ahora!</h2>
 
-                <Link className="btn-primario" to="/congreso" >Saber más</Link>
+                <Link className="btn-primario" to="/registro" >¡Regístrate Ahora!</Link>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
