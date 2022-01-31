@@ -61,7 +61,7 @@ function Home() {
               <Carousel.Caption>
                 <img src={logo} className="App-logo" alt="logo" />
 
-                <h1 className="mt-2">Sociedad De Especialistas <br />en Enferemedades Raras</h1>
+                <h1 className="mt-2">Sociedad De Especialistas <br />en Enfermedades Raras</h1>
                 <p>¡No te pierdas el 1er Congreso Internacional SEER 2022!</p>
                 <Link className="btn-primario" to="/registro" >Regístrate </Link>
 
@@ -81,7 +81,7 @@ function Home() {
 
               <Carousel.Caption>
                 <img src={logo} className="App-logo" alt="logo" />
-                <h1>1er Congreso Internacional</h1>
+                <h1>1er Congreso Internacional SEER</h1>
                 <p>Aparta las fechas 17,18 y 19 de febrero.</p>
                 <Link className="btn-primario" to="/registro" >Registro</Link>
               </Carousel.Caption>
