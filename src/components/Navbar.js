@@ -66,7 +66,7 @@ function Navbar() {
           <FaIcons.FaHome />
         </NavLink>
         <NavLink onClick={homeSection.onClick} selected={homeSection.selected} to="/" className={({ isActive }) => isActive ? 'active-nav' : 'comite-nav'} >
-          <li onClick={closeMobileMenu}>Comité cientifico </li>
+          <li onClick={closeMobileMenu}>Comité científico </li>
         </NavLink>
         <NavLink to="/" onClick={colabSection.onClick} selected={colabSection.selected} className={({ isActive }) => isActive ? 'active-nav' : 'ponente-nav'} >
           <li onClick={closeMobileMenu}> Colaboradores </li>
