@@ -35,7 +35,7 @@ const Clock = ({ deadline }) => {
   }, [deadline]);
 
   return (
-    <div className="container  text-center" data-aos="fade-in">
+    <div className="container mt-5 text-center" data-aos="fade-in">
       <div className="row">
         <h3 className="mt-2 titulo">¡No te pierdas el 1er Congreso<br /> Internacional SEER 2022!</h3>
         <h4>Aparta las fechas 17,18 y 19 de febrero.</h4>
