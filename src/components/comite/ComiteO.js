@@ -24,7 +24,7 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dr. Francisco Zuñiga </p>
-              <p className="titulo-ponente">Genética medica </p>
+              <p className="titulo-ponente">Genética Médica </p>
               <p className="trayectoria">
                 Médico Genetista con Alta Especialidad en Genodermatosis y Neurogenética, actualmente cursando una maestría en Ciencias Médicas y Odontológicas. Miembro de la Asociación Mexicana de Genética Humana. Actualmente es médico Especialista Adscrito al Servicio de Genética del Hospital Regional de Alta Especialidad Ciudad Salud en Tapachula, Chiapas y Práctica privada. Vocal de los Comités de Bioética y Ética en Investigación del Hospital Regional de Alta Especialidad Ciudad Salud.
               </p>
@@ -46,7 +46,7 @@ function Comite() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dr. Francisco Zuñiga</h4>
-            <p className="position">Genética medica</p>
+            <p className="position">Genética Médica</p>
           </div>
         </div>
       </div>

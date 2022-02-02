@@ -26,7 +26,7 @@ function Comite() {
               <p className="nombre">Dra. Luz María Sánchez </p>
               <p className="titulo-ponente">Neonatología </p>
               <p className="trayectoria">
-                Neonatóloga, experiencia de 28 años laborando en el Hospital de Especialidades No. 25 del IMSS en Monterrey, NL con experiencia en enfermedades raras desde hace más de 15 años. Miembro de grupos de expertos nacionales e internacionales en enfermedades raras. Profesora de Pediatria por más de 20 años e investigadora clínica del Sistema Nacional de Investigadores. Actualmente ejerce la medicina privada.
+                Neonatóloga, experiencia de 28 años laborando en el Hospital de Especialidades No. 25 del IMSS en Monterrey, NL con experiencia en enfermedades raras desde hace más de 15 años. Miembro de grupos de expertos nacionales e internacionales en enfermedades raras. Profesora de Pediatría por más de 20 años e investigadora clínica del Sistema Nacional de Investigadores. Actualmente ejerce la medicina privada.
               </p>
             </div>
           </div>

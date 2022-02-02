@@ -32,7 +32,7 @@ function ListaComite() {
           <div className="col-lg-6 col-md-9 mt-5" >
             <div className="section-tittle section-tittle2 mb-50">
               <h2 className="titulo">Conoce al comité científico<br /> que integra SEER</h2>
-              <p>El Comité Científico del SEER esta conformado por médicos expertos en enfermedades de baja prevalencia y con una gran trayectoria en sus áreas.</p>
+              <p>El Comité Científico de SEER esta conformado por médicos expertos en enfermedades de baja prevalencia y con una gran trayectoria en sus áreas.</p>
             </div>
           </div>
 

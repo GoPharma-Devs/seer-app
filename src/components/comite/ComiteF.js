@@ -24,9 +24,9 @@ function ComiteF() {
             />
             <div className="texto">
               <p className="nombre">Dra. Ana Limón </p>
-              <p className="titulo-ponente">Pediatria </p>
+              <p className="titulo-ponente">Pediatría </p>
               <p className="trayectoria">
-                Pediatra con estudios en epidemiología cllínica. Experiencia como Jefa del Área de Pediatría, Presidenta del Comité de Bioética y Directora General en el Hospital Central Sur de Alta Especialidad de Pemex Picacho. Fundadora de la Asociación Mexicana de Pedíatras de Petróleos Mexicanos. Tesorera, vicepresidenta y presidenta de la Academia Mexicana de Pediatría y Presidenta del Consejo Mexicano de Certificación en Pediatria. Actualmente es Secretaria Clinica de la Facultad de Medicina de la UNAM. Cuenta con investigaciones y artículos y libros científicos pediátricos publicados.
+                Pediatra con estudios en epidemiología cllínica. Experiencia como Jefa del Área de Pediatría, Presidenta del Comité de Bioética y Directora General en el Hospital Central Sur de Alta Especialidad de Pemex Picacho. Fundadora de la Asociación Mexicana de Pediatras de Petróleos Mexicanos. Tesorera, vicepresidenta y presidenta de la Academia Mexicana de Pediatría y Presidenta del Consejo Mexicano de Certificación en Pediatría. Actualmente es Secretaria Clínica de la Facultad de Medicina de la UNAM. Cuenta con investigaciones, artículos y libros científicos pediátricos publicados.
               </p>
             </div>
           </div>
@@ -46,7 +46,7 @@ function ComiteF() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dra. Ana Limón</h4>
-            <p className="position">Pediatria</p>
+            <p className="position">Pediatría</p>
           </div>
         </div>
       </div>

@@ -24,9 +24,9 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dr. Juan Manuel Politei </p>
-              <p className="titulo-ponente">Neurologia  </p>
+              <p className="titulo-ponente">Neurología  </p>
               <p className="trayectoria">
-                Médico de Staff en el Laboratorio de Neuroquímica Dr Chamoles. Fundación para el Estudio de las Enfermedades Neurometabólicas (FESEN), Editor de literatura y eventos científicos para Circlepress.,Asesor externo en enfermedades huérfanas para SANOFI/GENZYME; BIOMARIN; RHYTHM; AMICUS/PINT; IDORSIA; AVROBIO; SANGAMO; 4DMT; CELNOVA.
+                Médico de Staff en el Laboratorio de Neuroquímica Dr. Chamoles. Fundación para el Estudio de las Enfermedades Neurometabólicas (FESEN), Editor de literatura y eventos científicos para Circlepress.,Asesor externo en enfermedades huérfanas para SANOFI/GENZYME; BIOMARIN;  RHYTHM; AMICUS/PINT; IDORSIA; AVROBIO; SANGAMO; 4DMT; CELNOVA.
               </p>
             </div>
           </div>
@@ -46,7 +46,7 @@ function Comite() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dr. Juan Manuel Politei</h4>
-            <p className="position">Neurologia </p>
+            <p className="position">Neurología </p>
           </div>
         </div>
       </div>

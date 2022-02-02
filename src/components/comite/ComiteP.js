@@ -25,9 +25,9 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dra. Laura Martinez </p>
-              <p className="titulo-ponente">Doctora en médicina</p>
+              <p className="titulo-ponente">Doctora en Médicina</p>
               <p className="trayectoria">
-                Dra. en Medicina y Maestra en Ciencias. Jefa del Departamento de Genética. Profesora e Investigadora de tiempo completo en la Universidad Autónoma de Nuevo León desde 1982. Áreas de investigación: 1.- Interacción Genético -Nutricional y Metabolismo de Folatos relacionados con Enfermedades Crónico-Degenerativas y Defectos al Nacimiento. 2.- Defectos del Tubo Neural 3.- Tamiz Neonatal y Errores Innatos del Metabolismo.
+                Dra. en Medicina y Maestra en Ciencias. Jefa del Departamento de Genética. Profesora e Investigadora de tiempo completo en la Universidad Autónoma de Nuevo León desde 1982. Áreas de investigación: 1.- Interacción Genético-Nutricional y Metabolismo de Folatos relacionados con Enfermedades Crónico-Degenerativas y Defectos al Nacimiento. 2.- Defectos del Tubo Neural 3.- Tamiz Neonatal y Errores Innatos del Metabolismo.
               </p>
             </div>
           </div>
@@ -47,7 +47,7 @@ function Comite() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dra. Laura Martinez</h4>
-            <p className="position">Doctora en médicina</p>
+            <p className="position">Doctora en Médicina</p>
           </div>
         </div>
       </div>

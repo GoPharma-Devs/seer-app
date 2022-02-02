@@ -146,7 +146,7 @@ function Home() {
               <p>
                 SEER asociación civil constituída por profesionales de la salud y
                 disciplinas que coadyuven con el objeto de promover la educación e
-                investigación sobre las Enfermedades Raras; con el propósito de
+                investigación sobre las Enfermedades Raras con el propósito de
                 mejorar el conocimiento, abordaje y manejo de las mismas para
                 favorecer la calidad de vida de los pacientes.
               </p>

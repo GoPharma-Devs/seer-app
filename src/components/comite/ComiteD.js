@@ -27,7 +27,7 @@ function Comite() {
               <p className="nombre">Dr. Daniel Campos</p>
               <p className="titulo-ponente">Genética Médica</p>
               <p className="trayectoria">
-                Médico Cirujano, especialista en Genética Médica por la Facultad de médicina UANL. Médico Adscrito al Departamento de Genética
+                Médico Cirujano, especialista en Genética Médica por la Facultad de Médicina UANL. Médico Adscrito al Departamento de Genética
                 Titular de la Residencia en Genética Médica
                 Coordinador del Área de Genética Molecular
 

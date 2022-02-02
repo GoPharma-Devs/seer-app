@@ -25,15 +25,15 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dra. Erika Vargas </p>
-              <p className="titulo-ponente">Medica cirujana </p>
+              <p className="titulo-ponente">Médica Cirujana </p>
               <p className="trayectoria">
-                Medica cirujana universidad nacional autónoma de méxico. (1991 -
+                Médica Cirujana Universidad Nacional Autónoma de México (1991 -
                 1997) cp 2581954 pediatría medica issdf secretaria de salud,
                 (1998-2001) reconocimiento universidad nacional autónoma de
                 méxico. Ced. Esp. 3410098. Avalada por el consejo mexicano de
-                certificacion en pediatria numero 100073 medicina interna
+                certificacion en Pediatría numero 100073 medicina interna
                 pediátrica instituto nacional de pediatría. Reconocimiento
-                universidad nacional autónoma de méxico. Núm de registro. Unam
+                Universidad Nacional Autónoma de México Núm de registro. UNAM
                 ca96-03 período 2001-2003 maestría en ciencias de la salud con
                 especialidad en investigación. Especialización en investigación.
                 Instituto Politécnico Nacional, título con registro oficial
@@ -41,9 +41,9 @@ function Comite() {
                 depósito lisosomal (edl) fundación española para el estudio y
                 tratamiento de la enfermedad de gaucher y otras lisosomales
                 (feeteg). Unidad de investigación traslacional. Instituto
-                aragonés de ciencias de la salud. España. (Año 2016 - 2017).
+                Aragonés de Ciencias de la Salud. España. (Año 2016 - 2017).
                 Créditos 5.1 ects. Master en enfermedades metabólicas
-                hereditarias universidad de santiago de compostela, españa,
+                hereditarias Universidad de Santiago de Compostela, España,
                 aceptada septiembre 2020, inicio enero 2021 a la fecha (cursando
                 actualmente). MPS disorders, Fabry, Gaucher Disease Training
                 certification of fymca medical ltd. Panama city, panama. (Mayo
@@ -67,7 +67,7 @@ function Comite() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dra. Erika Vargas</h4>
-            <p className="position">Medica cirujana</p>
+            <p className="position">Médica Cirujana</p>
           </div>
         </div>
       </div>

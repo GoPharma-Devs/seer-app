@@ -25,17 +25,26 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dra. Leticia Munive</p>
-              <p className="titulo-ponente">Neurología pediátrica </p>
+              <p className="titulo-ponente">Neurología Pediátrica </p>
               <p className="trayectoria">
                 Médico Genetista egresada de la UNAM. Actualmente Jefa del
                 Servicio de Genética del Hospital Central Sur de Alta
-                Especialidad PEMEX Profesor titular de Neurología pediátrica de la
-                carrera de Médico Cirujano, Facultad de Medicina UNAM Miembro de
+                Especialidad PEMEX, Profesor titular de Neurología Pediátrica de la
+                carrera de Médico Cirujano en la Facultad de Medicina UNAM, Miembro de
                 la Asociación Mexicana de Genética Humana y del Consejo Mexicano
-                de Especialistas en Genética Humana. Miembro Fundador del Grupo
-                de Estudios al Nacimiento.
+                de Especialistas en Genética Humana.
+                Miembro Fundador del Grupo de Estudios al Nacimiento.
               </p>
             </div>
+
+            <h1>Certificado de Asistencia</h1>
+            <small>Por este medio hacemos de su conocimiento que el nombre que coloque en este formulario es el que aparecerá en su constancia de participación en el congreso.
+              <br />
+              Es necesario finalizar el formulario antes de cerrar
+              de lo contrario no obtendra su asistencia</small>
+            <small>Muchas gracias.</small>
+
+            <p>¡Bienvenidos!</p>
           </div>
         </Modal.Body>
       </Modal>
@@ -53,7 +62,7 @@ function Comite() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dra. Leticia Munive</h4>
-            <p className="position">Neurología pediátrica</p>
+            <p className="position">Neurología Pediátrica</p>
           </div>
         </div>
       </div>

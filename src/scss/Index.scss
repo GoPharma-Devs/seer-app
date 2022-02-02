@@ -1112,3 +1112,17 @@ footer {
     display: block;
   }
 }
+
+.video-contenedor {
+  position: relative;
+  height: auto;
+  width: 1080px;
+
+  @include phone {
+    width: 100% !important;
+  }
+
+  @include tableth {
+    width: 100% !important;
+  }
+}
