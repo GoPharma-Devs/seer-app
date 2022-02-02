@@ -25,8 +25,10 @@ const Transmision = () => {
       </div>
       <button onClick={Logout} className="btn-primario cerrar-sesion">Cerrar Sesión</button>
 
+
     </section>
   )
 }
 
 export default Transmision
+
