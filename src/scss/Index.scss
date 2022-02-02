@@ -1126,3 +1126,28 @@ footer {
     width: 100% !important;
   }
 }
+
+.cerrar-sesion {
+
+  z-index: 11;
+  right: 5%;
+
+}
+
+.contenedor-transmision {
+  align-items: center;
+  justify-content: center;
+
+  .video-contenedor {
+    margin-top: 10vh;
+  }
+
+  .chat-contenedor {
+    margin: 1rem auto;
+    max-width: 1080px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
