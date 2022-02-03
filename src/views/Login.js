@@ -128,7 +128,7 @@ const Login = () => {
       <div className="contenedor-login">
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="username">Correo eletrónico:</label>
+            <label htmlFor="username">Correo electrónico:</label>
             <input
               type="text"
               id="username"

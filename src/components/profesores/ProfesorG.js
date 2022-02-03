@@ -48,7 +48,7 @@ function ProfesorA() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dr. Rafael Navarro</h4>
-            <p className="position">Alergia Pediátrica</p>
+            <p className="position">Médico cirujano</p>
           </div>
         </div>
       </div>
