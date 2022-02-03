@@ -7,7 +7,7 @@ import HeroSlider1 from "../img/fondo-hero-slider.png";
 import HeroSlider1R from "../img/fondo-hero-slider-r.png";
 import ListaComite from "../components/ListaComite";
 import ListaPonente from "../components/ListaPonentes";
-
+import Patrocinadores from "../components/Patrocinadores"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 //import { ExternalLink } from "react-external-link";
@@ -210,8 +210,8 @@ function Home() {
         <h2>PROFESORES</h2>
          */}
           <ListaPonente />
-          {/* <Patrocinadores />
-        <Aliados /> */}
+          <Patrocinadores />
+
         </div>
       </section>
       <section className="contacto-section" data-aos="fade-up">

@@ -28,7 +28,7 @@ function ProfesorA() {
               <p className="nombre">Jacqueline Tovar</p>
               <p className="titulo-ponente">Licenciada en Derecho</p>
               <p className="trayectoria">
-                Líder de la Sociedad Civil desde el año 2008, experiencia de más de 13 años en el ámbito de las enfermedades raras, especialmente en la parte estratégica legislativa, promoción y difusión de la importancia de la detección, diagnóstico y atención del tamiz neonatal ampliado a nivel nacional.
+                Cargo actual Presidenta y Fundadora de Fundación Mexicana de Prevención y Salud Materna "Mujer México" Fundadora de la Iniciativa, Líder de la Sociedad Civil desde el año 2008, experiencia de más de 13 años en el ámbito de las enfermedades raras, especialmente en la parte estratégica legislativa, promoción y difusión de la importancia de la detección, diagnóstico y atención del tamiz neonatal ampliado a nivel nacional.
               </p>
             </div>
           </div>

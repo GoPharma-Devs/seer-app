@@ -44,7 +44,7 @@
 }
 
 body {
-  background-color: #98c4f3;
+  background-color: #abc2e0;
   background-image: url('../img/fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -1149,5 +1149,42 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+
+.patrocinadores {
+  margin-top: 5rem;
+
+}
+
+.patrocinadores-Contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  align-content: center;
+  align-items: center;
+  justify-self: center;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  @include phone {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .patrocinadores-img {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: auto;
+      max-width: 180px;
+    }
   }
 }
