@@ -1165,6 +1165,8 @@ footer {
   align-content: center;
   align-items: center;
   justify-self: center;
+  width: 100%;
+  gap: 1rem;
 
   @include tablet {
     grid-template-columns: 1fr 1fr;
@@ -1177,7 +1179,7 @@ footer {
   }
 
   .patrocinadores-img {
-    padding: 1rem;
+    padding: 1.3rem;
     display: flex;
     align-items: center;
     justify-content: center;
