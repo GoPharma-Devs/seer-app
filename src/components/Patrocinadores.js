@@ -53,9 +53,9 @@ const myArray = [
 ];
 function Patrocinadores() {
   return (
-    <div className="patrocinadores" data-aos="fade-up">
+    <div className="patrocinadores pt-4" data-aos="fade-up">
       <h4 className="text-center">Nuestros</h4>
-      <h3 className="text-center">Patrocinadores</h3>
+      <h3 className="text-center titulo">Patrocinadores</h3>
 
       <div className="patrocinadores-Contenedor">
         {myArray.map((item, index) => (
