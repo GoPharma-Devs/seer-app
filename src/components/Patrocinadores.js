@@ -56,7 +56,7 @@ function Patrocinadores() {
     <>
 
       <div className=" bg-white container-fluid mt-4 pt-5 pb-4" data-aos="fade-up">
-        <h4 className="text-center">Nuestros</h4>
+
         <h3 className="text-center titulo">Patrocinadores</h3>
 
         <div className="patrocinadores">
