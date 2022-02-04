@@ -122,7 +122,7 @@ const Login = () => {
         {errMsg}
       </p>
       <h1>SEER 2022</h1>
-      <h2>17,18 y 19 de febrero</h2>
+      <h2>17, 18 y 19 de febrero</h2>
       <h3>Bienvenid@</h3>
 
       <div className="contenedor-login">

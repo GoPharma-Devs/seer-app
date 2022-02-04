@@ -37,14 +37,7 @@ function Comite() {
               </p>
             </div>
 
-            <h1>Certificado de Asistencia</h1>
-            <small>Por este medio hacemos de su conocimiento que el nombre que coloque en este formulario es el que aparecerá en su constancia de participación en el congreso.
-              <br />
-              Es necesario finalizar el formulario antes de cerrar
-              de lo contrario no obtendra su asistencia</small>
-            <small>Muchas gracias.</small>
 
-            <p>¡Bienvenidos!</p>
           </div>
         </Modal.Body>
       </Modal>

@@ -61,9 +61,9 @@ function Home() {
               <Carousel.Caption>
                 <img src={logo} className="App-logo" alt="logo" />
 
-                <h1 className="mt-2">Sociedad De Especialistas <br />en Enfermedades Raras</h1>
-                <p>¡No te pierdas el 1er Congreso Internacional SEER 2022!</p>
-                <Link className="btn-primario" to="/registro" >Regístrate </Link>
+                <h1 className="mt-2">Sociedad de Especialistas <br />en Enfermedades Raras</h1>
+                <p>¡No te pierdas el 1<sup>er</sup> Congreso Internacional SEER 2022!</p>
+                <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
 
               </Carousel.Caption>
             </Carousel.Item>
@@ -81,9 +81,9 @@ function Home() {
 
               <Carousel.Caption>
                 <img src={logo} className="App-logo" alt="logo" />
-                <h1>1er Congreso Internacional SEER</h1>
+                <h1>1<sup>er</sup> Congreso Internacional SEER</h1>
                 <p>Aparta las fechas 17,18 y 19 de febrero.</p>
-                <Link className="btn-primario" to="/registro" >Registro</Link>
+                <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item interval={4500}    >
@@ -100,11 +100,11 @@ function Home() {
 
               <Carousel.Caption>
                 <img src={logo} className="App-logo" alt="logo" />
-                <h1>¡No te pierdas el 1er Congreso <br /> internacional SEER 2022!</h1>
+                <h1>¡No te pierdas el 1<sup>er</sup> Congreso <br /> Internacional SEER 2022!</h1>
 
 
 
-                <Link className="btn-primario" to="/registro" >¡Regístrate Ahora!</Link>
+                <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
@@ -144,7 +144,7 @@ function Home() {
               <h3 className="titulo">¿QUIÉNES SOMOS?</h3>
 
               <p>
-                SEER asociación civil constituída por profesionales de la salud y
+                SEER es una asociación civil constituída por profesionales de la salud y
                 disciplinas que coadyuven con el objeto de promover la educación e
                 investigación sobre las Enfermedades Raras con el propósito de
                 mejorar el conocimiento, abordaje y manejo de las mismas para
@@ -163,7 +163,7 @@ function Home() {
 
               <p>
                 Sensibilizar y educar a la comunidad médica sobre las enfermedades raras, con base en nuestros cuatro pilares: Concientización,
-                Prevención, Diagnóstico y Manejo. Contribuiyendo a la difusión y
+                Prevención, Diagnóstico y Manejo. Así contribuyendo a la difusión y
                 correcto encause de las enfermedades raras, colaborando con los
                 diferentes actores del ecosistema de salud y la sociedad civil.
               </p>
@@ -178,7 +178,7 @@ function Home() {
               <h3 className="titulo">VISIÓN </h3>
 
               <p>
-                SEER la asociación referente en NorLatam en investigación,
+                SEER, la asociación referente en Norlatam en investigación,
                 diagnóstico, tratamiento y concientización de las enfermedades
                 raras, generando conocimiento en la comunidad médica y la
                 sociedad, provocando un impacto positivo en la atención y calidad
