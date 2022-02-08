@@ -27,13 +27,7 @@ function Comite() {
               <p className="nombre">Dra. Leticia Munive</p>
               <p className="titulo-ponente">Neurología Pediátrica </p>
               <p className="trayectoria">
-                Médico Genetista egresada de la UNAM. Actualmente Jefa del
-                Servicio de Genética del Hospital Central Sur de Alta
-                Especialidad PEMEX, Profesor titular de Neurología Pediátrica de la
-                carrera de Médico Cirujano en la Facultad de Medicina UNAM, Miembro de
-                la Asociación Mexicana de Genética Humana y del Consejo Mexicano
-                de Especialistas en Genética Humana.
-                Miembro Fundador del Grupo de Estudios al Nacimiento.
+                Neuróloga Pediatra con Maestría en Ciencias Médicas y Neuroinmunología. Adscrita al Servicio de Neurología del Instituto Nacional de Pediatría y al servicio de Pediatría del Hospital Médica Sur y Angeles Pedregal. Ex Presidenta de la Sociedad Mexicana de Neurología Pediátrica AC (2015 – 2017). Consultora en enfermedades raras para el Institutito Nacional de Pediatría e ISSSTE. Autora y coautora de diversos capítulos y artículos relacionados a Epilepsia, Trastornos del Neurodesarrollo, Enfermedades Neuroinmunológicas y metabólicas.
               </p>
             </div>
 
