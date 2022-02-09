@@ -63,7 +63,7 @@ function Home() {
                 <img src={logo} className="App-logo" alt="logo" />
 
                 <h1 className="mt-2">Sociedad de Especialistas <br />en Enfermedades Raras</h1>
-                <p className="titulo">¡No te pierdas el 1<sup>er</sup> Congreso Internacional SEER 2022!</p>
+                <img src={logo2} className="App-logo2" alt="logo" />
                 <br />
                 <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
 
@@ -103,7 +103,8 @@ function Home() {
 
               <Carousel.Caption>
                 <img src={logo} className="App-logo" alt="logo" />
-                <h1>¡No te pierdas el 1<sup>er</sup> Congreso <br /> Internacional SEER 2022!</h1>
+                <br />
+                <img src={logo2} className="App-logo2" alt="logo" />
 
 
                 <br />

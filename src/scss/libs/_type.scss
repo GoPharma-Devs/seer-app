@@ -17,7 +17,7 @@
 }
 
 @font-face {
-  font-family: 'DM Mono';
+  font-family: 'DM Mono ';
   src: url('DMMono-LightItalic.woff2') format('woff2'),
     url('DMMono-LightItalic.woff') format('woff');
   font-weight: 300;
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-  font-family: 'DM Mono';
+  font-family: 'DM Mono light';
   src: url('DMMono-Light.woff2') format('woff2'),
     url('DMMono-Light.woff') format('woff');
   font-weight: 300;
@@ -55,7 +55,7 @@
 
 
 p {
-  font-family: 'DM Mono';
+  font-family: 'DM Mono light';
   margin-bottom: 1rem;
 }
 
