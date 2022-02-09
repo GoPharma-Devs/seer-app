@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom"
-import logo from "../img/LOGO_SEER_WHITE_SLOGAN.png";
+import logo from "../img/logo-prin.png";
 import logo2 from "../img/LOGO_SEER_WHITE_2.png";
 import Logo from '../img/logo.svg';
 import HeroSlider1 from "../img/fondo-hero-slider.png";
@@ -61,9 +61,9 @@ function Home() {
               />
               <Carousel.Caption>
                 <img src={logo} className="App-logo" alt="logo" />
-
-                <h1 className="mt-2">Sociedad de Especialistas <br />en Enfermedades Raras</h1>
+                <br />
                 <img src={logo2} className="App-logo2" alt="logo" />
+                <p className="titulo">Reserva las fechas 17,18 y 19 de febrero.</p>
                 <br />
                 <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
 
@@ -84,7 +84,7 @@ function Home() {
               <Carousel.Caption>
                 <img src={logo2} className="App-logo2" alt="logo" />
 
-                <p className="titulo">Aparta las fechas 17,18 y 19 de febrero.</p>
+                <p className="titulo">Reserva las fechas 17,18 y 19 de febrero.</p>
                 <br />
                 <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
               </Carousel.Caption>
@@ -105,8 +105,9 @@ function Home() {
                 <img src={logo} className="App-logo" alt="logo" />
                 <br />
                 <img src={logo2} className="App-logo2" alt="logo" />
+                <br />
 
-
+                <p className="titulo">Reserva las fechas 17,18 y 19 de febrero.</p>
                 <br />
                 <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
               </Carousel.Caption>
