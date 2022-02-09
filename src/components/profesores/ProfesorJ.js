@@ -47,8 +47,8 @@ function ProfesorA() {
             <img src={ImgProfesor} alt="comite" />
           </div>
           <div className="info_box ">
-            <h4 className="name mt-3">Dr. Armando Partida</h4>
-            <p className="position">Alergia Pediátrica</p>
+            <h4 className="name mt-3">Alejandro Rey</h4>
+            <p className="position">Medico Cirujano</p>
           </div>
         </div>
       </div>
