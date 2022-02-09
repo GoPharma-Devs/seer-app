@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import axios from "../api/axios";
 import { Modal, Button } from "react-bootstrap";
 import Transmision from "./Transmision";
+import logo3 from "../img/LOGO_SEER_WHITE_3.png";
 const LOGIN_URL = "/login";
 
 const Login = () => {
@@ -121,8 +122,8 @@ const Login = () => {
       >
         {errMsg}
       </p>
-      <h1>SEER 2022</h1>
-      <h2>17, 18 y 19 de febrero</h2>
+      <img src={logo3} className="App-logo2" alt="logo" />
+      <h3>17, 18 y 19 de febrero</h3>
       <h3>Bienvenid@</h3>
 
       <div className="contenedor-login">

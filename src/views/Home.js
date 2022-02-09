@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom"
 import logo from "../img/LOGO_SEER_WHITE_SLOGAN.png";
+import logo2 from "../img/LOGO_SEER_WHITE_2.png";
 import Logo from '../img/logo.svg';
 import HeroSlider1 from "../img/fondo-hero-slider.png";
 import HeroSlider1R from "../img/fondo-hero-slider-r.png";
@@ -62,7 +63,8 @@ function Home() {
                 <img src={logo} className="App-logo" alt="logo" />
 
                 <h1 className="mt-2">Sociedad de Especialistas <br />en Enfermedades Raras</h1>
-                <p>¡No te pierdas el 1<sup>er</sup> Congreso Internacional SEER 2022!</p>
+                <p className="titulo">¡No te pierdas el 1<sup>er</sup> Congreso Internacional SEER 2022!</p>
+                <br />
                 <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
 
               </Carousel.Caption>
@@ -80,9 +82,10 @@ function Home() {
               />
 
               <Carousel.Caption>
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1>1<sup>er</sup> Congreso Internacional SEER</h1>
-                <p>Aparta las fechas 17,18 y 19 de febrero.</p>
+                <img src={logo2} className="App-logo2" alt="logo" />
+
+                <p className="titulo">Aparta las fechas 17,18 y 19 de febrero.</p>
+                <br />
                 <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
               </Carousel.Caption>
             </Carousel.Item>
@@ -103,7 +106,7 @@ function Home() {
                 <h1>¡No te pierdas el 1<sup>er</sup> Congreso <br /> Internacional SEER 2022!</h1>
 
 
-
+                <br />
                 <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
               </Carousel.Caption>
             </Carousel.Item>
@@ -216,11 +219,11 @@ function Home() {
       </section>
       <section className="contacto-section" data-aos="fade-up">
         <br />
-        <h2>
-          Cualquier duda, comentario o interés por favor comunicarse al correo:
-        </h2>
+        <h3>
+          Cualquier duda, comentario o interés <br /> por favor comunicarse al correo:
+        </h3>
 
-        <a href="mailto:comunicacion@seerlatam.org">
+        <a className="titulo" href="mailto:comunicacion@seerlatam.org">
           comunicacion@seerlatam.org
         </a>
       </section>

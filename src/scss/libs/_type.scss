@@ -1,46 +1,111 @@
+@font-face {
+  font-family: 'DM Mono';
+  src: url('DMMono-Regular.woff2') format('woff2'),
+    url('DMMono-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('DMMono-MediumItalic.woff2') format('woff2'),
+    url('DMMono-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('DMMono-LightItalic.woff2') format('woff2'),
+    url('DMMono-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('DMMono-Medium.woff2') format('woff2'),
+    url('DMMono-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('DMMono-Light.woff2') format('woff2'),
+    url('DMMono-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('DMMono-Italic.woff2') format('woff2'),
+    url('DMMono-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
 p {
   margin-bottom: 1rem;
-  margin: auto;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
-  margin: 1rem 0.2rem;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600 !important;
+h5,
+.titulo,
+span,
+small,
+label,
+input {
+
+  font-family: 'DM Mono';
+  font-weight: normal;
+  font-style: normal;
   line-height: 1.3;
+  margin-bottom: 0.5rem !important;
+  margin-top: 0.5rem;
 }
 
 h1 {
   line-height: 1.2;
   margin-top: 0;
   font-size: 2.3rem;
-  max-width: 550px;
   font-weight: bolder !important;
+
 }
 
 h2 {
   font-weight: bold !important;
-  margin: auto !important;
-  text-align: center !important;
-  font-size: 2.441rem !important;
+
+  text-align: left !important;
+  font-size: 2.21rem !important;
 }
 
 h3 {
   font-weight: bolder;
 
-  font-size: 1.953rem;
+  font-size: 1.6rem;
 }
 
 h4 {
-  font-size: 1.6rem !important;
+  font-size: 1rem !important;
+  margin-bottom: 0.2rem !important;
 }
 
 h5 {
   font-size: 1.25rem;
+
 }
 
 small,
@@ -93,4 +158,10 @@ small,
 
 ul.temas>li {
   text-align: left !important;
+}
+
+input {
+  min-height: 1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
 }

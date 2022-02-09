@@ -45,7 +45,7 @@ function Comite() {
             <img src={ImgPonente} alt="comite" />
           </div>
           <div className="info_box ">
-            <h4 className="name mt-3">Luz María Sánchez</h4>
+            <h4 className="name mt-3">Dra. Luz María Sánchez</h4>
             <p className="position">Neonatología</p>
           </div>
         </div>

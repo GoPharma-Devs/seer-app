@@ -2,6 +2,7 @@
 
 @import "libs/mixins";
 @import "libs/variables";
+@import "libs/type";
 @import "./components/Navbar";
 
 
@@ -44,7 +45,7 @@
 }
 
 body {
-  background-color: #abc2e0;
+  background-color: #8997A8;
   background-image: url('../img/fondo.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,6 +133,14 @@ h2.nombre-ponente {
 
 .App-logo {
   max-width: 220px
+}
+
+.App-logo2 {
+  max-width: 50vw;
+
+  @include phone {
+    max-width: 70vw;
+  }
 }
 
 .Home {
@@ -453,7 +462,7 @@ footer {
   border-radius: 1rem;
   text-decoration: none !important;
   cursor: pointer;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   border: none;
   max-width: 220px;
 
@@ -467,10 +476,11 @@ footer {
 
 .contenedor-login {
   background-color: #fff;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   border-radius: 1rem;
   max-width: 530px;
-  margin-top: 2rem;
+
+  min-width: 390px;
 }
 
 .form-group {
@@ -634,6 +644,16 @@ footer {
 
 .carousel-caption {
   bottom: 25vh !important;
+
+  p,
+  .titulo {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .btn-primario {
+    margin-top: 2rem;
+  }
 
   @include tablet {
     bottom: 45vh !important

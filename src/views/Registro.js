@@ -53,8 +53,7 @@ function Registro() {
             <form onSubmit={handleSubmit} action="https://seerlatam.us1.list-manage.com/subscribe/post?u=37892f6a3c3f15b6ba401af59&amp;id=76d3e57aa3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate " target="_blank" >
               <div id="mc_embed_signup_scroll">
 
-                <h1>SEER 2022</h1>
-                <p>Calidad de Vida al alcance de nuestras manos</p>
+
                 <h2>Registro</h2>
 
 
