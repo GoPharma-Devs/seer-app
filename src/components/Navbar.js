@@ -6,10 +6,7 @@ import Logo from '../img/logo.svg';
 //import Logo from "../../img/logo.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import {
-
-  useScrollSection,
-} from 'react-scroll-section';
+import { useScrollSection } from 'react-scroll-section';
 
 
 function Navbar() {

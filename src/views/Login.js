@@ -123,10 +123,10 @@ const Login = () => {
         {errMsg}
       </p>
       <img src={logo3} className="App-logo2" alt="logo" />
-      <h3>17, 18 y 19 de febrero</h3>
-      <h3>Bienvenid@</h3>
+      <h3 className="text-center">17, 18 y 19 de febrero <br /> Bienvenid@</h3>
 
-      <div className="contenedor-login">
+
+      <div className="contenedor-login mt-4">
         <form className="form" onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="username">Correo electrónico:</label>

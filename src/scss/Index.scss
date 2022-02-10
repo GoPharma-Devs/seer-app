@@ -12,6 +12,8 @@
   margin: 0;
 }
 
+
+
 .contador {
   display: flex;
   align-items: center;
@@ -475,6 +477,60 @@ footer {
 
 }
 
+.btn-secundario {
+  background-color: #fff !important;
+  color: $app-1 !important;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  text-decoration: none !important;
+  cursor: pointer;
+  margin: 1.5rem auto;
+  border: none;
+  max-width: 220px;
+  font-family: 'DM Mono';
+
+  &:hover {
+    background-color: $app-1 !important;
+    color: white !important;
+    box-shadow: 0 3px 6px rgba(192, 201, 255, 0.16), 0 3px 6px rgba(252, 252, 252, 0.23);
+  }
+
+}
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  70% {
+    transform: translateY(0%);
+  }
+
+  80% {
+    transform: translateY(-25%);
+  }
+
+  90% {
+    transform: translateY(0%);
+  }
+
+  95% {
+    transform: translateY(-15%);
+  }
+
+  97% {
+    transform: translateY(0%);
+  }
+
+  99% {
+    transform: translateY(-6%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .contenedor-login {
   background-color: #fff;
   padding: 1.5rem 1rem;
@@ -712,6 +768,8 @@ footer {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+
+
 }
 
 #mc_embed_signup input[type=checkbox] {
@@ -791,6 +849,8 @@ footer {
   width: 100%;
   padding: 8px 0;
   text-indent: 2%;
+
+  text-transform: lowercase !important;
 }
 
 #mc_embed_signup .mc-field-group select {

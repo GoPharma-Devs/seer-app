@@ -115,7 +115,9 @@ h5 {
 }
 
 small,
-.text_small {
+.text_small,
+span {
+  text-transform: lowercase !important;
   font-size: 0.7rem;
 }
 
@@ -170,6 +172,10 @@ input {
   min-height: 1rem;
   padding: 0.5rem;
   box-sizing: border-box;
+
+  &::placeholder {
+    text-transform: lowercase !important;
+  }
 }
 
 a.titulo {

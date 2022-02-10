@@ -3,9 +3,13 @@ import React, { useEffect } from 'react';
 import { Link } from "react-router-dom"
 import logo from "../img/logo-prin.png";
 import logo2 from "../img/LOGO_SEER_WHITE_2.png";
+
+
 import Logo from '../img/logo.svg';
 import HeroSlider1 from "../img/fondo-hero-slider.png";
 import HeroSlider1R from "../img/fondo-hero-slider-r.png";
+import HeroSliderAzul from "../img/azul.png"
+import HeroSliderAzulR from "../img/azul-r.png"
 import ListaComite from "../components/ListaComite";
 import ListaPonente from "../components/ListaPonentes";
 import Patrocinadores from "../components/Patrocinadores"
@@ -17,7 +21,7 @@ import {
   FaChevronDown,
 } from "react-icons/fa";
 import {
-  useScrollSection,
+  useScrollSection
 } from 'react-scroll-section';
 import CountDown from "../components/CountDown";
 
@@ -27,6 +31,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import Carousel from 'react-bootstrap/Carousel'
 function Home() {
+
 
   const homeSection = useScrollSection('comite');
   useEffect(() => {
@@ -69,26 +74,26 @@ function Home() {
 
               </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item interval={4500}    >
               <img
                 className="d-block w-100 slider"
-                src={HeroSlider1}
+                src={HeroSliderAzul}
                 alt="First slide"
               />
               <img
                 className="d-block  h-75 w-100 slider-r"
-                src={HeroSlider1R}
+                src={HeroSliderAzulR}
                 alt="First slide responsive"
               />
 
               <Carousel.Caption>
                 <img src={logo2} className="App-logo2" alt="logo" />
-
-                <p className="titulo">Reserva las fechas 17,18 y 19 de febrero.</p>
                 <br />
-                <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
+                <Link className="btn-secundario" to="/" onClick={homeSection.onClick} >¡Conoce a nuestro comité!</Link>
               </Carousel.Caption>
             </Carousel.Item>
+
             <Carousel.Item interval={4500}    >
               <img
                 className="d-block w-100 slider"
@@ -102,10 +107,7 @@ function Home() {
               />
 
               <Carousel.Caption>
-                <img src={logo} className="App-logo" alt="logo" />
-                <br />
                 <img src={logo2} className="App-logo2" alt="logo" />
-                <br />
 
                 <p className="titulo">Reserva las fechas 17,18 y 19 de febrero.</p>
                 <br />
@@ -119,8 +121,8 @@ function Home() {
 
       <div className="row mt-5" data-aos="fade-up" >
         <div className="container-fluid mt-5 mb-5 text-center">
-          <p>Conoce más de este gran proyecto</p>
-          <FaChevronDown className="bounce-2" onClick={homeSection.onClick} selected={homeSection.selected} />
+          <p className="mt-3">Conoce más de este gran proyecto</p>
+          <FaChevronDown className="bounce" onClick={homeSection.onClick} selected={homeSection.selected} />
         </div>
 
         <div className="row mt-5 mb-5  justify-content-center" data-aos="fade-up">

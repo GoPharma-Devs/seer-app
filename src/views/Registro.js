@@ -81,12 +81,12 @@ function Registro() {
                 <div className="mc-field-group">
                   <label htmlFor="mce-EMAIL">Email  <span className="asterisk">*</span>
                   </label>
-                  <input onChange={e => setForm({ ...form, EMAIL: e.target.value })} type="email" defaultValue="usuario@correo" name="EMAIL" className="required email" id="mce-EMAIL" />
+                  <input onChange={e => setForm({ ...form, EMAIL: e.target.value })} type="email" defaultValue="usuario@correo.ltd" name="EMAIL" className="required email" id="mce-EMAIL" />
                 </div>
                 <div className="mc-field-group size1of2">
                   <label htmlFor="mce-PHONE">Teléfono  <span className="asterisk">*</span>
                   </label>
-                  <input onChange={e => setForm({ ...form, PHONE: e.target.value })} type="text" name="PHONE" className="required" defaultValue="Teléfono" id="mce-PHONE" />
+                  <input onChange={e => setForm({ ...form, PHONE: e.target.value })} type="text" name="PHONE" className="required" id="mce-PHONE" />
                 </div>
                 <div className="mc-field-group">
                   <label htmlFor="mce-MMERGE7">Cédula Profesional o Universidad y matricula <span className="asterisk">*</span>
