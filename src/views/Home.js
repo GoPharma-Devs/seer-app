@@ -68,7 +68,7 @@ function Home() {
                 <img src={logo} className="App-logo" alt="logo" />
                 <br />
                 <img src={logo2} className="App-logo2" alt="logo" />
-                <p className="titulo">Reserva las fechas 17,18 y 19 de febrero.</p>
+                <p className="titulo">Reserva las fechas 17, 18 y 19 de febrero.</p>
                 <br />
                 <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
 
@@ -109,7 +109,7 @@ function Home() {
               <Carousel.Caption>
                 <img src={logo2} className="App-logo2" alt="logo" />
 
-                <p className="titulo">Reserva las fechas 17,18 y 19 de febrero.</p>
+                <p className="titulo">Reserva las fechas 17, 18 y 19 de febrero.</p>
                 <br />
                 <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
               </Carousel.Caption>
