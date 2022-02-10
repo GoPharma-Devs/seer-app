@@ -12,13 +12,13 @@ import ProfesorJ from "./profesores/ProfesorJ";
 import { Section } from 'react-scroll-section';
 function ListaPonente() {
   return (
-    <Section id="colab">
+    <Section id="colab ">
       <div className="container">
 
-        <h3 className="titulo" style={{ textAlign: "center", fontSize: "2.2rem", }}> Conoce a nuestros  <br />colaboradores</h3>
+        <h3 className="titulo" style={{ marginTop: "10vh", textAlign: "center", fontSize: "2.2rem", }}> Conoce a nuestros  <br />colaboradores</h3>
         <br />
         <br />
-        <section className="row" data-aos="fade-up">
+        <section className="row mb-4" data-aos="fade-up">
           <ProfesorA />
           <ProfesorB />
           <ProfesorC />
