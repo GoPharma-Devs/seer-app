@@ -134,7 +134,11 @@ h2.nombre-ponente {
 }
 
 .App-logo {
-  max-width: 220px
+  max-width: 220px;
+
+  @include phone {
+    max-width: 110px;
+  }
 }
 
 .App-logo2 {
@@ -142,6 +146,7 @@ h2.nombre-ponente {
 
   @include phone {
     max-width: 70vw;
+    margin-bottom: 10vh;
   }
 }
 
@@ -486,7 +491,7 @@ footer {
   cursor: pointer;
   margin: 1.5rem auto;
   border: none;
-  max-width: 220px;
+
   font-family: 'DM Mono';
 
   &:hover {
@@ -495,6 +500,9 @@ footer {
     box-shadow: 0 3px 6px rgba(192, 201, 255, 0.16), 0 3px 6px rgba(252, 252, 252, 0.23);
   }
 
+  @include phone {
+    font-size: 11px;
+  }
 }
 
 .bounce {
@@ -717,7 +725,7 @@ footer {
   }
 
   @include phone {
-    bottom: 15vh !important
+    bottom: 35vh !important
   }
 }
 
@@ -1031,7 +1039,7 @@ footer {
   }
 
   @include phone {
-    margin-top: 5vh;
+    margin-top: 10vh;
     display: block !important;
     box-sizing: border-box !important;
     max-height: 90vh;
@@ -1043,7 +1051,15 @@ footer {
 .carousel-control-next,
 .carousel-control-prev {
   width: 7% !important;
-  color: $app-1 !important;
+
+}
+
+.carousel-control-next {
+  right: 3%;
+}
+
+.carousel-control-prev {
+  left: 3%;
 }
 
 .carousel-nav-icon {
