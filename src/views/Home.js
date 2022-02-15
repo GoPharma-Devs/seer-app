@@ -30,6 +30,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 
 import Carousel from 'react-bootstrap/Carousel'
+import Aliados from '../components/Alidos';
 function Home() {
 
 
@@ -218,6 +219,7 @@ function Home() {
          */}
           <ListaPonente />
           <Patrocinadores />
+          <Aliados />
 
         </div>
       </section>

@@ -1250,13 +1250,15 @@ footer {
 }
 
 
-.patrocinadores {
+.patrocinadores,
+.aliados {
   margin-top: 3rem;
   margin-bottom: 3rem;
 
 }
 
-.patrocinadores-Contenedor {
+.patrocinadores-Contenedor,
+.aliados-Contenedor {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -1278,7 +1280,8 @@ footer {
     grid-template-rows: auto;
   }
 
-  .patrocinadores-img {
+  .patrocinadores-img,
+  .aliados-img {
     padding: 1rem;
     display: flex;
     align-items: center;
