@@ -48,7 +48,7 @@ const myArray = [
   {
     name: "Sanofi",
     id: 10,
-    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/Patrocinadores%2Fsanofi.png?alt=media&token=edf44dbd-3ffe-4a69-8302-a728e32b93f9"
+    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/Patrocinadores%2Fsanofi_nuevo.png?alt=media&token=0c8c34f8-5600-4f6e-8ce8-6a8eb920579b"
   },
   {
     name: "Takeda",
