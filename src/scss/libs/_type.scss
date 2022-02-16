@@ -71,8 +71,7 @@ h5,
 .titulo,
 span,
 small,
-label,
-input {
+label {
 
   font-family: 'DM Mono';
   font-weight: normal;
@@ -173,9 +172,7 @@ input {
   padding: 0.5rem;
   box-sizing: border-box;
 
-  &::placeholder {
-    text-transform: lowercase !important;
-  }
+
 }
 
 a.titulo {
