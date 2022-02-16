@@ -9,7 +9,7 @@ import Registro from "../views/Registro";
 import ErrorPage from "../views/ErrorPage";
 import Exito from "../views/Exito";
 import Convocatoria from "../views/Convocatoria";
-
+import Agenda from "../components/Agenda";
 import {
   ScrollingProvider,
 
@@ -49,6 +49,7 @@ const GeneralRoutes = () => {
             )}
             <Route path="/exito" element={<Exito />} />
             <Route path="/convocatoria" element={<Convocatoria />} />
+            <Route path="/agenda" element={<Agenda />} />
             <Route path="*" element={<ErrorPage />} />
 
           </Routes>

@@ -28,7 +28,7 @@ import CountDown from "../components/CountDown";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-
+import Agenda from '../components/Agenda'
 import Carousel from 'react-bootstrap/Carousel'
 import Aliados from '../components/Alidos';
 function Home() {
@@ -212,6 +212,7 @@ function Home() {
 
           <ListaComite />
           <CountDown />
+          <Agenda />
           {/* <Agendas />
         <br />
         <h4>Conoce a nuestros </h4>
