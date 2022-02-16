@@ -8,6 +8,8 @@ import Registro from "../views/Registro";
 //import Transmision from "../views/Transmision";
 import ErrorPage from "../views/ErrorPage";
 import Exito from "../views/Exito";
+import Convocatoria from "../views/Convocatoria";
+
 import {
   ScrollingProvider,
 
@@ -46,6 +48,7 @@ const GeneralRoutes = () => {
 
             )}
             <Route path="/exito" element={<Exito />} />
+            <Route path="/convocatoria" element={<Convocatoria />} />
             <Route path="*" element={<ErrorPage />} />
 
           </Routes>
