@@ -26,7 +26,7 @@ function ProfesorA() {
             />
             <div className="texto">
               <p className="nombre">Adriana Ochoa</p>
-              <p className="titulo-ponente">Licenciada </p>
+              <p className="titulo-ponente">Licenciada en Trabajo Social </p>
               <p className="trayectoria">
                 Secretaria del Comité de ética en Investigación, coordinadora del Programa de Diagnóstico Presintomático para enfermedad de Huntington y ataxias espinocerebelosas, perteneciente al Sistema Nacional de Investigadores Nivel 1. Participación en múltiples reuniones científicas nacionales e internacionales. Autora y coautora de diversos artículos publicados en revistas nacionales e internacionales. Áreas de investigación: Bioética, cuidados paliativos, sociogenética, diagnóstico presintomático, discriminación y estigma en enfermedades neurodegenerativas, entre otras.
               </p>
@@ -48,7 +48,7 @@ function ProfesorA() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Adriana Ochoa</h4>
-            <p className="position">Licenciada</p>
+            <p className="position">Licenciada en Trabajo Social</p>
           </div>
         </div>
       </div>

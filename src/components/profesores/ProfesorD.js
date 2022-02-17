@@ -26,7 +26,7 @@ function ProfesorA() {
             />
             <div className="texto">
               <p className="nombre">Griselda Rodriguez</p>
-              <p className="titulo-ponente">Trabajadora Social</p>
+              <p className="titulo-ponente">Licenciada en Trabajo Social</p>
               <p className="trayectoria">
                 Lic. en Trabajo Social, egresada de la UNAM. Diplomada en Intervención Social con Familias, Atención Temprana por la Asociación Pro Parálisis Cerebral APAC, Atención integral de las personas con discapacidad y de la tercera edad, Atención al cuidador y en Cuidadores Primarios. Miembro fundador y Delegada en la Ciudad de México de la Organización Mexicana de Enfermedades Raras (OMER). Colaboradora con la Asociación Nacional de Síndrome de Williams, A.C. Colaboradora de la Federación Mexicana de Enfermedades Raras (FEMEXER) y de la Asociación Mexicana de Enfermedades Raras (AMAER).
               </p>
@@ -48,7 +48,7 @@ function ProfesorA() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Griselda Rodriguez</h4>
-            <p className="position">Licenciada en Derecho
+            <p className="position">Licenciada en Trabajo Social
             </p>
           </div>
         </div>

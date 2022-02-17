@@ -154,7 +154,7 @@ function Home() {
               <p>
                 SEER es una asociación civil constituída por profesionales de la salud y
                 disciplinas que coadyuven con el objeto de promover la educación e
-                investigación sobre las Enfermedades Raras con el propósito de
+                investigación sobre las Enfermedades Raras; Con el propósito de
                 mejorar el conocimiento, abordaje y manejo de las mismas para
                 favorecer la calidad de vida de los pacientes.
               </p>
@@ -170,8 +170,8 @@ function Home() {
               <h3 className="titulo">MISIÓN</h3>
 
               <p>
-                Sensibilizar y educar a la comunidad médica sobre las enfermedades raras, con base en nuestros cuatro pilares: Concientización,
-                Prevención, Diagnóstico y Manejo. Así contribuyendo a la difusión y
+                Sensibilizar y educar a la comunidad médica sobre las enfermedades raras, con base en nuestros cuatro pilares: <strong>Concientización,
+                  Prevención, Diagnóstico y Manejo.</strong> Así contribuyendo a la difusión y
                 correcto encause de las enfermedades raras, colaborando con los
                 diferentes actores del ecosistema de salud y la sociedad civil.
               </p>
@@ -186,8 +186,8 @@ function Home() {
               <h3 className="titulo">VISIÓN </h3>
 
               <p>
-                SEER, la asociación referente en Norlatam en investigación,
-                diagnóstico, tratamiento y concientización de las enfermedades
+                SEER, la asociación referente en Norlatam en <strong>investigación,
+                  diagnóstico, tratamiento y concientización</strong> de las enfermedades
                 raras, generando conocimiento en la comunidad médica y la
                 sociedad, provocando un impacto positivo en la atención y calidad
                 de vida de los pacientes.

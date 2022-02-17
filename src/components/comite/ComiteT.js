@@ -25,7 +25,7 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dr. Armando Partida</p>
-              <p className="titulo-ponente">Alergia Pediátrica</p>
+              <p className="titulo-ponente">Pediatría-Alergia e Inmunología Clínica</p>
               <p className="trayectoria">
                 Médico Pediatra con subespecialidad en Alergia e Inmunología Clínica, Alta Especialidad en Inmunodeficiencias Primarias, Maestría en Ciencias Médicas, y Maestría en Terapia Génica y Celular. Miembro colaborador de la Fundación Mexicana para Niñas y Niños con Inmunodeficiencias Primarias (FUMENI, A.C.) Socio Fundador de Healthy Kids Polanco S.C. y actualmente Gerente Médico de Alergia y Alta Especialidad para GSK México.
               </p>
@@ -47,7 +47,7 @@ function Comite() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dr. Armando Partida</h4>
-            <p className="position">Alergia Pediátrica</p>
+            <p className="position">Pediatría-Alergia e Inmunología Clínica</p>
           </div>
         </div>
       </div>

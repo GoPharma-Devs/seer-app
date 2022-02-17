@@ -24,7 +24,7 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dr. Jorge Alberto Ramos </p>
-              <p className="titulo-ponente">Cuidados Paliativos Pediátricos </p>
+              <p className="titulo-ponente">Pediatría y Cuidados Paliativos Pediátricos  </p>
               <p className="trayectoria">
                 Médico Pediatra con Maestría en Desarrollo Humano (ITESO) y Máster Universitario de Cuidados Paliativos en el Enfermo Oncológico (Universidad de Salamanca). Actualmente adscrito al Servicio de Medicina Paliativa y Dolor del Hospital General de Occidente (Secretaría de Salud Jalisco) y Profesor Adjunto de la Especialidad (UDG).
               </p>
@@ -46,7 +46,7 @@ function Comite() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dr. Jorge Alberto Ramos</h4>
-            <p className="position">Cuidados Paliativos Pediátricos</p>
+            <p className="position">Pediatría y Cuidados Paliativos Pediátricos</p>
           </div>
         </div>
       </div>

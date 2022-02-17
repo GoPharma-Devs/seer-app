@@ -26,9 +26,9 @@ function ProfesorA() {
             />
             <div className="texto">
               <p className="nombre">Kenji Lopez</p>
-              <p className="titulo-ponente">Abogado</p>
+              <p className="titulo-ponente">Licenciado en Derecho con Maestría en Políticas Públicas</p>
               <p className="trayectoria">
-                Abogado con Maestría en Políticas Públicas en el Tecnológico de Monterrey. Con estudios en las Universidades de Harvard, Georgetown y en la Universidad Pontificia Comillas, en España. Director para Organismos Especializados de la ONU. Miembro de la Barra Mexicana de Abogados. En 2017, formalizó la constitución de la organización Cáncer Warriors de México.
+                Licenciado en Derecho con Maestría en Políticas Públicas en el Tecnológico de Monterrey. Con estudios en las Universidades de Harvard, Georgetown y en la Universidad Pontificia Comillas, en España. Director para Organismos Especializados de la ONU. Miembro de la Barra Mexicana de Abogados. En 2017, formalizó la constitución de la organización Cáncer Warriors de México.
               </p>
             </div>
           </div>

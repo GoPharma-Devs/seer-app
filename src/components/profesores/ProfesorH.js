@@ -26,7 +26,7 @@ function ProfesorA() {
             />
             <div className="texto">
               <p className="nombre">Dr. Israel Rico</p>
-              <p className="titulo-ponente">Médico cirujano </p>
+              <p className="titulo-ponente">Médico cirujano -Consultor en proyectos de investigación Economía de la Salud y Epidemiología</p>
               <p className="trayectoria">
                 Médico cirujano con experiencia en áreas de alta especialidad dentro de la industra farmacéutica. Ha sido revisor de las revistas científicas Global Public Health y Latin American Journal of Clinical Sciences and Medical Technology, así como consultor en más de 40 proyectos de investigación de economía de la salud y epidemiología. Actualmente cursa la maestría en políticas públicas comparadas en la Facultad de Estudios Latinoamericanos en Ciencias Sociales (FLACSO).
               </p>
@@ -48,7 +48,7 @@ function ProfesorA() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dr. Israel Rico</h4>
-            <p className="position">Médico cirujano</p>
+            <p className="position">Médico cirujano - Consultor en proyectos de investigación Economía de la Salud y Epidemiología</p>
           </div>
         </div>
       </div>

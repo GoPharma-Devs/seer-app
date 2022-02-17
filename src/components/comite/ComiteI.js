@@ -25,9 +25,9 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dra. Andrea Navarrete </p>
-              <p className="titulo-ponente">Pediatra </p>
+              <p className="titulo-ponente">Pediatría</p>
               <p className="trayectoria">
-                Pediatra con diplomados en Epidemiología Clínica. Experiencia como Médica adscrita de la Unidad de Terapia Intermedia e Intensiva Neonatal del Hospital General Regional “Carlos Mac Gregor Sánchez Navarro” y profesora universitaria de la carrera de medicina. Actualmente es Técnico Académico Asociado “C” de la Facultad de Medicina de la UNAM y cuenta con investigaciones y artículos científicos pediátricos publicados, ha participado como ponente en diversos eventos nacionales e internacionales.
+                Pediatríacon diplomados en Epidemiología Clínica. Experiencia como Médica adscrita de la Unidad de Terapia Intermedia e Intensiva Neonatal del Hospital General Regional “Carlos Mac Gregor Sánchez Navarro” y profesora universitaria de la carrera de medicina. Actualmente es Técnico Académico Asociado “C” de la Facultad de Medicina de la UNAM y cuenta con investigaciones y artículos científicos pediátricos publicados, ha participado como ponente en diversos eventos nacionales e internacionales.
               </p>
             </div>
           </div>
