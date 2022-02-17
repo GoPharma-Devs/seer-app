@@ -26,7 +26,7 @@ function ProfesorA() {
             />
             <div className="texto">
               <p className="nombre">Dr. Rafael Navarro</p>
-              <p className="titulo-ponente">Médico Cirujano-Sistemas de salud y Politica Pública </p>
+              <p className="titulo-ponente">Médico Cirujano- Sistemas de salud y Política Pública </p>
               <p className="trayectoria">
                 Médico Cirujano por la Universidad Anahuac de México, con estudios en Biología Molecular, Sistemas de Salud y Política Pública. Actualmente es director médico en Go Pharma. Ha sido profesor de posgrado en farmacoeconomía e investigación clínica y cuenta con más de 12 años de experiencia en áreas de alta especialidad dentro la industria farmacéutica, en laboratorios transnacionales y nacionales; teniendo a su cargo México, Centroamérica, Perú, Ecuador y El Caribe.
               </p>
@@ -48,7 +48,7 @@ function ProfesorA() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dr. Rafael Navarro</h4>
-            <p className="position">Médico Cirujano-Sistemas de salud y Politica Pública </p>
+            <p className="position">Médico Cirujano-Sistemas de salud y Política Pública </p>
           </div>
         </div>
       </div>

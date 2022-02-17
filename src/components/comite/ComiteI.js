@@ -47,7 +47,7 @@ function Comite() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dra. Andrea Navarrete</h4>
-            <p className="position">Pediatra</p>
+            <p className="position">Pediatría</p>
           </div>
         </div>
       </div>
