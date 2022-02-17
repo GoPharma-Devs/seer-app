@@ -38,7 +38,7 @@ const myArray = [
   {
     name: "UCEM",
     id: 6,
-    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2FRecurso%201.png?alt=media&token=f6dd690c-aac8-4573-9dd0-97b98e5505d6"
+    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2Fucem-q.png?alt=media&token=74b159f6-6902-45b9-b43a-04190ef1ed92"
   }
 ];
 function Aliados() {

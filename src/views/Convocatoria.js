@@ -15,7 +15,7 @@ function Convocatoria() {
         <p>El Caso Clínico debe SEER sometido por un Médico con cédula profesional que radique en la República Mexicana. </p>
         <p>El Caso Clínico debe haber sido estudiado clínicamente, con estudios de laboratorio y gabinete; que aún no cuente con diagnóstico de certeza. Se deberá enviar resumen detallado siguiendo la NOM-004-SSA3-2012, Del expediente clínico.  </p>
         <p>El paciente deberá ser de limitados recursos económicos para poder sufragar el gasto del monto de la prueba. Por lo que, el paciente será sometido a un estudio socioeconómico evaluado por profesionistas miembros de SEER. </p>
-        <p>Los casos recibidos serán valorados por 2 de las Comisiones dentro de SEER: Comisión de Financiamiento a Estudios de Laboratorio y Gabinete (para Pacientes) y Comisión de Financiamiento a Proyectos de Investigación. Así como por alguno de los Médicos Genetista, Miembros de SEER (Habrá casos en los que el exoma no sea el estudio adecuado, por lo que esta valoración es muy importante) </p>
+        <p>Los casos recibidos serán valorados por 2 de las Comisiones dentro de SEER: Comisión de Financiamiento a Estudios de Laboratorio y Gabinete (para Pacientes) y Comisión de Financiamiento a Proyectos de Investigación. Así como por alguno de los Médicos Genetistas, Miembros de SEER (Habrá casos en los que el exoma no sea el estudio adecuado, por lo que esta valoración es muy importante) </p>
         <p>Ningún Miembro del Comité Científico, ni Colaboradores SEER; puede participar en la presente convocatoria.  </p>
         <p>Solo se recibirá un caso por Médico.</p>
         <p>Los Aspirantes deben cumplir al 100% los requisitos de la presente convocatoria. </p>
