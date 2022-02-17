@@ -25,9 +25,9 @@ function Comite() {
             />
             <div className="texto">
               <p className="nombre">Dra. Erika Vargas </p>
-              <p className="titulo-ponente">Médicina Interna Pediatríca </p>
+              <p className="titulo-ponente">Medicina Interna Pediátrica </p>
               <p className="trayectoria">
-                Médicina Interna Pediatríca, Universidad Nacional Autónoma de México (1991 -
+                Medicina Interna Pediatríca, Universidad Nacional Autónoma de México (1991 -
                 1997) cp 2581954 pediatría medica issdf secretaria de salud,
                 (1998-2001) reconocimiento universidad nacional autónoma de
                 méxico. Ced. Esp. 3410098. Avalada por el consejo mexicano de
@@ -67,7 +67,7 @@ function Comite() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dra. Erika Vargas</h4>
-            <p className="position">Médicina Interna Pediatríca</p>
+            <p className="position">Medicina Interna Pediátrica</p>
           </div>
         </div>
       </div>
