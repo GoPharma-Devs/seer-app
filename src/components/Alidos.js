@@ -31,13 +31,18 @@ const myArray = [
     img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2FlogoCompletoHungtinton.png?alt=media&token=fc5ed0d9-2281-4a99-b75a-ee59ec316cec"
   },
   {
-    name: "ppudm",
+    name: "omer",
     id: 5,
+    img: "https://firebasestorage.googleapis.com/v0/b/go-pharma-website.appspot.com/o/partners%2FOmer.png?alt=media&token=ccbed7f3-b183-4d90-b209-74d3a08d12c3"
+  },
+  {
+    name: "ppudm",
+    id: 6,
     img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2FPPuDM.png?alt=media&token=f6f9462c-9334-4e74-8193-83ace51080ef"
   },
   {
     name: "UCEM",
-    id: 6,
+    id: "7",
     img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2Fucem-q.png?alt=media&token=74b159f6-6902-45b9-b43a-04190ef1ed92"
   }
 ];
