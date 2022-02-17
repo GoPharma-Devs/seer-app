@@ -26,7 +26,7 @@ function ProfesorA() {
             />
             <div className="texto">
               <p className="nombre">Dimitri Proffé</p>
-              <p className="titulo-ponente">Licenciado</p>
+              <p className="titulo-ponente">Fundador del proyecto "Explore for Huntington"</p>
               <p className="trayectoria">
                 Viajes internacionales – 2 años Viajes y voluntariado junio 2018 Marzo 2020, Middle office Cash Management (Departamento de Banca Electrónica y Liquidez) BNP Paribas París (Francia) Diciembre de 2015 – Mayo de 2018, Embajador de servicio al cliente Marquise Group-Aeropuerto Internacional de Vancouver Vancouver (Canadá – Columbia Británica) Enero de 2015 – Julio de 2015, Representante de Servicio al Cliente BNP Paribas Le Touquet Paris-Plage (Francia) - Septiembre de 2012 – septiembre de 2013, Asesor de recepción Crédit Agricole · Dunkerque (Francia) ·
               </p>
@@ -48,7 +48,7 @@ function ProfesorA() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Dimitri Proffé</h4>
-            <p className="position">Licenciado</p>
+            <p className="position">Fundador del proyecto "Explore for Huntington" </p>
           </div>
         </div>
       </div>

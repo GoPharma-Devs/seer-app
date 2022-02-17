@@ -26,7 +26,7 @@ function ProfesorA() {
             />
             <div className="texto">
               <p className="nombre">Alejandro Rey</p>
-              <p className="titulo-ponente">Medico Cirujano</p>
+              <p className="titulo-ponente">Médico Genetista</p>
               <p className="trayectoria">
                 Médico Genetista, con experiencia en asuntos médicos, consultoría, bioética, farmacología, diagnóstico y apoyo clínico para pacientes con enfermedades raras. Enfoque orientado hacia las ciencias sociales al contar con una Licenciatura en Ciencias Religiosas y una Maestría en Estudios Judaicos. Actualmente Enlace Médico Científico para Ultragenyx Pharmaceutical Latinoamérica y Director Médico del centro de desarrollo infantil Desarrollo Dinámico.
               </p>
@@ -48,7 +48,7 @@ function ProfesorA() {
           </div>
           <div className="info_box ">
             <h4 className="name mt-3">Alejandro Rey</h4>
-            <p className="position">Medico Cirujano</p>
+            <p className="position">Médico Genetista</p>
           </div>
         </div>
       </div>
