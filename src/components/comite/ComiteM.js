@@ -24,30 +24,10 @@ function Comite() {
               alt="imagen-comite a"
             />
             <div className="texto">
-              <p className="nombre">Dra. Erika Vargas </p>
+              <p className="nombre">Dra. Ericka Vargas Quevedo </p>
               <p className="titulo-ponente">Medicina Interna Pediátrica </p>
               <p className="trayectoria">
-                Medicina Interna Pediátrica, Universidad Nacional Autónoma de México (1991 -
-                1997) cp 2581954 pediatría medica issdf secretaria de salud,
-                (1998-2001) reconocimiento universidad nacional autónoma de
-                méxico. Ced. Esp. 3410098. Avalada por el consejo mexicano de
-                certificacion en Pediatría numero 100073 medicina interna
-                pediátrica instituto nacional de pediatría. Reconocimiento
-                Universidad Nacional Autónoma de México Núm de registro. UNAM
-                ca96-03 período 2001-2003 maestría en ciencias de la salud con
-                especialidad en investigación. Especialización en investigación.
-                Instituto Politécnico Nacional, título con registro oficial
-                b141239 cédula (año 2014 - 2016). Master en enfermedades de
-                depósito lisosomal (edl) fundación española para el estudio y
-                tratamiento de la enfermedad de gaucher y otras lisosomales
-                (feeteg). Unidad de investigación traslacional. Instituto
-                Aragonés de Ciencias de la Salud. España. (Año 2016 - 2017).
-                Créditos 5.1 ects. Master en enfermedades metabólicas
-                hereditarias Universidad de Santiago de Compostela, España,
-                aceptada septiembre 2020, inicio enero 2021 a la fecha (cursando
-                actualmente). MPS disorders, Fabry, Gaucher Disease Training
-                certification of fymca medical ltd. Panama city, panama. (Mayo
-                2017 a enero 2019).
+                Médico Internista Pediatra, con Maestria en Ciencias de la Salud y Especializacion en Investigación (IPN), Master Universitario en Enfermedades Metabolicas Hereditarias (Universidad de Santiago de Compostela), Master en Enfermedades de Depósito Lisosomal (Unidad de Investigación Traslacional, Instituto Aragonés de Ciencias de la Salud, Madrid, España), MPS, Fabry y Gaucher Disease (Training Certification of FYMCA Medical ltd, Panamá City (2017-2019). Profesor adjunto de la especialidad (UNAM), participa cómo speaker en diversos eventos científicos, cuenta con diversas publicaciones nacionales e internacionales y diversos capítulos en el area. Actualmente adscrita al servicio de Medicina Interna Pediatrica del CMN 20 de Noviembre, Fundadora y Coordinadora de la Clínica de Errores Innatos del Metabolismo Pediátricos y Enfermedades Raras a nivel nacional.
               </p>
             </div>
           </div>
@@ -66,7 +46,7 @@ function Comite() {
             <img src={ImgPonente} alt="comite" />
           </div>
           <div className="info_box ">
-            <h4 className="name mt-3">Dra. Erika Vargas</h4>
+            <h4 className="name mt-3">Dra. Ericka Vargas Quevedo</h4>
             <p className="position">Medicina Interna Pediátrica</p>
           </div>
         </div>

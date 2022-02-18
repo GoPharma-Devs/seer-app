@@ -101,13 +101,14 @@ const Login = () => {
             setUser({ ...user, form: true });
             setSecondDay('true');
             localStorage.setItem("user", JSON.stringify({ ...user, form: true }));
+            localStorage.setItem("secondDay", 'true');
           }}
         />
       </div>
     </section>
   }
 
-  if (user?.form && secondDay){
+  if (user?.form && secondDay == 'true'){
     return (
       <section className="section transmision-contenedor">
         <Transmision />

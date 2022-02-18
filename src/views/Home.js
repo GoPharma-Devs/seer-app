@@ -23,7 +23,7 @@ import {
 import {
   useScrollSection
 } from 'react-scroll-section';
-import CountDown from "../components/CountDown";
+//import CountDown from "../components/CountDown";
 
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -211,7 +211,7 @@ function Home() {
 
 
           <ListaComite />
-          <CountDown />
+
           <Agenda />
           {/* <Agendas />
         <br />
