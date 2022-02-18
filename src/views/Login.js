@@ -108,7 +108,7 @@ const Login = () => {
     </section>
   }
 
-  if (user?.form && secondDay == 'true'){
+  if (user?.form && secondDay === 'true') {
     return (
       <section className="section transmision-contenedor">
         <Transmision />
