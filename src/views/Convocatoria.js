@@ -1,10 +1,11 @@
 import React from 'react'
-
+import ImagenBanner from "../img/Logo-banner-hero.png"
 function Convocatoria() {
   return (
     <section className="convocatoria bg-white">
-      <div className="contenedor-convocatoria p-4">
-        <h1>Convocatoria</h1>
+      <div className="contenedor-convocatoria p-4 ">
+        <img className='mx-auto' src={ImagenBanner} alt="" />
+        <h1 className='mt-5'>Convocatoria</h1>
 
         <p>Con el objetivo de SEER la asociación referente en NorLatam en investigación, diagnóstico, tratamiento y concientización de las enfermedades raras, generando conocimiento en la comunidad médica y la sociedad, provocando un impacto positivo en la atención y calidad de vida de los pacientes. La Sociedad de Especialistas de Enfermedades Raras (SEER) convoca a todos los médicos que radiquen en la República Mexicana que cuenten con cédula profesional a enviar un caso de difícil diagnóstico, con la intención de brindarles SIN COSTO el Estudio Molecular.  </p>
         <p>La Convocatoria está limitada a TRES EXOMAS, por lo que los casos deberán cumplir con ciertas características, el día limité para recepción de casos será el 25 de febrero 24:00 hrs CdMx. El resultado se anunciará el 25 de marzo del 2022 por las redes oficiales de SEER.  </p>

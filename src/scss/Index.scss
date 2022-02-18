@@ -73,6 +73,10 @@ h2.nombre-ponente {
 
   .contenedor-convocatoria {
     max-width: 1080px;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    text-align: left;
   }
 }
 

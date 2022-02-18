@@ -6,10 +6,13 @@ import logo2 from "../img/LOGO_SEER_WHITE_2.png";
 
 
 import Logo from '../img/logo.svg';
+import LogoA from '../img/Logotipo-SEER_AZUL_GO_PHARMA.png';
 import HeroSlider1 from "../img/fondo-hero-slider.png";
 import HeroSlider1R from "../img/fondo-hero-slider-r.png";
 import HeroSliderAzul from "../img/azul.png"
 import HeroSliderAzulR from "../img/azul-r.png"
+import BannerConvo from "../img/CARRUSEL_CONVOCATORIA.png"
+import BannerConvoR from "../img/CARRUSEL_CONOCATORIA_MOVIL.png"
 import ListaComite from "../components/ListaComite";
 import ListaPonente from "../components/ListaPonentes";
 import Patrocinadores from "../components/Patrocinadores"
@@ -54,6 +57,28 @@ function Home() {
       <section className="Home" data-aos="fade-in">
         <div className="row" data-aos="fade-in">
           <Carousel className="Carousel-hero container-fluid"  >
+            <Carousel.Item interval={4500}    >
+              <img
+                className="d-block w-100 slider"
+                src={BannerConvo}
+                alt="First slide"
+              />
+              <img
+                className="d-block  h-75 w-100 slider-r"
+                src={BannerConvoR}
+                alt="First slide responsive"
+              />
+              <Carousel.Caption>
+                <img src={LogoA} className="App-logo" alt="logo" />
+                <br />
+                <br />
+
+                <p className="titulo-b">Conoce la convocatoria.</p>
+                <br />
+                <Link className="btn-primario" to="/convocatoria" >¡Conoce más!</Link>
+
+              </Carousel.Caption>
+            </Carousel.Item>
             <Carousel.Item interval={4500}    >
               <img
                 className="d-block w-100 slider"
