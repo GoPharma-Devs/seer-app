@@ -4,7 +4,7 @@ function Convocatoria() {
   return (
     <section className="convocatoria bg-white">
       <div className="contenedor-convocatoria p-4 ">
-        <img className='mx-auto' src={ImagenBanner} alt="" />
+        <img className='mx-auto img-fluid' src={ImagenBanner} alt="" />
         <h1 className='mt-5'>Convocatoria</h1>
 
         <p>Con el objetivo de SEER la asociación referente en NorLatam en investigación, diagnóstico, tratamiento y concientización de las enfermedades raras, generando conocimiento en la comunidad médica y la sociedad, provocando un impacto positivo en la atención y calidad de vida de los pacientes. La Sociedad de Especialistas de Enfermedades Raras (SEER) convoca a todos los médicos que radiquen en la República Mexicana que cuenten con cédula profesional a enviar un caso de difícil diagnóstico, con la intención de brindarles SIN COSTO el Estudio Molecular.  </p>
