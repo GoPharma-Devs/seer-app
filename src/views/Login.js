@@ -13,6 +13,7 @@ const Login = () => {
   const userRef = useRef();
   const errRef = useRef();
   const [user, setUser] = useState(localStorage.getItem('user') != null ? JSON.parse(localStorage.getItem('user')) : null);
+  const [secondDay, setSecondDay] = useState(localStorage.getItem('secondDay'));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
@@ -98,6 +99,7 @@ const Login = () => {
           onHide={() => {
             setModalShow(false);
             setUser({ ...user, form: true });
+            setSecondDay('true');
             localStorage.setItem("user", JSON.stringify({ ...user, form: true }));
           }}
         />
@@ -105,7 +107,7 @@ const Login = () => {
     </section>
   }
 
-  if (user?.form) {
+  if (user?.form && secondDay){
     return (
       <section className="section transmision-contenedor">
         <Transmision />
