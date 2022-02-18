@@ -2,7 +2,7 @@ import React from 'react'
 import ImagenBanner from "../img/Logo-banner-hero.png"
 function Convocatoria() {
   return (
-    <section className="convocatoria bg-white">
+    <section className="convocatoria bg-white" data-aos="fade-up">
       <div className="contenedor-convocatoria p-4 ">
         <img className='mx-auto img-fluid' src={ImagenBanner} alt="" />
         <h1 className='mt-5'>Convocatoria</h1>
