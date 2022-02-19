@@ -13,7 +13,7 @@ const Login = () => {
   const userRef = useRef();
   const errRef = useRef();
   const [user, setUser] = useState(localStorage.getItem('user') != null ? JSON.parse(localStorage.getItem('user')) : null);
-  const [secondDay, setSecondDay] = useState(localStorage.getItem('secondDay'));
+  const [thirdDay, setthirdDay] = useState(localStorage.getItem('thirdDay'));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
@@ -99,16 +99,16 @@ const Login = () => {
           onHide={() => {
             setModalShow(false);
             setUser({ ...user, form: true });
-            setSecondDay('true');
+            setthirdDay('true');
             localStorage.setItem("user", JSON.stringify({ ...user, form: true }));
-            localStorage.setItem("secondDay", 'true');
+            localStorage.setItem("thirdDay", 'true');
           }}
         />
       </div>
     </section>
   }
 
-  if (user?.form && secondDay == 'true'){
+  if (user?.form && thirdDay === 'true'){
     return (
       <section className="section transmision-contenedor">
         <Transmision />
