@@ -76,20 +76,20 @@ function Navbar() {
         >
           <li> Registro</li>
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/agenda"
           className={({ isActive }) => isActive ? 'active-nav' : ''}
           onClick={closeMobileMenu}
         >
           <li > Agenda </li>
-        </NavLink>
+        </NavLink> */}
 
         <NavLink
-          to="/congreso"
+          to="/convocatoria"
           className={({ isActive }) => isActive ? 'active-nav' : ''}
           onClick={closeMobileMenu}
         >
-          <li className="btn-primario"> Congreso </li>
+          <li className="btn-primario"> Convocatoria </li>
         </NavLink>
 
       </ul>

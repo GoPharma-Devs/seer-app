@@ -31,7 +31,7 @@ import {
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import Agenda from '../components/Agenda'
+//import Agenda from '../components/Agenda'
 import Carousel from 'react-bootstrap/Carousel'
 import Aliados from '../components/Alidos';
 function Home() {
@@ -60,6 +60,27 @@ function Home() {
             <Carousel.Item interval={4500}    >
               <img
                 className="d-block w-100 slider"
+                src={HeroSlider1}
+                alt="First slide"
+              />
+              <img
+                className="d-block  h-75 w-100 slider-r"
+                src={HeroSlider1R}
+                alt="First slide responsive"
+              />
+              <Carousel.Caption>
+                <img src={logo} className="App-logo" alt="logo" />
+                <br />
+                <img src={logo2} className="App-logo2" alt="logo" />
+                <p className="titulo">¡Muchas gracias por formar parte de esta gran experiencia!</p>
+                <br />
+
+
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={4500}    >
+              <img
+                className="d-block w-100 slider"
                 src={BannerConvo}
                 alt="First slide"
               />
@@ -79,27 +100,7 @@ function Home() {
 
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={4500}    >
-              <img
-                className="d-block w-100 slider"
-                src={HeroSlider1}
-                alt="First slide"
-              />
-              <img
-                className="d-block  h-75 w-100 slider-r"
-                src={HeroSlider1R}
-                alt="First slide responsive"
-              />
-              <Carousel.Caption>
-                <img src={logo} className="App-logo" alt="logo" />
-                <br />
-                <img src={logo2} className="App-logo2" alt="logo" />
-                <p className="titulo">Reserva las fechas 17, 18 y 19 de febrero.</p>
-                <br />
-                <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
 
-              </Carousel.Caption>
-            </Carousel.Item>
 
             <Carousel.Item interval={4500}    >
               <img
@@ -116,30 +117,12 @@ function Home() {
               <Carousel.Caption>
                 <img src={logo2} className="App-logo2" alt="logo" />
                 <br />
+                <br />
                 <Link className="btn-secundario" to="/" onClick={homeSection.onClick} >¡Conoce a nuestro comité!</Link>
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item interval={4500}    >
-              <img
-                className="d-block w-100 slider"
-                src={HeroSlider1}
-                alt="First slide"
-              />
-              <img
-                className="d-block  h-75 w-100 slider-r"
-                src={HeroSlider1R}
-                alt="First slide responsive"
-              />
 
-              <Carousel.Caption>
-                <img src={logo2} className="App-logo2" alt="logo" />
-
-                <p className="titulo">Reserva las fechas 17, 18 y 19 de febrero.</p>
-                <br />
-                <Link className="btn-primario" to="/registro" >¡Regístrate!</Link>
-              </Carousel.Caption>
-            </Carousel.Item>
           </Carousel>
         </div>
 
@@ -237,12 +220,8 @@ function Home() {
 
           <ListaComite />
 
-          <Agenda />
-          {/* <Agendas />
-        <br />
-        <h4>Conoce a nuestros </h4>
-        <h2>PROFESORES</h2>
-         */}
+          {/* <Agenda /> */}
+
           <ListaPonente />
           <Patrocinadores />
           <Aliados />
