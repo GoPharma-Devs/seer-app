@@ -81,6 +81,7 @@ function Registro() {
                   <label htmlFor="mce-EMAIL">Email  <span className="asterisk">*</span>
                   </label>
                   <input onChange={e => setForm({ ...form, EMAIL: e.target.value })} type="email" defaultValue="usuario@correo.ltd" name="EMAIL" className="required email" id="mce-EMAIL" />
+                  <small>usar solo caracteres en minúscula</small>
                 </div>
                 <div className="mc-field-group size1of2">
                   <label htmlFor="mce-PHONE">Teléfono  <span className="asterisk">*</span>

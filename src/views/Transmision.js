@@ -12,9 +12,13 @@ const Transmision = () => {
 
 
 
-        <div style={{ padding: "54.25% 0 0 0", position: 'relative' }}><iframe src="https://vimeo.com/event/1857588/embed/757df308ba" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} title="SEER_Bienvenidos_Loop.mp4" /></div>
 
-        {/* <div style={{padding: '56.25% 0 0 0', position: 'relative'}}><iframe src="https://vimeo.com/event/1855019/embed/5845e89727" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%'}} /></div> */}
+        <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe title="dia tres" src="https://vimeo.com/event/1864307/embed" frameBorder={0} allow="autoplay; fullscreen; picture-in-picture" allowFullScreen style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} /></div>
+
+
+
+
+
 
 
       </div>

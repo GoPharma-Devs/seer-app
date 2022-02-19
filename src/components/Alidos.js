@@ -3,13 +3,18 @@ const myArray = [
   {
     name: "AMFQ",
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2FRecurso%201.png?alt=media&token=34cb4b1d-14ae-4cd0-aac1-3e57195c89e5"
+    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2FAsociacio%CC%81n%20Mexicana%20de%20Fibrosis%20Quistica.png?alt=media&token=9f22aa2b-3955-45e4-8706-f1716cfb866c"
   },
   {
     name: "AMFQ",
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2FAsociacio%CC%81n%20Mexicana%20de%20Fibrosis%20Quistica.png?alt=media&token=9f22aa2b-3955-45e4-8706-f1716cfb866c"
+    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/logo%402x_test.png?alt=media&token=d53e0c85-ecf1-452c-a2f0-239826a65172"
+  }, {
+    name: "AMFQ",
+    id: 0,
+    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2FRecurso%201.png?alt=media&token=34cb4b1d-14ae-4cd0-aac1-3e57195c89e5"
   },
+
   {
     name: "Fermex",
     id: 1,
