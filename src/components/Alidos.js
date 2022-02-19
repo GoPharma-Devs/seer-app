@@ -1,6 +1,11 @@
 import React from "react";
 const myArray = [
   {
+    name: "AMaeh",
+    id: 0,
+    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2Famaeh.png?alt=media&token=0f49f665-d789-46e5-952b-82cf37ca5a93"
+  },
+  {
     name: "AMFQ",
     id: 0,
     img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2FAsociacio%CC%81n%20Mexicana%20de%20Fibrosis%20Quistica.png?alt=media&token=9f22aa2b-3955-45e4-8706-f1716cfb866c"
@@ -13,6 +18,11 @@ const myArray = [
     name: "AMFQ",
     id: 0,
     img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2FRecurso%201.png?alt=media&token=34cb4b1d-14ae-4cd0-aac1-3e57195c89e5"
+  },
+  {
+    name: "disautonomia",
+    id: 0,
+    img: "https://firebasestorage.googleapis.com/v0/b/seer-7d680.appspot.com/o/aliados%2Fdisautonomia.jpg?alt=media&token=b2d6afd0-7e39-4856-bb63-fb2bb525b16a"
   },
 
   {
