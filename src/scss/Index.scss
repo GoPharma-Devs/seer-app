@@ -5,7 +5,12 @@
 @import "libs/type";
 @import "./components/Navbar";
 
+.mainWindow {
+  padding-top: 15vh;
+  max-width: 1080px;
+  margin: 0 auto;
 
+}
 
 * {
   padding: 0;

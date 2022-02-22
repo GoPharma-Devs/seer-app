@@ -10,6 +10,7 @@ import ErrorPage from "../views/ErrorPage";
 import Exito from "../views/Exito";
 import Convocatoria from "../views/Convocatoria";
 import Agenda from "../components/Agenda";
+import Chat from "../views/Chat";
 import {
   ScrollingProvider,
 
@@ -42,6 +43,10 @@ const GeneralRoutes = () => {
                 <Route
                   path="/registro"
                   element={<Registro authenticate={() => setUser(true)} />}
+                />
+                <Route
+                  path="/chat-history"
+                  element={<Chat authenticate={() => setUser(true)} />}
                 />
 
               </>

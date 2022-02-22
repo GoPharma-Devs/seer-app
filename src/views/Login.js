@@ -4,8 +4,9 @@ import AuthContext from "../context/AuthProvider";
 import { Link } from "react-router-dom";
 import axios from "../api/axios";
 import { Modal, Button } from "react-bootstrap";
-import Transmision from "./Transmision";
+//import Transmision from "./Transmision";
 import logo3 from "../img/LOGO_SEER_WHITE_3.png";
+import Chat from "./Chat";
 const LOGIN_URL = "/login";
 
 const Login = () => {
@@ -108,10 +109,10 @@ const Login = () => {
     </section>
   }
 
-  if (user?.form && thirdDay === 'true'){
+  if (user?.form && thirdDay === 'true') {
     return (
       <section className="section transmision-contenedor">
-        <Transmision />
+        <Chat />
       </section>
     )
 
