@@ -36,7 +36,7 @@ const GeneralRoutes = () => {
               <>
                 <Route path="/" element={<Home />} />
                 <Route
-                  path="/congreso"
+                  path="/congreso-2022"
                   element={<Login authenticate={() => setUser(true)} />}
                 />
 
