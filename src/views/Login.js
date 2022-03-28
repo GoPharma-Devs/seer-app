@@ -13,20 +13,21 @@ const Login = () => {
   const { setAuth } = useContext(AuthContext);
   const userRef = useRef();
   const errRef = useRef();
-  const [user, setUser] = useState(localStorage.getItem('user') != null ? JSON.parse(localStorage.getItem('user')) : null);
-  const [thirdDay, setthirdDay] = useState(localStorage.getItem('thirdDay'));
+  const [user, setUser] = useState(
+    localStorage.getItem("user") != null
+      ? JSON.parse(localStorage.getItem("user"))
+      : null
+  );
+  const [thirdDay, setthirdDay] = useState(localStorage.getItem("thirdDay"));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
   const [modalShow, setModalShow] = useState(true);
 
-
   useEffect(() => {
     // userRef.current.focus();
   }, []);
-
-
 
   useEffect(() => {
     setErrMsg("");
@@ -44,7 +45,6 @@ const Login = () => {
         }
       );
       console.log("Session Iniciada");
-
 
       setAuth({ user });
       setEmail("");
@@ -77,11 +77,15 @@ const Login = () => {
         centered
       >
         <Modal.Body>
-
-          <iframe id="JotFormIFrame-212609285006048" title="SEER 2022"
-            onLoad={window.parent.scrollTo(0, 0)} src="https://form.jotform.com/212609285006048" frameBorder={0} style={{ minWidth: '100%', height: 539, border: 'none' }} scrolling="no">
-          </iframe>
-
+          <iframe
+            id="JotFormIFrame-212609285006048"
+            title="SEER 2022"
+            onLoad={window.parent.scrollTo(0, 0)}
+            src="https://form.jotform.com/212609285006048"
+            frameBorder={0}
+            style={{ minWidth: "100%", height: 539, border: "none" }}
+            scrolling="no"
+          ></iframe>
         </Modal.Body>
         <Modal.Footer>
           <Button className="btn btn-danger" onClick={props.onHide}>
@@ -93,87 +97,89 @@ const Login = () => {
   }
 
   if (success && !user?.form) {
-    return <section className="section transmision-contenedor Hero">
-      <div className="contenedor">
-        <MyVerticallyCenteredModal
-          show={modalShow}
-          onHide={() => {
-            setModalShow(false);
-            setUser({ ...user, form: true });
-            setthirdDay('true');
-            localStorage.setItem("user", JSON.stringify({ ...user, form: true }));
-            localStorage.setItem("thirdDay", 'true');
-          }}
-        />
-      </div>
-    </section>
+    return (
+      <section className="section transmision-contenedor Hero">
+        <div className="contenedor">
+          <MyVerticallyCenteredModal
+            show={modalShow}
+            onHide={() => {
+              setModalShow(false);
+              setUser({ ...user, form: true });
+              setthirdDay("true");
+              localStorage.setItem(
+                "user",
+                JSON.stringify({ ...user, form: true })
+              );
+              localStorage.setItem("thirdDay", "true");
+            }}
+          />
+        </div>
+      </section>
+    );
   }
 
-  if (user?.form && thirdDay === 'true') {
+  if (user?.form && thirdDay === "true") {
     return (
       <section className="section transmision-contenedor">
         <Chat />
       </section>
-    )
-
+    );
   }
-  return (<section>
-    <div className="contenedor">
-      <p
-        ref={errRef}
-        className={errMsg ? "errmsg" : "offscreen"}
-        aria-live="assertive"
-      >
-        {errMsg}
-      </p>
-      <img src={logo3} className="App-logo2" alt="logo" />
-      <h3 className="text-center">17, 18 y 19 de febrero <br /> Bienvenid@</h3>
+  return (
+    <section>
+      <div className="contenedor">
+        <p
+          ref={errRef}
+          className={errMsg ? "errmsg" : "offscreen"}
+          aria-live="assertive"
+        >
+          {errMsg}
+        </p>
+        <img src={logo3} className="App-logo2" alt="logo" />
+        <h3 className="text-center">
+          17, 18 y 19 de febrero <br /> Bienvenid@
+        </h3>
 
+        <div className="contenedor-login mt-4">
+          <form className="form" onSubmit={handleSubmit}>
+            <div className="form-group">
+              <label htmlFor="username">Correo electrónico:</label>
+              <input
+                type="text"
+                id="username"
+                ref={userRef}
+                autoComplete="off"
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                required
+              />
+            </div>
 
-      <div className="contenedor-login mt-4">
-        <form className="form" onSubmit={handleSubmit}>
-          <div className="form-group">
-            <label htmlFor="username">Correo electrónico:</label>
-            <input
-              type="text"
-              id="username"
-              ref={userRef}
-              autoComplete="off"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-              required
-            />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="password">Contraseña:</label>
-            <input
-              type="password"
-              id="password"
-              onChange={(e) => setPassword(e.target.value)}
-              value={password}
-              required
-              autoComplete="off"
-            />
-          </div>
-          <button className="btn btn-primario">Entrar</button>
-        </form>
-        <small>
-          Desea registrarse o actualizar sus datos
-          <br />
-          <span className="line">
-            {/*put router link here*/}
-            <Link to="/registro">Ir a registro</Link>
-          </span>
-        </small>
+            <div className="form-group">
+              <label htmlFor="password">Contraseña:</label>
+              <input
+                type="password"
+                id="password"
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+                required
+                autoComplete="off"
+              />
+            </div>
+            <button className="btn btn-primario">Entrar</button>
+          </form>
+          <small>
+            Desea registrarse o actualizar sus datos
+            <br />
+            <span className="line">
+              {/*put router link here*/}
+              <Link to="/registro">Ir a registro</Link>
+            </span>
+          </small>
+        </div>
       </div>
-    </div>
-
-  </section>)
-
-
-
-
+    </section>
+  );
 };
 
 export default Login;
