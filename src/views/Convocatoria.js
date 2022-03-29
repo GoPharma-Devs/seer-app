@@ -4,8 +4,8 @@ function Convocatoria() {
   return (
 
     <>
-      <section className='resultados bg-white' >
-        <div className="contenedor">
+      <section className='resultados bg-white' data-aos="fade-in" >
+        <div className="contenedor p-4">
           <br />
           <img className='mx-auto img-fluid' src={ImagenBanner} alt="" />
           <br />
