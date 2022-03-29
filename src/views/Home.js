@@ -57,6 +57,29 @@ function Home() {
       <section className="Home" data-aos="fade-in">
         <div className="row" data-aos="fade-in">
           <Carousel className="Carousel-hero container-fluid"  >
+
+
+            <Carousel.Item interval={5500}    >
+              <img
+                className="d-block w-100 slider"
+                src={BannerConvo}
+                alt="First slide"
+              />
+              <img
+                className="d-block  h-75 w-100 slider-r"
+                src={BannerConvoR}
+                alt="First slide responsive"
+              />
+              <Carousel.Caption>
+                <img src={LogoA} className="App-logo" alt="logo" />
+                <br />
+                <br />
+                <p className="titulo-c"> <strong>Resultados</strong> de la  <br /><strong>convocatoria</strong></p>
+                <br />
+                <Link className="btn-primario" to="/convocatoria" >¡Conoce más!</Link>
+
+              </Carousel.Caption>
+            </Carousel.Item>
             <Carousel.Item interval={4500}    >
               <img
                 className="d-block w-100 slider"
@@ -78,28 +101,7 @@ function Home() {
 
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item interval={4500}    >
-              <img
-                className="d-block w-100 slider"
-                src={BannerConvo}
-                alt="First slide"
-              />
-              <img
-                className="d-block  h-75 w-100 slider-r"
-                src={BannerConvoR}
-                alt="First slide responsive"
-              />
-              <Carousel.Caption>
-                <img src={LogoA} className="App-logo" alt="logo" />
-                <br />
-                <br />
 
-                <p className="titulo-b">Conoce la convocatoria.</p>
-                <br />
-                <Link className="btn-primario" to="/convocatoria" >¡Conoce más!</Link>
-
-              </Carousel.Caption>
-            </Carousel.Item>
 
 
             <Carousel.Item interval={4500}    >

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap");
 
 @import "libs/mixins";
 @import "libs/variables";
@@ -17,8 +17,6 @@
   padding: 0;
   margin: 0;
 }
-
-
 
 .contador {
   display: flex;
@@ -53,11 +51,11 @@
 }
 
 body {
-  background-color: #8997A8;
-  background-image: url('../img/fondo.png');
+  background-color: #8997a8;
+  background-image: url("../img/fondo.png");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #103561 !important;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -66,11 +64,22 @@ body {
 h2.nombre-ponente {
   font-size: 1.5rem;
 }
-
+.resultados {
+  margin-top: 10vh;
+  .contenedor {
+    max-width: 1080px;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    text-align: left;
+    min-height: 50vh !important;
+    margin: auto;
+  }
+}
 .convocatoria {
   padding: 1rem;
   box-sizing: border-box;
-  margin-top: 10vh;
+
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -83,6 +92,7 @@ h2.nombre-ponente {
     align-items: flex-start;
     flex-flow: column;
     text-align: left;
+    margin: auto;
   }
 }
 
@@ -95,7 +105,6 @@ h2.nombre-ponente {
   width: 100%;
   box-sizing: border-box;
   flex-flow: column;
-
 
   &-nosotros {
     height: auto !important;
@@ -146,9 +155,6 @@ h2.nombre-ponente {
       }
     }
   }
-
-
-
 }
 
 .titulo {
@@ -186,7 +192,6 @@ h2.nombre-ponente {
 }
 
 section {
-
   height: auto;
   width: 100%;
 }
@@ -204,7 +209,6 @@ section {
     list-style: none;
   }
 }
-
 
 footer {
   display: flex;
@@ -237,10 +241,8 @@ footer {
           color: white;
         }
       }
-
     }
   }
-
 }
 
 .contacto-section {
@@ -264,12 +266,8 @@ footer {
   }
 }
 
-
 .comite-contenedor,
 .profesores-contenedor {
-
-
-
   height: auto;
   padding: 7rem 1rem 1rem 1rem;
 
@@ -288,12 +286,10 @@ footer {
     justify-content: space-around;
 
     @include tablet {
-
       grid-template-columns: 1fr 1fr;
     }
 
     @include phone {
-
       grid-template-columns: 1fr;
     }
 
@@ -337,19 +333,16 @@ footer {
           transform: translateY(0px);
           text-shadow: 2px 2px 3px rgba(12, 12, 37, 0.76);
 
-
           .nombre-ponente {
             color: #ffffff !important;
             text-align: left;
-
-
 
             font-weight: bold !important;
           }
         }
 
         .nombre-card {
-          opacity: 0
+          opacity: 0;
         }
       }
 
@@ -379,10 +372,7 @@ footer {
         position: absolute;
         top: 0;
         left: 0;
-
       }
-
-
 
       .info {
         position: relative;
@@ -392,7 +382,6 @@ footer {
         transform: translateY(30px);
         transition: 0.5s;
 
-
         h1 {
           margin: 0px;
         }
@@ -400,16 +389,11 @@ footer {
         p {
           letter-spacing: 1px;
           font-size: 15px;
-
         }
-
-
       }
     }
   }
 }
-
-
 
 .contenedor-modal {
   align-items: center;
@@ -428,7 +412,6 @@ footer {
   }
 
   .texto {
-
     .nombre {
       margin-bottom: -9px;
       font-size: 1.2rem;
@@ -458,7 +441,6 @@ footer {
   color: $app-1;
 }
 
-
 .modal-content {
   position: relative;
   display: flex;
@@ -467,8 +449,8 @@ footer {
   pointer-events: auto;
   background-color: #d6d6d6;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: .3rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
   outline: 0;
   max-width: 690px;
 }
@@ -495,14 +477,13 @@ footer {
   margin: 1.5rem auto;
   border: none;
   max-width: 220px;
-  font-family: 'DM Mono';
+  font-family: "DM Mono";
 
   &:hover {
     background-color: white !important;
     color: $app-1 !important;
     box-shadow: 0 3px 6px rgba(8, 22, 99, 0.16), 0 3px 6px rgba(20, 2, 99, 0.23);
   }
-
 }
 
 .btn-secundario {
@@ -515,12 +496,13 @@ footer {
   margin: 1.5rem auto;
   border: none;
 
-  font-family: 'DM Mono';
+  font-family: "DM Mono";
 
   &:hover {
     background-color: $app-1 !important;
     color: white !important;
-    box-shadow: 0 3px 6px rgba(192, 201, 255, 0.16), 0 3px 6px rgba(252, 252, 252, 0.23);
+    box-shadow: 0 3px 6px rgba(192, 201, 255, 0.16),
+      0 3px 6px rgba(252, 252, 252, 0.23);
   }
 
   @include phone {
@@ -590,7 +572,6 @@ footer {
   width: 100%;
   display: flex;
   flex-flow: column;
-
 }
 
 .bgbanner {
@@ -609,7 +590,6 @@ footer {
   border-radius: 8px;
   background: #fff;
   clear: left;
-
 }
 
 .contenedor-botones {
@@ -633,7 +613,6 @@ footer {
   }
 }
 
-
 .registro {
   margin-top: 15vh;
 }
@@ -642,7 +621,6 @@ footer {
 #comite {
   padding-top: 15vh;
 }
-
 
 .formulario {
   display: flex;
@@ -669,7 +647,7 @@ footer {
   input[type="password"],
   button,
   textarea {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 22px;
     padding: 0.25rem;
     border-radius: 0.5rem;
@@ -694,7 +672,7 @@ footer {
     bottom: -10px;
   }
 
-  .instructions>svg {
+  .instructions > svg {
     margin-right: 0.25rem;
   }
 
@@ -744,11 +722,11 @@ footer {
   }
 
   @include tablet {
-    bottom: 45vh !important
+    bottom: 45vh !important;
   }
 
   @include phone {
-    bottom: 35vh !important
+    bottom: 35vh !important;
   }
 }
 
@@ -756,12 +734,10 @@ footer {
   top: 10vh !important;
   padding: 0px !important;
 
-
   @include tablet {
     top: 0px !important;
   }
 }
-
 
 .jotform-form {
   box-sizing: border-box;
@@ -778,13 +754,12 @@ footer {
   }
 }
 
-
 /* MailChimp Form Embed Code - Classic - 12/17/2015 v10.7 */
 #mc_embed_signup form {
   display: block;
   position: relative;
   text-align: left;
-  padding: 10px 0 10px 3%
+  padding: 10px 0 10px 3%;
 }
 
 #mc_embed_signup h2 {
@@ -795,19 +770,17 @@ footer {
 }
 
 #mc_embed_signup input {
-  border: 1px solid #ABB0B2;
+  border: 1px solid #abb0b2;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-
-
 }
 
-#mc_embed_signup input[type=checkbox] {
+#mc_embed_signup input[type="checkbox"] {
   -webkit-appearance: checkbox;
 }
 
-#mc_embed_signup input[type=radio] {
+#mc_embed_signup input[type="radio"] {
   -webkit-appearance: radio;
 }
 
@@ -821,7 +794,7 @@ footer {
   border: 0 none;
   border-radius: 4px;
   transition: all 0.23s ease-in-out 0s;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-size: 15px;
@@ -880,8 +853,6 @@ footer {
   width: 100%;
   padding: 8px 0;
   text-indent: 2%;
-
-
 }
 
 #mc_embed_signup .mc-field-group select {
@@ -964,7 +935,7 @@ footer {
 #mc_embed_signup div#mce-responses {
   float: left;
   top: -1.4em;
-  padding: 0em .5em 0em .5em;
+  padding: 0em 0.5em 0em 0.5em;
   overflow: hidden;
   width: 90%;
   margin: 0 5%;
@@ -973,7 +944,7 @@ footer {
 
 #mc_embed_signup div.response {
   margin: 1em 0;
-  padding: 1em .5em .5em 0;
+  padding: 1em 0.5em 0.5em 0;
   font-weight: bold;
   float: left;
   top: -1.5em;
@@ -996,7 +967,7 @@ footer {
   width: auto;
   margin-left: 1.05em;
   text-align: left;
-  padding: .5em 0;
+  padding: 0.5em 0;
 }
 
 #mc-embedded-subscribe {
@@ -1011,9 +982,9 @@ footer {
 }
 
 #mc_embed_signup #num-subscribers span {
-  padding: .5em;
+  padding: 0.5em;
   border: 1px solid #ccc;
-  margin-right: .5em;
+  margin-right: 0.5em;
   font-weight: bold;
 }
 
@@ -1035,12 +1006,10 @@ footer {
   border: 2px solid #e85c41;
 }
 
-
 .JotFormIFrame-212609285006048,
 #JotFormIFrame-212609285006048 {
   width: 100% !important;
 }
-
 
 .slider {
   display: block;
@@ -1074,7 +1043,6 @@ footer {
 .carousel-control-next,
 .carousel-control-prev {
   width: 7% !important;
-
 }
 
 .carousel-control-next {
@@ -1091,7 +1059,6 @@ footer {
 }
 
 .carousel-item {
-
   .col,
   .col-sm,
   .col-md {
@@ -1102,7 +1069,6 @@ footer {
   }
 }
 
-
 .vertical-timeline-element-icon {
   position: absolute;
   top: 0;
@@ -1110,11 +1076,12 @@ footer {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 4px #fff0, inset 0 2px 0 rgba(0, 0, 0, 0), 0 3px 0 4px rgba(0, 0, 0, 0);
-  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
+  -webkit-box-shadow: 0 0 0 4px #fff0, inset 0 2px 0 rgba(0, 0, 0, 0),
+    0 3px 0 4px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
   background: transparent !important;
 }
-
 
 .vertical-timeline--two-columns .vertical-timeline-element-icon {
   width: 60px;
@@ -1138,8 +1105,6 @@ footer {
   background: transparent !important;
 }
 
-
-
 .img-responsive {
   max-width: auto;
   height: 180px !important;
@@ -1161,19 +1126,14 @@ footer {
       border-style: none;
 
       &:hover {
-        box-shadow: 0 3px 6px rgba(8, 22, 99, 0.16), 0 3px 6px rgba(20, 2, 99, 0.23);
+        box-shadow: 0 3px 6px rgba(8, 22, 99, 0.16),
+          0 3px 6px rgba(20, 2, 99, 0.23);
         border-radius: 0px 60px 0px 60px;
       }
     }
 
-
-
-
-
     .info_box {
       line-height: 1;
-
-
 
       .name {
         text-align: left !important;
@@ -1190,7 +1150,6 @@ footer {
       }
     }
   }
-
 
   .vertical-timeline::before {
     content: "";
@@ -1227,7 +1186,6 @@ footer {
     color: #ffffff !important;
   }
 
-
   .oculto {
     display: block;
   }
@@ -1248,10 +1206,7 @@ footer {
 }
 
 .cerrar-sesion {
-
-
   right: 5%;
-
 }
 
 .contenedor-transmision {
@@ -1272,12 +1227,10 @@ footer {
   }
 }
 
-
 .patrocinadores,
 .aliados {
   margin-top: 3rem;
   margin-bottom: 3rem;
-
 }
 
 .patrocinadores-Contenedor,
