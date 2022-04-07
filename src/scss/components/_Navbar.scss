@@ -12,7 +12,7 @@
   width: 100%;
   z-index: 6;
   box-sizing: border-box;
-  font-family: 'DM Mono light';
+  font-family: "DM Mono light";
 
   ul {
     margin: 0;
@@ -24,7 +24,6 @@
   .navbar-icon {
     position: relative;
     display: none;
-
 
     @include tablet {
       display: block;
@@ -57,12 +56,11 @@
     position: relative;
     display: flex;
     list-style: none;
-    max-width: 650px;
+    max-width: 70%;
     width: 100%;
     align-items: center;
     justify-content: space-between;
     flex-flow: row;
-
 
     a {
       font-size: 14px;
@@ -71,12 +69,12 @@
       cursor: pointer;
 
       .btn-primario {
+        color: #081e50;
         margin: 0.5rem auto;
       }
 
       &:hover {
         li {
-
           color: #bad7fa !important;
         }
       }
@@ -96,13 +94,11 @@
 
   .nav-transparent {
     height: 65px;
-
-
   }
 
   & .active {
-
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     opacity: 1;
     top: 64px;
     flex-flow: column;
@@ -122,13 +118,9 @@
     box-sizing: border-box;
     display: none;
 
-
     @include tablet {
-
       display: flex;
     }
-
-
 
     li {
       box-sizing: border-box;
@@ -151,7 +143,6 @@
 
       &:hover {
         li {
-
           color: #ffffff !important;
         }
       }
@@ -165,7 +156,6 @@
 
 .nav-colored,
 .nav-colored-solid {
-
   background-color: #103561 !important;
   width: 100%;
   padding: 0.5% 5%;
