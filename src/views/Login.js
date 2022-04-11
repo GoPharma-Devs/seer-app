@@ -6,7 +6,8 @@ import axios from "../api/axios";
 import { Modal, Button } from "react-bootstrap";
 //import Transmision from "./Transmision";
 //import logo3 from "../img/LOGO_SEER_WHITE_3.png";
-import Chat from "./Chat";
+//import Chat from "./Chat";
+import Loby from "./Loby";
 const LOGIN_URL = "/login";
 
 const Login = () => {
@@ -119,7 +120,7 @@ const Login = () => {
   if (user?.form && thirdDay === "true") {
     return (
       <section className="section transmision-contenedor">
-        <Chat />
+        <Loby />
       </section>
     );
   }
