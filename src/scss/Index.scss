@@ -480,8 +480,8 @@ footer {
   font-family: "DM Mono";
 
   &:hover {
-    background-color: rgb(58, 61, 64) !important;
-    color: $app-1 !important;
+    background-color: $app-1 !important;
+    color: #fff !important;
     box-shadow: 0 3px 6px rgba(8, 22, 99, 0.16), 0 3px 6px rgba(20, 2, 99, 0.23);
   }
 }
@@ -1299,4 +1299,22 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.aviso {
+  min-height: 100vh;
+  height: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: justify;
+  color: #103561;
+  .titulo {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #103561;
+  }
 }

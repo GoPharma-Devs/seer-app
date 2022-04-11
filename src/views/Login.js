@@ -3,7 +3,7 @@ import { useRef, useState, useEffect, useContext } from "react";
 import AuthContext from "../context/AuthProvider";
 import { Link } from "react-router-dom";
 import axios from "../api/axios";
-import { Modal, Button } from "react-bootstrap";
+//import { Modal, Button } from "react-bootstrap";
 //import Transmision from "./Transmision";
 //import logo3 from "../img/LOGO_SEER_WHITE_3.png";
 //import Chat from "./Chat";
@@ -19,12 +19,12 @@ const Login = () => {
       ? JSON.parse(localStorage.getItem("user"))
       : null
   );
-  const [thirdDay, setthirdDay] = useState(localStorage.getItem("thirdDay"));
+  //const [thirdDay, setthirdDay] = useState(localStorage.getItem("thirdDay"));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errMsg, setErrMsg] = useState("");
   const [success, setSuccess] = useState(false);
-  const [modalShow, setModalShow] = useState(true);
+  //const [modalShow, setModalShow] = useState(true);
 
 
 
@@ -67,63 +67,19 @@ const Login = () => {
       errRef.current.focus();
     }
   };
-  function MyVerticallyCenteredModal(props) {
-    return (
-      <Modal
-        {...props}
-        size="lg"
-        aria-labelledby="contained-modal-title-vcenter"
-        centered
-      >
-        <Modal.Body>
-          <iframe
-            id="JotFormIFrame-212609285006048"
-            title="SEER 2022"
-            onLoad={window.parent.scrollTo(0, 0)}
-            src="https://form.jotform.com/212609285006048"
-            frameBorder={0}
-            style={{ minWidth: "100%", height: 539, border: "none" }}
-            scrolling="no"
-          ></iframe>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button className="btn btn-danger" onClick={props.onHide}>
-            Cerrar
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    );
-  }
 
-  if (success && !user?.form) {
+
+  if (success === true) {
     return (
       <section className="section transmision-contenedor Hero">
         <div className="contenedor">
-          <MyVerticallyCenteredModal
-            show={modalShow}
-            onHide={() => {
-              setModalShow(false);
-              setUser({ ...user, form: true });
-              setthirdDay("true");
-              localStorage.setItem(
-                "user",
-                JSON.stringify({ ...user, form: true })
-              );
-              localStorage.setItem("thirdDay", "true");
-            }}
-          />
+          <Loby />
         </div>
       </section>
     );
   }
 
-  if (user?.form && thirdDay === "true") {
-    return (
-      <section className="section transmision-contenedor">
-        <Loby />
-      </section>
-    );
-  }
+
   return (
     <section>
       <div className="contenedor">
@@ -171,7 +127,7 @@ const Login = () => {
             <small className="">
               ¿Aún no tienes cuenta? <br />
               <span className="line">
-
+                {/*put router link here*/}
                 <Link to="/registro">Registrate​            </Link>
 
 
