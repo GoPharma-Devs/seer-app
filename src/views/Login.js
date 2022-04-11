@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import axios from "../api/axios";
 import { Modal, Button } from "react-bootstrap";
 //import Transmision from "./Transmision";
-import logo3 from "../img/LOGO_SEER_WHITE_3.png";
+//import logo3 from "../img/LOGO_SEER_WHITE_3.png";
 import Chat from "./Chat";
 const LOGIN_URL = "/login";
 
@@ -25,9 +25,7 @@ const Login = () => {
   const [success, setSuccess] = useState(false);
   const [modalShow, setModalShow] = useState(true);
 
-  useEffect(() => {
-    // userRef.current.focus();
-  }, []);
+
 
   useEffect(() => {
     setErrMsg("");
@@ -135,9 +133,9 @@ const Login = () => {
         >
           {errMsg}
         </p>
-        <img src={logo3} className="App-logo2" alt="logo" />
+
         <h3 className="text-center">
-          17, 18 y 19 de febrero <br /> Bienvenid@
+          <br /> Bienvenid@, <br /> Inicia sesión para continuar
         </h3>
 
         <div className="contenedor-login mt-4">
@@ -168,14 +166,21 @@ const Login = () => {
             </div>
             <button className="btn btn-primario">Entrar</button>
           </form>
-          <small>
-            Desea registrarse o actualizar sus datos
-            <br />
-            <span className="line">
-              {/*put router link here*/}
-              <Link to="/registro">Ir a registro</Link>
-            </span>
-          </small>
+          <div className="container text-center">
+            <small className="">
+              ¿Aún no tienes cuenta? <br />
+              <span className="line">
+
+                <Link to="/registro">Registrate​            </Link>
+
+
+              </span>
+              <br />
+              <span className="line">Click para revisar nuestro
+                <Link to="/aviso-de-privacidad"> aviso de privacidad​           </Link>
+              </span>
+            </small>
+          </div>
         </div>
       </div>
     </section>

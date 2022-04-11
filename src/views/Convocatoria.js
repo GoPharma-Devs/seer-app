@@ -9,7 +9,7 @@ function Convocatoria() {
           <br />
           <img className='mx-auto img-fluid' src={ImagenBanner} alt="" />
           <br />
-          <h1>Resultados</h1>
+          <h1>Resultados <span class="badge badge-secondary">Cerrada</span></h1>
           <p>La Sociedad de Especialistas en Enfermedades Raras, SEER; agradece la participación de todos los aspirantes. Ustedes fueron parte importante de la primera actividad de educación y concientización que SEER realizó en pro de las Enfermedades Raras.</p>
 
           <p  >Nos complace anunciar los 3 nombres de los acreedores a la realización de Un Exoma para sus pacientes.</p>
