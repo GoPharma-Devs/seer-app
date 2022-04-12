@@ -8,13 +8,11 @@ function Loby() {
   };
   return (
     <>
-      <button onClick={Logout} className="btn-primario cerrar-sesion">
-        Cerrar Sesión
-      </button>
+
 
       <section className="section Lobby ">
         <div className="container px-4">
-          <div className="row gx-5">
+          <div className="row mt-3 gx-5">
             <h3 style={{ maxWidth: "1000px", textAlign: "center", margin: "auto" }}>
               Revive el 1er Congreso Internacional de la Sociedad de
               Especialistas en Enfermedades Raras 2022
@@ -22,7 +20,7 @@ function Loby() {
           </div>
         </div>
 
-        <div className="row row-cols-1 row-cols-lg-3 align-items-stretch p-4 g-4 py-5">
+        <div className="row row-cols-1 row-cols-lg-3 align-items-stretch  g-4 m-3">
           <div className="col">
             <div className="card card-cover h-100 overflow-hidden text-white bg-light rounded-5 shadow-lg dia">
               <div className="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
@@ -97,6 +95,9 @@ function Loby() {
           </div>
         </div>
       </section>
+      <button onClick={Logout} className="btn-primario cerrar-sesion">
+        Cerrar Sesión
+      </button>
     </>
   );
 }

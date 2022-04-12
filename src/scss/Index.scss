@@ -1206,14 +1206,7 @@ footer {
 }
 
 .cerrar-sesion {
-  position: absolute;
-  top: 15%;
-  right: 5%;
-
-  width: 100%;
-  @include phone {
-    top: 10%;
-  }
+  position: relative;
 }
 
 .contenedor-transmision {
@@ -1302,7 +1295,7 @@ footer {
 }
 
 .Lobby {
-  margin-top: 15vh;
+  margin-top: 10vh;
   height: auto;
   min-height: 60vh;
   display: flex;
