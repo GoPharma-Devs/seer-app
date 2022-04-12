@@ -1330,13 +1330,18 @@ footer {
 }
 
 .dia {
+  border: none;
   cursor: pointer;
-  background-position: top;
-  background-image: url("../img/fondo.png") !important;
-  &:hover {
-    transition: all 0.5s ease;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/img/azul.png");
+  background-blend-mode: multiply;
 
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    background-color: #6d92bd !important;
+    background-blend-mode: multiply;
     background-position: center;
-    background-image: url("../img/azul.png") !important;
   }
 }
