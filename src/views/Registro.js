@@ -102,6 +102,9 @@ function Registro() {
                   <br />
                   <br />
                   <Link style={{ marginTop: '1rem' }} to="/congreso"> ¿Ya tienes cuenta?</Link>
+                  <br />
+                  <br />
+                  <Link style={{ marginTop: '1rem' }} to="/aviso-de-privacidad">Aviso de privacidad​</Link>
                 </div>
               </div>
 

@@ -48,6 +48,7 @@ const Login = () => {
       setAuth({ user });
       setEmail("");
       setPassword("");
+
       if (response?.status === 200) {
         console.log("usuario");
         setSuccess(true);
@@ -60,9 +61,9 @@ const Login = () => {
       } else if (err.response?.status === 400) {
         setErrMsg("Falta el nombre de usuario o la contraseña");
       } else if (err.response?.status === 401) {
-        setErrMsg("Correo no registrado");
+        setErrMsg("Correo ó Contraseña erronea, verifique sus datos");
       } else {
-        setErrMsg("Usuario no encontrado");
+        setErrMsg("Usuario no encontrado, favor de registrarse de nuevo");
       }
       errRef.current.focus();
     }
@@ -83,13 +84,7 @@ const Login = () => {
   return (
     <section>
       <div className="contenedor">
-        <p
-          ref={errRef}
-          className={errMsg ? "errmsg" : "offscreen"}
-          aria-live="assertive"
-        >
-          {errMsg}
-        </p>
+
 
         <h3 className="text-center">
           <br /> Bienvenid@, <br /> Inicia sesión para continuar
@@ -121,14 +116,22 @@ const Login = () => {
                 autoComplete="off"
               />
             </div>
+            <p
+
+              ref={errRef}
+              className={errMsg ? "errmsg text-danger" : "offscreen"}
+              aria-live="assertive"
+            >
+              {errMsg}
+            </p>
             <button className="btn btn-primario">Entrar</button>
           </form>
           <div className="container text-center">
             <small className="">
-              ¿Aún no tienes cuenta? <br />
+              ¿Aún no tienes cuenta?
               <span className="line">
                 {/*put router link here*/}
-                <Link to="/registro">Registrate​            </Link>
+                <Link to="/registro"> Regístrate  </Link>
 
 
               </span>
