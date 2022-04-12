@@ -15,7 +15,7 @@ function Loby() {
       <section className="section Lobby ">
         <div className="container px-4 text-left">
           <div className="row gx-5">
-            <h3 classname="h5">Revive el 1er Congreso Internacional de la Sociedad de Especialistas en Enfermedades Raras 2022​</h3>
+            <h3 className="h5">Revive el 1er Congreso Internacional de la Sociedad de Especialistas en Enfermedades Raras 2022​</h3>
           </div>
         </div>
 
