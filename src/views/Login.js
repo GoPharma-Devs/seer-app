@@ -52,8 +52,8 @@ const Login = () => {
       if (response?.status === 200) {
         console.log("usuario");
         setSuccess(true);
-        localStorage.setItem("user", JSON.stringify({ ...user, form: false }));
-        setUser({ ...user, form: false });
+        setUser({ ...user, form: true });
+        localStorage.setItem("user", JSON.stringify({ ...user, form: true }));
       }
     } catch (err) {
       if (!err?.response) {
@@ -70,11 +70,71 @@ const Login = () => {
   };
 
 
-  if (success === true) {
+
+  if (!success && !user?.form) {
+
+
     return (
-      <section className="section transmision-contenedor Hero">
+      <section>
         <div className="contenedor">
-          <Loby />
+
+
+          <h3 className="text-center">
+            <br /> Bienvenid@, <br /> Inicia sesión para continuar
+          </h3>
+
+          <div className="contenedor-login mt-4">
+            <form className="form" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="username">Correo electrónico:</label>
+                <input
+                  type="text"
+                  id="username"
+                  ref={userRef}
+                  autoComplete="off"
+                  onChange={(e) => setEmail(e.target.value)}
+                  value={email}
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="password">Contraseña:</label>
+                <input
+                  type="password"
+                  id="password"
+                  onChange={(e) => setPassword(e.target.value)}
+                  value={password}
+                  required
+                  autoComplete="off"
+                />
+              </div>
+              <p
+
+                ref={errRef}
+                className={errMsg ? "errmsg text-danger" : "offscreen"}
+                aria-live="assertive"
+              >
+                {errMsg}
+              </p>
+              <button className="btn btn-primario">Entrar</button>
+            </form>
+            <div className="container text-center">
+              <small className="">
+                ¿Aún no tienes cuenta?
+                <span className="line">
+                  {/*put router link here*/}
+                  <Link to="/registro"> Regístrate  </Link>
+
+
+                </span>
+                <br />
+                <span className="line">Click para revisar nuestro
+                  <Link to="/aviso-de-privacidad"> aviso de privacidad​           </Link>
+                </span>
+              </small>
+            </div>
+          </div>
         </div>
       </section>
     );
@@ -82,69 +142,16 @@ const Login = () => {
 
 
   return (
-    <section>
+    <section className="section transmision-contenedor Hero">
       <div className="contenedor">
+        <Loby />
 
-
-        <h3 className="text-center">
-          <br /> Bienvenid@, <br /> Inicia sesión para continuar
-        </h3>
-
-        <div className="contenedor-login mt-4">
-          <form className="form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <label htmlFor="username">Correo electrónico:</label>
-              <input
-                type="text"
-                id="username"
-                ref={userRef}
-                autoComplete="off"
-                onChange={(e) => setEmail(e.target.value)}
-                value={email}
-                required
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="password">Contraseña:</label>
-              <input
-                type="password"
-                id="password"
-                onChange={(e) => setPassword(e.target.value)}
-                value={password}
-                required
-                autoComplete="off"
-              />
-            </div>
-            <p
-
-              ref={errRef}
-              className={errMsg ? "errmsg text-danger" : "offscreen"}
-              aria-live="assertive"
-            >
-              {errMsg}
-            </p>
-            <button className="btn btn-primario">Entrar</button>
-          </form>
-          <div className="container text-center">
-            <small className="">
-              ¿Aún no tienes cuenta?
-              <span className="line">
-                {/*put router link here*/}
-                <Link to="/registro"> Regístrate  </Link>
-
-
-              </span>
-              <br />
-              <span className="line">Click para revisar nuestro
-                <Link to="/aviso-de-privacidad"> aviso de privacidad​           </Link>
-              </span>
-            </small>
-          </div>
-        </div>
       </div>
     </section>
-  );
+
+  )
+
+
 };
 
 export default Login;

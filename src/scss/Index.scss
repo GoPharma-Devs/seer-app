@@ -1206,7 +1206,14 @@ footer {
 }
 
 .cerrar-sesion {
+  position: absolute;
+  top: 15%;
   right: 5%;
+
+  width: 100%;
+  @include phone {
+    top: 10%;
+  }
 }
 
 .contenedor-transmision {
@@ -1295,8 +1302,11 @@ footer {
 }
 
 .Lobby {
-  height: 100vh;
+  margin-top: 15vh;
+  height: auto;
+  min-height: 60vh;
   display: flex;
+  flex-flow: column;
   align-items: center;
   justify-content: center;
 }
@@ -1316,5 +1326,17 @@ footer {
     font-size: 1rem;
     font-weight: bold;
     color: #103561;
+  }
+}
+
+.dia {
+  cursor: pointer;
+  background-position: top;
+  background-image: url("../img/fondo.png") !important;
+  &:hover {
+    transition: all 0.5s ease;
+
+    background-position: center;
+    background-image: url("../img/azul.png") !important;
   }
 }
