@@ -56,7 +56,7 @@ function Home() {
     <>
       <section className="Home" data-aos="fade-in">
         <div className="row" data-aos="fade-in">
-          <Carousel className="Carousel-hero container-fluid"  >
+          <Carousel className="Carousel-hero container-fluid bg-seer"  >
 
 
             <Carousel.Item interval={5500}    >
