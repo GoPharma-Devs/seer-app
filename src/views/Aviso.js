@@ -5,7 +5,7 @@ function Aviso() {
     <>
       <section className='section aviso'>
 
-        <div className="container p-4">
+        <div className="container  p-4 bg-white rounded-2 py-3">
           <h1 style={{ textAlign: 'center' }}>Aviso de privacidad</h1>
           <p className="titulo">¿Quién es el responsable de sus datos personales? </p>
           <p>En virtud de lo dispuesto por la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (la “LFPD”) y resto de disposiciones aplicables, Asociación Científica de Enfermedades Raras, A.C (en adelante, indistintamente el “Responsable” o “SEER”) es el Responsable de sus datos personales.</p>
