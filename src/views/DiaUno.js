@@ -43,7 +43,7 @@ function DiaUno() {
         <div className='container'>
 
           <div className='row' style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe title='dia-uno' src="https://vimeo.com/showcase/9444749/embed" allowFullScreen frameBorder={0} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} /></div>
-          <br />
+
           <button className='goback' onClick={() => navigate(-1)}> <FaArrowAltCircleLeft /> Regresar</button>
         </div>
 
