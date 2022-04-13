@@ -40,7 +40,7 @@ function DiaUno() {
   return (
     <>
       {user && (<section className='section App-header ' data-aos="fade-up">
-        <div className='container'>
+        <div className='container p-3'>
 
           <div className='row' style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe title='dia-uno' src="https://vimeo.com/showcase/9444749/embed" allowFullScreen frameBorder={0} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} /></div>
 
@@ -62,12 +62,7 @@ function DiaUno() {
           <button onClick={Logout} className="btn btn-primario"> Ir al incio</button>
         </div>
       </section>)}
-      <div className="row">
-        <div className="container d-flex alig-items-center">
 
-
-        </div>
-      </div>
     </>
   )
 }
