@@ -30,16 +30,16 @@ function DiaUno() {
       {user && (
         <section className="section App-header " >
           <div className="container p-3">
-            <button className="goback mt-2" onClick={() => navigate(-1)}>
-              {" "}
-              <FaArrowAltCircleLeft /> Regresar
-            </button>
+
             <div className="mt-2" style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe title="SEER 1er Dìa" src="https://vimeo.com/showcase/9444749/embed" allowFullScreen frameBorder={0} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} /></div>
 
 
 
             <div className="row d-flex justify-content-around ">
-
+              <button className="goback mt-2" onClick={() => navigate(-1)}>
+                {" "}
+                <FaArrowAltCircleLeft /> Regresar
+              </button>
               <button onClick={Logout} className="goback mt-2 ">
                 Cerrar Sesión
               </button>
