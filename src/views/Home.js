@@ -132,7 +132,7 @@ function Home() {
 
       <div className="row mt-5" data-aos="fade-up" >
         <div className="container-fluid mt-5 mb-5 text-center">
-          <p className="mt-3">Conoce más de este gran proyecto</p>
+          <p className="mt-3 h4">Conoce más de este gran proyecto</p>
           <FaChevronDown className="bounce" onClick={homeSection.onClick} selected={homeSection.selected} />
         </div>
 

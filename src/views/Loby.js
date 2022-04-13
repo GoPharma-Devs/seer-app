@@ -32,7 +32,7 @@ function Loby() {
           </div>
         </div>
 
-        <div className="row row-cols-1 row-cols-lg-3 align-items-stretch  g-4 m-3">
+        <div className="row w-75 row-cols-1 row-cols-lg-3 align-items-stretch  g-4 m-3">
           <Link to="diauno" style={{ textDecoration: "none" }}>
             <div className="col">
               <div className="card card-cover h-100 overflow-hidden text-white  rounded-5 shadow-lg dia">
@@ -45,7 +45,7 @@ function Loby() {
                   </h5>
                   <ul className="d-flex list-unstyled mt-auto">
                     <li className="d-flex align-items-center me-3">
-                      <small>17 DE FEBRERO​</small>
+                      <small>17 DE FEBRERO</small>
                     </li>
                     <li className="me-auto"></li>
                     <li className="d-flex align-items-center">
@@ -72,7 +72,7 @@ function Loby() {
                 </h5>
                 <ul className="d-flex list-unstyled mt-auto">
                   <li className="d-flex align-items-center me-3">
-                    <small>18 DE FEBRERO​</small>
+                    <small>18 DE FEBRERO</small>
                   </li>
                   <li className="me-auto"></li>
                   <li className="d-flex align-items-center">
@@ -96,7 +96,7 @@ function Loby() {
                 </h5>
                 <ul className="d-flex list-unstyled mt-auto">
                   <li className="d-flex align-items-center me-3">
-                    <small>19 DE FEBRERO​</small>
+                    <small>19 DE FEBRERO</small>
                   </li>
                   <li className="me-auto"></li>
                   <li className="d-flex align-items-center">
