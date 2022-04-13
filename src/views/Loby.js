@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Logo from "../img/logo.svg";
 import { Link } from "react-router-dom";
 import AOS from 'aos';
@@ -8,19 +8,16 @@ function Loby() {
     localStorage.removeItem("user");
     window.location.replace("/");
   };
-  useEffect(() => {
-
-    AOS.init({
-      offset: 120,
-      delay: 20,
-      duration: 500,
-      easing: 'ease-in-out',
-      debounceDelay: 50,
-      throttleDelay: 99,
-      mirror: false,
-      anchorPlacement: 'bottom-top',
-    });
-  }, [])
+  AOS.init({
+    offset: 120,
+    delay: 20,
+    duration: 500,
+    easing: 'ease-in-out',
+    debounceDelay: 50,
+    throttleDelay: 99,
+    mirror: false,
+    anchorPlacement: 'bottom-top',
+  });
   return (
     <>
 
