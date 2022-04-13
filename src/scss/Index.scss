@@ -1338,3 +1338,17 @@ footer {
     background-position: center;
   }
 }
+.App-header {
+  min-height: 100vh;
+  height: 100%;
+  padding-top: 12vh;
+}
+
+button.goback {
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.896);
+  color: rgba(255, 255, 255, 0.852);
+}

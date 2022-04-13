@@ -16,6 +16,7 @@ import {
 
 } from 'react-scroll-section';
 import Aviso from "../views/Aviso";
+import DiaUno from "../views/DiaUno";
 const GeneralRoutes = () => {
   const Wrapper = ({ children }) => {
     const location = useLocation();
@@ -50,10 +51,12 @@ const GeneralRoutes = () => {
               </>
 
             )}
+            <Route path="congreso-2022/diauno" element={<DiaUno />} />
             <Route path="/exito" element={<Exito />} />
             <Route path="/convocatoria" element={<Convocatoria />} />
             <Route path="/agenda" element={<Agenda />} />
             <Route path="/aviso-de-privacidad" element={<Aviso />} />
+
             <Route path="*" element={<ErrorPage />} />
 
           </Routes>
