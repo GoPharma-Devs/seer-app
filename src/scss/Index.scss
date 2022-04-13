@@ -1341,7 +1341,7 @@ footer {
 .App-header {
   min-height: 88vh;
   height: 100%;
-  padding-top: 12vh;
+  padding-top: 11vh;
 }
 
 button.goback {
@@ -1361,4 +1361,9 @@ button.goback {
     #fdfdffa5 30%,
     rgba(119, 148, 189, 0.957) 100%
   );
+}
+
+.Diauno {
+  margin: auto;
+  max-width: 1020px;
 }
