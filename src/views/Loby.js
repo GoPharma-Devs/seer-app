@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Logo from "../img/logo.svg";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 function Loby() {
   const Logout = () => {
     localStorage.removeItem("user");
     window.location.replace("/");
   };
+  useEffect(() => {
+
+    AOS.init({
+      offset: 120,
+      delay: 20,
+      duration: 500,
+      easing: 'ease-in-out',
+      debounceDelay: 50,
+      throttleDelay: 99,
+      mirror: false,
+      anchorPlacement: 'bottom-top',
+    });
+  }, [])
   return (
     <>
 
 
-      <section className="section Lobby ">
+      <section className="section Lobby" data-aos="fade-up" >
         <div className="container px-4">
           <div className="row mt-3 gx-5">
             <h3 style={{ maxWidth: "1000px", textAlign: "center", margin: "auto" }}>
@@ -23,7 +38,7 @@ function Loby() {
         <div className="row row-cols-1 row-cols-lg-3 align-items-stretch  g-4 m-3">
           <Link to="diauno" style={{ textDecoration: "none" }}>
             <div className="col">
-              <div className="card card-cover h-100 overflow-hidden text-white bg-light rounded-5 shadow-lg dia">
+              <div className="card card-cover h-100 overflow-hidden text-white  rounded-5 shadow-lg dia">
                 <div className="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
                   <img style={{ maxWidth: "20px" }} src={Logo} alt="" />
                   <h5 className=" mt-5 mb-4   fw-bold">
@@ -48,7 +63,7 @@ function Loby() {
             </div>
           </Link>
           <div className="col">
-            <div className="card card-cover h-100 overflow-hidden text-white bg-light rounded-5 shadow-lg dia">
+            <div className="card card-cover h-100 overflow-hidden text-white  rounded-5 shadow-lg dia">
 
               <div className="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
                 <img style={{ maxWidth: "20px" }} src={Logo} alt="" />
@@ -73,7 +88,7 @@ function Loby() {
             </div>
           </div>
           <div className="col">
-            <div className="card card-cover h-100 overflow-hidden text-white bg-light rounded-5 shadow-lg dia">
+            <div className="card card-cover h-100 overflow-hidden text-white  rounded-5 shadow-lg dia">
               <div className="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
                 <img style={{ maxWidth: "20px" }} src={Logo} alt="" />
                 <h5 className=" mt-5 mb-4  fw-bold">
