@@ -196,7 +196,11 @@ strong {
 ul,
 ol,
 li {
+  max-width: 95%;
   margin-left: 1rem;
+  margin-right: auto;
   font-family: "DM Mono";
   font-weight: 700;
+  text-align: justify;
+  font-size: 0.9rem;
 }
