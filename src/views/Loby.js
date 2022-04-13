@@ -55,7 +55,7 @@ function Loby() {
                       <svg className="bi me-2" width="1em" height="1em">
                         <use xlinkHref="#calendar3" />
                       </svg>
-                      <small>6 videos</small>
+                      <small>3 videos</small>
                     </li>
                   </ul>
                 </div>
@@ -68,9 +68,10 @@ function Loby() {
               <div className="d-flex flex-column h-100 p-4 pb-3 text-white text-shadow-1">
                 <img style={{ maxWidth: "20px" }} src={Logo} alt="" />
                 <h5 className=" mt-5 mb-4   fw-bold">
-                  CLICK PARA <br />
+                  {/* CLICK PARA <br />
                   REVIVIR
-                  <br /> EL 2<sup>DO</sup> DÍA
+                  <br /> EL 2<sup>DO</sup> DÍA */}
+                  2<sup>DO</sup> DÍA
                 </h5>
                 <ul className="d-flex list-unstyled mt-auto">
                   <li className="d-flex align-items-center me-3">
@@ -81,7 +82,7 @@ function Loby() {
                     <svg className="bi me-2" width="1em" height="1em">
                       <use xlinkHref="#calendar3" />
                     </svg>
-                    <small>6 videos</small>
+                    <small>...</small>
                   </li>
                 </ul>
               </div>
@@ -92,8 +93,9 @@ function Loby() {
               <div className="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
                 <img style={{ maxWidth: "20px" }} src={Logo} alt="" />
                 <h5 className=" mt-5 mb-4  fw-bold">
-                  CLICK PARA <br />
-                  REVIVIR EL 3<sup>ER</sup> DÍA
+                  {/* CLICK PARA <br />
+                  REVIVIR EL 3<sup>ER</sup> DÍA */}
+                  3<sup>ER</sup> DÍA
                 </h5>
                 <ul className="d-flex list-unstyled mt-auto">
                   <li className="d-flex align-items-center me-3">
@@ -104,7 +106,7 @@ function Loby() {
                     <svg className="bi me-2" width="1em" height="1em">
                       <use xlinkHref="#calendar3" />
                     </svg>
-                    <small>6 videos</small>
+                    <small>...</small>
                   </li>
                 </ul>
               </div>

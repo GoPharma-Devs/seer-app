@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
 
+import { NavLink, useLocation } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import Logo from "../img/logo.svg";
 //import Logo from "../../img/logo.png";
@@ -9,6 +9,9 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useScrollSection } from "react-scroll-section";
 
 function Navbar() {
+  const location = useLocation();
+  const [navBg, setNavBg] = useState("block");
+  const [homePage, setHomePage] = useState("block")
   const [click, setClick] = useState(false);
   const homeSection = useScrollSection("comite");
   const colabSection = useScrollSection("colab");
@@ -16,7 +19,22 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
   useEffect(() => {
     navegador();
-  });
+
+
+    if (window.location.pathname === "/") {
+      setNavBg("block");
+    } else {
+      setNavBg('none')
+    }
+
+    if (window.location.pathname === "/") {
+
+      setHomePage("block")
+    } else {
+      setHomePage("none")
+
+    }
+  }, [location]);
   const navegador = () => {
     var navScr = document.getElementById("navScr");
     window.onscroll = function () {
@@ -68,22 +86,27 @@ function Navbar() {
           className="navbar_menu_link home-icon"
           onClick={closeMobileMenu}
         >
-          <FaIcons.FaHome />
+          <FaIcons.FaHome /> Inicio
         </NavLink>
         <NavLink
+          style={{ display: homePage }}
+
           onClick={homeSection.onClick}
           selected={homeSection.selected}
           to="/"
+
           className={({ isActive }) => (isActive ? "active-nav" : "comite-nav")}
         >
           <li onClick={closeMobileMenu}>Comité científico </li>
         </NavLink>
         <NavLink
+
+          style={{ display: navBg }}
           to="/"
           onClick={colabSection.onClick}
           selected={colabSection.selected}
           className={({ isActive }) =>
-            isActive ? "active-nav" : "ponente-nav"
+            isActive ? `active-nav ` : `ponente-nav `
           }
         >
           <li onClick={closeMobileMenu}> Colaboradores </li>

@@ -44,7 +44,7 @@ function DiaUno() {
 
           <div className='row' style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe title='dia-uno' src="https://vimeo.com/showcase/9444749/embed" allowFullScreen frameBorder={0} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} /></div>
 
-          <button className='goback' onClick={() => navigate(-1)}> <FaArrowAltCircleLeft /> Regresar</button>
+          <button className='goback mt-2' onClick={() => navigate(-1)}> <FaArrowAltCircleLeft /> Regresar</button>
         </div>
 
       </section>)}
@@ -60,7 +60,7 @@ function DiaUno() {
       <div className="row">
         <div className="container d-flex alig-items-center">
 
-          <button style={{ margin: "auto", textAlign: "center" }} onClick={Logout} className="btn-primario cerrar-sesion">
+          <button style={{ margin: "auto", textAlign: "center" }} onClick={Logout} className="btn-primario cerrar-sesion ">
             Cerrar Sesión
           </button>
         </div>
