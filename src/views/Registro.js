@@ -101,7 +101,7 @@ function Registro() {
                 <div className="clear"><input type="submit" value="Registrarte" name="subscribe" id="mc-embedded-subscribe" className="button btn-primario" />
                   <br />
                   <br />
-                  <Link style={{ marginTop: '1rem' }} to="/congreso"> ¿Ya tienes cuenta?</Link>
+                  <Link style={{ marginTop: '1rem' }} to="/congreso-2022"> ¿Ya tienes cuenta?</Link>
                   <br />
                   <br />
                   <Link style={{ marginTop: '1rem' }} to="/aviso-de-privacidad">Aviso de privacidad​</Link>
