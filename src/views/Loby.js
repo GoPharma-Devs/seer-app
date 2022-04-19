@@ -52,7 +52,7 @@ function Loby() {
                       <svg className="bi me-2" width="1em" height="1em">
                         <use xlinkHref="#calendar3" />
                       </svg>
-                      <small>3 videos</small>
+                      <small>13 videos</small>
                     </li>
                   </ul>
                 </div>
