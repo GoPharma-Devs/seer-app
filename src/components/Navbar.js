@@ -74,13 +74,13 @@ function Navbar() {
         <img src={Logo} className="navbar_logo" alt="seer-latam" />
       </NavLink>
       <ul className={click ? "navbar_menu active " : "navbar_menu"}>
-        <NavLink
+        {/* <NavLink
           to="/congreso-2022"
           className={({ isActive }) => (isActive ? "active-nav" : "")}
           onClick={closeMobileMenu}
         >
           <li className="btn-primario"> Congreso 2022 </li>
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/"
           className="navbar_menu_link home-icon"
