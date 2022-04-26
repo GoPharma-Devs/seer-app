@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 
-function DiaUno() {
+function DiaDos() {
   const navigate = useNavigate();
   const Logout = () => {
     localStorage.removeItem("user");
@@ -30,9 +30,12 @@ function DiaUno() {
       {user && (
         <section className="section App-header Diauno" >
           <div className="container ">
-            <h1>SEER Día 1 - 17 DE FEBRERO</h1>
-            <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}><iframe title="SEER 1er Dìa" src="https://vimeo.com/showcase/9444749/embed" allowFullScreen frameBorder={0} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} /></div>
+            <h1>SEER Día 2 - 18 DE FEBRERO</h1>
+            <div style={{ padding: "56.25% 0 0 10%", position: "relative", }}>
 
+              <iframe title="dia 2" src="https://vimeo.com/showcase/9460103/embed" allowFullScreen frameBorder={0} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }} />
+
+            </div>
 
 
             <div className="row d-flex justify-content-around ">
@@ -65,4 +68,4 @@ function DiaUno() {
   );
 }
 
-export default DiaUno;
+export default DiaDos;
